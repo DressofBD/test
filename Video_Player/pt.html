@@ -1,0 +1,122 @@
+<!--
+  ## Introduction
+
+  Click-to-play is a common UX feature for video players on the web.
+
+  Initially displayed on top of the video, the overlay contains details about the video such as title, duration, poster image, links and a play icon.
+
+  `amp-video` supports the standard `play` AMP action, allowing you to implement click-to-play easily.
+--><!-- -->
+<!doctype html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+  <title>Click-to-play overlay for amp-video</title>
+  <!-- ## Setup -->
+  <!--
+    Import the `amp-video` component.
+  -->
+  <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <link rel="canonical" href="https://amp.dev/documentation/examples/multimedia-animations/click-to-play_overlay_for_amp-video/index.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <!-- ## Styling -->
+  <!--
+    Custom styles for click-to-play overlay
+  -->
+  <style amp-custom>
+
+    /* Wrapper that hosts the video and the overlay */
+    .video-player {
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Overlay fills the parent and sits on top of the video */
+    .click-to-play-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }         #myVideo{
+            width: 60%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+         }
+         /* Overlay fills the parent and sits on top of the video */
+         .click-to-play-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 60%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         .poster-image {
+         position: absolute;
+         z-index: 1;
+         }
+         .poster-image img {
+         object-fit: cover;
+         }
+         .video-title {
+         position: absolute;
+         z-index: 2;
+         /* Align to the top left */
+         top: 0;
+         left: 0;
+         font-size: 1.3em;
+         background-color: transparent;
+         color: #fafafa;
+         padding: 0.5rem;
+         margin: 0px;
+         }
+         .play-icon {
+         position: absolute;
+         z-index: 2;
+         width: 80px;
+         height: 80px;
+         background: url(videoPlayBtn.svg),linear-gradient(130deg, #fff, #000);
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+         cursor: pointer;
+         border: 5px solid #fff;
+         border-radius: 50%;
+         box-shadow: 0 5px 40px rgba(0,0,0,0.35);
+         transition: transform 0.2s, box-shadow 0.2s ease;
+         }
+         .play-icon:hover {
+         transform: scale(1.1);
+         box-shadow: 0 5px 40px rgba(0,0,0,0.8);
+         }
+         .play-icon:hover, .play-icon:focus {
+         opacity: 1;
+         }
+  </style>
+</head>
+<body>
+
+  <!-- ## Markup -->
+  <!--
+    The overlay is an absolutely positioned `div` that sits on top of the `amp-video` element and fills the parent player container. It hosts the poster image, video title and a play icon.
+
+    Play icon uses `play` and `hide` AMP actions to hide the overlay and play the video when it is tapped.
+  -->
+    <div class="player-area">
+         <div class="video-player">
+            <amp-video id="myVideo" controls width="886" height="1920" layout="responsive" src="https://firebasestorage.googleapis.com/v0/b/injurymap-981.appspot.com/o/videos%2Fpromo-v1%2Fda.mp4?alt=media&token=e5350dba-d6ed-44d2-a25c-05fee7d2ade2" poster="https://firebasestorage.googleapis.com/v0/b/injurymap-981.appspot.com/o/videos%2Fpromovideo_poster.png?alt=media&token=af4e5564-7da0-4c0e-8d2d-f2e92abdc373" muted loop>
+            </amp-video>
+            <div id="myOverlay" class="click-to-play-overlay">
+               <h3 class="video-title"> </h3>
+               <div class="play-icon" role="button" tabindex="0" on="tap:myOverlay.hide, myVideo.play"></div>
+            </div>
+         </div>
+      </div>
+</body></html>
