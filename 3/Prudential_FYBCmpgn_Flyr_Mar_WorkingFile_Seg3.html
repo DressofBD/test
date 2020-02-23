@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <title>Happy Borth Day! | PRUDENTIAL </title>
+    <link rel="shortcut icon" type="image/icon" href="img/Prudential.png">
+<style>
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #666;
+  background-color: #e6e6e6;
+  margin: 0;
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  /*background: linear-gradient(to bottom, #dfecf1, #8ebacb);*/
+  overflow: hidden;
+  position: relative;
+  background-color: #fcf1d6;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.pabsolute{
+  position: absolute;
+}
+.body-bg{}
+.prudential-logo {
+  max-width:  30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hbd {
+  top: 28%;
+  max-width: 60%;
+  left: 50%;
+  z-index: 9;
+  margin-left: -30%;
+}
+.lights {
+  position: absolute;
+  top: 20%;
+  max-width: 100%;
+  left: 50%;
+  z-index: 8;
+  margin-left: -50%;
+}
+.cake {
+  top: 45%;
+  left: 50%;
+  max-width: 56%;
+  margin-left: -28%;
+}
+.cover {
+  max-width: 54%;
+  left: 50%;
+  margin-left: -28%;
+  top: 11%;
+}
+.box {
+  top: 46%;
+  max-width: 70%;
+  left: 50%;
+  margin-left: -35%;
+}
+.bottom-text {
+  bottom: 4%;
+  max-width: 75%;
+  left: 50%;
+  margin-left: -37.5%;
+}
+.floating{
+  transform-origin: bottom;
+  animation-name: floating;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+    from {transform:translateY(0%); }
+    to {transform:translateY(15%);}
+}
+.shrink{  animation-name: shrink;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes shrink{
+  from{transform: scale(.9, 1.1);}
+  to{transform: scale(1, 1);}
+}
+@media screen and (max-width:979px){
+
+}
+@media screen and (min-width:980px) {
+  .container {
+    max-width: 720px
+  }
+}
+@media screen and (max-width:420px){
+
+}
+</style>
+</head>
+   <body>
+      <!-- Main Content -->
+      <section class="container">
+        <img src="img/bg.png" class="body-bg">
+        <img src="img/Prudential.png" class="pabsolute prudential-logo">
+        <img src="img/cover.png" class="floating pabsolute cover">
+        <img src="img/hbd.png" class="shrink pabsolute hbd">
+        <img src="img/lights.png" class="pabsolute lights">
+        <img src="img/box.png" class=" pabsolute box">
+        <img src="img/bottom-text.png" class="pabsolute bottom-text">
+      </section>
+   </body>
+</html>
+
