@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <title>Pulse by PRUDENTIAL </title>
+    <link rel="shortcut icon" type="image/icon" href="img/fav.jpg">
+<style>
+
+@font-face {
+font-family: 'Fs Albert Pro';
+src: local('Fs Albert Pro'), 
+       url('fonts/fsalbertpro-bold.woff2') format('woff2'), 
+       url('fonts/fsalbertpro-regular.woff2') format('woff2'),
+       url('fonts/fsalbertpro-regular.woff') format('woff'), 
+       url('fonts/fsalbertpro-bold.woff') format('woff'),
+       url('fonts/fsalbertpro-bold.ttf')  format('ttf'),
+       url('fonts/fsalbertpro-regular.ttf')  format('ttf');
+}
+body {
+  font-family: 'Fs Albert Pro', 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.container {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #ddd;
+}
+.main-body{
+  position: absolute;
+  top: 0%;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+.pabsolute{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pulse-logo {
+  width: 22%;
+  margin-left: auto;
+  display: flex;
+  margin-top: 5%;
+  margin-right: auto;
+  margin-bottom: 8%;
+}
+.do-health {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+}
+.do-health h1 {
+  margin: 20px 0;
+  font-size: 34px;
+  color: #68737A;
+}
+.do-health p{
+  color: #000;
+}
+.bi-cycle {
+  max-width: 86%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+.key-feature {
+  max-width: 65%;
+  position: relative;
+}
+.key-feature h3 {
+  color: #fff;
+  background-color: #ED1B2E;
+  padding: 8px 45px;
+}
+.key-feature h3::before {
+  content: '';
+  position: absolute;
+  right: -28px;
+  top: 50%;
+  display: block;
+  width: 28px;
+  height: 30px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #ED1B2E;
+}
+.img-block h2 {
+  margin: 0;
+  color: #000;
+}
+.img-block p {
+  font-size: 15px;
+  color: #000;
+}
+.img-block ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.img-block ul li:first-child {
+  width: 29%;
+  padding-right: 20px;
+}
+.img-block ul li:last-child{
+  width: 70%;
+  padding-right: 20px;
+}
+.img-block ul li:first-child img {
+}
+.img-block ul li:last-child img {
+  width: auto;
+  height: 30px;
+}
+.img-block li{}
+.img-block {
+  width: 90%;
+  background-image: linear-gradient(to top, #fff, transparent);
+  border-radius: 20px;
+  margin: 15px auto;
+  position: relative;
+}
+.learn-more a {
+  display: block;
+  max-width: 140px;
+  padding: 6px 18px;
+  border-radius: 8px;
+  background: #ED1B2E;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  transition: all .5s;
+}
+.learn-more a:hover{
+  background: #fff;
+  color: #ED1B2E;
+  border-radius: 0;
+}
+.offer {
+  width: 92%;
+  margin-right: 0;
+}
+.click-here {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -65px;
+}
+.click-here li, .knows-you li{
+  margin: 0 10px;
+}
+.click-here li:first-child a {
+  color: #fff;
+  font-weight: bold;
+  background: #ED1B2E;
+  padding: 6px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: all .5s;
+}
+.click-here li:first-child a:hover{
+  background: #fff;
+  color: #ED1B2E;
+  border-radius: 0;
+}
+.click-here img, .knows-you img {
+  max-width: 100px;
+}
+.knows-you {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 35px;
+}
+.knows-you:before, .knows-you:after{
+  content: "";
+  position: absolute;
+  width: 12%;
+  height: 2px;
+  background-color: #000;
+}
+.knows-you:after{
+  right: 0%;
+}
+.knows-you::before {
+  left: 0%;
+}
+
+@media (max-width: 700px){
+.container{
+  width: 400px;
+  height: 2100px;
+}
+.body-bg{
+  display: none;
+  height: 100%;
+}
+.body-bg2{
+  display: block !important;
+  height: auto;
+}
+.body-bg3{
+  display: block !important;
+  bottom: 0%;
+  position: absolute
+}
+.pulse-logo {
+  width: 33%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.bi-cycle {
+  margin-top: 2%;
+}
+.do-health h1 {
+  font-size: 20px;
+  margin: 0;
+}
+.do-health p {
+  font-size: 13px;
+  margin: 0;
+}
+.click-here, .knows-you {
+  flex-flow: column;
+}
+.click-here{
+  margin-top: -36px;
+}
+.img-block h2 {
+  font-size: 16px;
+}
+.img-block ul li:first-child {
+  width: 40%;
+}
+.img-block ul li:last-child img {
+  height: 20px;
+}
+.key-feature h3::before {
+  right: -62px;
+  top: 50%;
+  width: 63px;
+  height: 64px;
+}
+.knows-you::before, .knows-you::after {
+  display: none;
+}
+}
+</style>
+</head>
+  <body>
+      <!-- Main Content -->
+      <section class="container">
+        <img src="img/bg.png" class="body-bg">
+        <img src="img/bg2.png" class="body-bg2" style="display: none;">
+        <img src="img/bg3.png" class="body-bg3" style="display: none;">
+        <div class="main-body">
+          <a href="javascript:void(0)"><img src="img/logo.png" class="pabsolute pulse-logo" title="Pulse"></a>
+          <div class="pabsolute do-health">
+            <h1><span style="color: #ED1B2E"> Do health</span> your way!</h1>
+            <p>We know that no two people in this world are alike. That’s why we’ve built an AI-powered app for your health and fitness needs. Get relevant health insights and solutions for your body today. After all, no one knows you like your Pulse.</p>
+          </div>
+          <img src="img/bi-cycle.png" class="pabsolute bi-cycle" title="Pulse is here to help">
+          <div class="key-feature">
+            <h3>The key features of Pulse by Prudential app: </h3>
+          </div>
+          <div class="img-block">
+            <ul>
+              <li><img src="img/Checker.png" title="Symptom Checker"></li>
+              <li>
+                <img src="img/Checker2.png" title="Symptom Checker">
+                <h2>What's your body telling you?</h2>
+                <p>An AI-powered chatbot that helps you to understand your symptoms better when you answer a series of questions.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="img-block">
+            <ul>
+              <li><img src="img/Healthcheck.png" title="Healthcheck"></li>
+              <li>
+                <img src="img/Healthcheck2.png" title="Healthcheck">
+                <h2>Discover your health</h2>
+                <p>By answering a series of questions, Healthcheck will assess your overall health status and visualise it with your very own interactive and engaging Digital Twin.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="img-block">
+            <ul>
+              <li><img src="img/Online Consultation.png" title="Online Consultation"></li>
+              <li>
+                <img src="img/Online Consultation2.png" title="Online Consultation">
+                <h2>A doctor is only a call away</h2>
+                <p>Connect with a doctor at your convenience through a video call or a phone call. This way, your health is no longer out of reach.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="img-block">
+            <ul>
+              <li><img src="img/Dengue Alert.png" title="Dengue Alert"></li>
+              <li>
+                <img src="img/Dengue Alert2.png" title="Dengue Alert">
+                <h2>Dodge dengue outbreaks</h2>
+                <p>Stay alert and predict the next dengue outbreak based on your location up to 3 months in advance.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="img-block">
+            <ul>
+              <li><img src="img/Fitness Tracker.png" title="Fitness Challenge and Tracker"></li>
+              <li>
+                <img src="img/Fitness Tracker2.png" title="Fitness Challenge and Tracker">
+                <h2>Up your game with challenges</h2>
+                <p>Take up fitness challenges to get in better shape and track your progress with a fitness tracker that imports health data from existing health apps and wearables.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="pabsolute learn-more">
+            <a href="https://www.wedopulse.com/my/challenge-yourself?utm_language=en" target="_blank" >Learn More</a>
+          </div>
+          <div class="pabsolute offer">
+            <img src="img/offer.png" title="Enjoy 10% Discount">
+          </div>
+          <ul class="click-here">
+              <li><a href="https://wedopulse.com/my/" target="_blank">Click here</a> </li>
+              <li><h4> to visit us or Download via </h4> </li>
+              <li><a href="https://wedopulse.page.link/3Ge4" target="_blank"><img src="img/appstore.png" title="App Store Logo"> </a></li>
+              <li><a href="https://wedopulse.page.link/3Ge4" target="_blank"><img src="img/playstore.png" title="Play Store Logo"> </a></li>
+            </ul>
+            <ul class="knows-you">
+              <li><h3>No one knows you like your</h3></li>
+              <a href="javascript:void(0)"> <img src="img/logo.png" title="Pulse"></a>
+            </ul>
+            <p style="display: flex;justify-content: center;font-size: 13px;">*Terms and conditions apply.</p>
+        </div>
+      </section>
+   </body>
+</html>
+
