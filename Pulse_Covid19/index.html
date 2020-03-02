@@ -33,7 +33,10 @@ body {
   width: 100%;
   max-width: 720px;
   height: auto;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
   position: relative;
   background-color: #ddd;
@@ -174,7 +177,7 @@ li{
   color: #ED1B2E;
   border-radius: 0;
 }
-.click-here img, .knows-you img {
+.click-here img {
   max-width: 100px;
 }
 .knows-you {
@@ -184,24 +187,12 @@ li{
   position: relative;
   margin: 0 35px;
 }
-.knows-you:before, .knows-you:after{
-  content: "";
-  position: absolute;
-  width: 12%;
-  height: 2px;
-  background-color: #000;
-}
-.knows-you:after{
-  right: 0%;
-}
-.knows-you::before {
-  left: 0%;
-}
+
 
 @media (max-width: 700px){
 .container{
   width: 400px;
-  height: 2100px;
+  height: 1900px;
 }
 .body-bg{
   display: none;
@@ -233,10 +224,19 @@ li{
   margin: 0;
 }
 .click-here, .knows-you {
-  flex-flow: column;
+  flex-flow: wrap;
+}
+.knows-you{
+  margin-top: 15px;
+}
+.click-here img {
+  max-width: 90px;
 }
 .click-here{
   margin-top: -36px;
+}
+.img-block {
+  margin: 22px auto;
 }
 .img-block h2 {
   font-size: 16px;
@@ -247,14 +247,14 @@ li{
 .img-block ul li:last-child img {
   height: 20px;
 }
+.img-block ul li:last-child {
+  padding-right: 0px;
+}
 .key-feature h3::before {
   right: -62px;
   top: 50%;
   width: 63px;
   height: 64px;
-}
-.knows-you::before, .knows-you::after {
-  display: none;
 }
 }
 </style>
@@ -338,8 +338,7 @@ li{
               <li><a href="https://wedopulse.page.link/3Ge4" target="_blank"><img src="img/playstore.png" title="Play Store Logo"> </a></li>
             </ul>
             <ul class="knows-you">
-              <li><h3>No one knows you like your</h3></li>
-              <a href="javascript:void(0)"> <img src="img/logo.png" title="Pulse"></a>
+              <li><img src="img/knowpluse.png"></li>
             </ul>
             <p style="display: flex;justify-content: center;font-size: 13px;">*Terms and conditions apply.</p>
         </div>
