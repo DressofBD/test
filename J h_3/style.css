@@ -156,6 +156,10 @@ a{
 }
 
 
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
 body{
   font-family: 'Heebo Regular';
 }
@@ -207,7 +211,7 @@ body.candidate-form-v3 p {
 .candidate-form-content .top-mnu li a {
   font-family: 'Heebo Medium';
   font-size: 23px;
-  padding: 8px 30px;
+  padding: 8px 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom: 4px solid;
@@ -353,7 +357,11 @@ body.candidate-form-v3 p {
 .tbl-1 a .delete{
   color: #b3b3b3;
 }
-.tbl-1{}
+.tbl-1 {
+  min-width: 740px;
+  overflow-x: scroll;
+  margin: 20px auto;
+}
 .td-mnu{
   position: relative;
 }
@@ -498,3 +506,12 @@ ul.languages-lst .dpdown:hover ul{
 
 
 
+@media (max-width: 991px){
+.candidate-form-content .top-mnu {
+  flex-flow: column;
+}
+.candidate-form-content .top-mnu li {
+  width: 85%;
+  margin: 10px auto;
+}
+}
