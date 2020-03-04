@@ -1,0 +1,61 @@
+/*Tablet Layout: 760px. */
+@media only screen and (min-width: 760px) and (max-width: 991px) {}
+/* Mobile Layout:120px. */
+@media only screen and (max-width: 767px) {}
+/*Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+
+
+
+@media(max-width:1080px) {
+
+}
+@media(max-width:1050px){
+
+}
+@media(max-width:1024px){
+
+}
+@media (max-width:991px){
+
+}
+@media (max-width: 900px){
+
+}
+@media (max-width: 800px){
+
+}
+@media (max-width:768px){
+
+}
+@media (max-width:736px){
+
+}
+@media (max-width:667px){
+
+}
+@media (max-width: 640px){
+
+}
+@media (max-width: 600px){
+
+}
+@media (max-width: 568px){
+
+}
+@media (max-width: 480px){
+
+}
+@media (max-width: 414px){
+
+}
+@media (max-width: 384px){
+
+}
+@media (max-width: 375px){
+
+}
+@media (max-width: 320px){
+
+}
