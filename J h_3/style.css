@@ -237,11 +237,14 @@ body.candidate-form-v3 p {
   height: auto;
 }
 .candidate-form-content .top-mnu li a .fa{
-  font-size: 30px;
+  font-size: 29px;
 }
 .candidate-form-content{}
 
-.personal-infos{}
+.job-dtls iframe{
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
 .personal-infos .form-group {
 }
 .personal-infos label{
@@ -287,7 +290,7 @@ body.candidate-form-v3 p {
   border-bottom: 6px solid transparent;
   border-top: 6px solid transparent;
   right: -18px;
-  top: 7px;
+  top: 15px;
 }
 .previous-jobs-dtls.in::before{
   content: "";
@@ -299,7 +302,7 @@ body.candidate-form-v3 p {
   border-top: 6px solid #b3b3b3;
   border-bottom: 6px solid transparent;
   right: -23px;
-  top: 7px;
+  top: 15px;
 }
 .previous-jobs-dtls ul {
   display: flex;
@@ -311,6 +314,7 @@ body.candidate-form-v3 p {
   width: 30%;
   border-bottom: 1px solid transparent;
   margin-left: 20px;
+  padding: 10px 0px;
 }
 .previous-jobs-dtls.in li {
   border-bottom: 1px solid #ccc;
@@ -358,8 +362,7 @@ body.candidate-form-v3 p {
   color: #b3b3b3;
 }
 .tbl-1 {
-  min-width: 740px;
-  overflow-x: scroll;
+  width: 100%;
   margin: 20px auto;
 }
 .td-mnu{
@@ -379,6 +382,7 @@ ul.tbl-1-mnu {
 ul.tbl-1-mnu li {
   border: 0px !important;
   width: 100%;
+  padding: 0;
 }
 ul.tbl-1-mnu li a {
   display: block;
@@ -476,13 +480,20 @@ ul.languages-lst .dpdown:hover ul{
   text-align: center;
   margin-top: 30px;
   margin-bottom: 60px;
+  transition: 0.5s;
+}
+.candidate-form-content form .send-report:hover{
+  background-color: #7ac943;
+  color: #0071bc;
 }
 .delete{
   position: relative;
   z-index: 999;
   right: -5px;
 }
-
+.delete:hover{
+  color: red !important;
+}
 
 
 
@@ -514,4 +525,44 @@ ul.languages-lst .dpdown:hover ul{
   width: 85%;
   margin: 10px auto;
 }
+.tbl-1{
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px auto;
+  display: block;
+  }
 }
+
+@media (max-width: 768px){
+  .previous-jobs-dtls ul {
+  width: 100%;
+}
+.candidate-form-content form {
+  padding: 0 10px;
+}
+ul.languages-lst {
+  flex-wrap: wrap;
+}
+ul.languages-lst li {
+  margin-bottom: 10px;
+}
+.previous-jobs-dtls::before {
+  right: -13px;
+}
+.previous-jobs-dtls.in::before {
+  right: -17px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
