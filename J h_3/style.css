@@ -233,7 +233,7 @@ body.candidate-form-v3 p {
   color: #7ac943;
 }
 .candidate-form-content .top-mnu li a img{
-  max-width: 45px;
+  max-width: 40px;
   height: auto;
 }
 .candidate-form-content .top-mnu li a .fa{
@@ -262,15 +262,15 @@ body.candidate-form-v3 p {
   color: #000;
   opacity: 1;
 }
-.personal-infos ::-webkit-input-placeholder{
+.candidate-form-v3 ::-webkit-input-placeholder{
   color: #000;
   opacity: 1;
 }
-.personal-infos :-ms-input-placeholder{
+.candidate-form-v3 :-ms-input-placeholder{
   color: #000;
   opacity: 1;
 }
-.personal-infos ::placeholder{
+.candidate-form-v3 ::placeholder{
   color: #000;
   opacity: 1;
 }
@@ -317,7 +317,6 @@ body.candidate-form-v3 p {
   padding: 10px 0px;
 }
 .previous-jobs-dtls.in li {
-  border-bottom: 1px solid #ccc;
 }
 .previous-jobs-dtls li .fa {
   color: #b3b3b3;
@@ -325,6 +324,25 @@ body.candidate-form-v3 p {
 }
 .previous-jobs-dtls.in{
   background-color: #fefce9;
+}
+.previous-jobs-dtls.in input {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #ccc;
+  width: 90px;
+  text-align: center;
+  padding-bottom: 5px;
+  font-weight: initial;
+  font-family: 'Heebo Light';
+  background: transparent;
+}
+.previous-jobs-dtls.in li:nth-child(2) input{
+  font-family: 'Heebo Regular';
+  font-weight: bold;
+}
+.previous-jobs-dtls.in li:nth-child(3) input{
+  width: 67px;
 }
 .tbl-1{}
 .tbl-1 thead th{
@@ -341,13 +359,16 @@ body.candidate-form-v3 p {
   background-color: #e6e6e6;
   width: 30%;
 }
-.tbl-1 tbody tr td:first-child:hover {
+.tbl-1 tbody tr td:first-child a:hover {
   color: #29abe2;
 }
 .tbl-1 tbody tr td:not(:first-child) {
   background-color: #fff;
   border: 2px solid #e6e6e6;
   text-align: center;
+  font-family: 'Heebo Light';
+  font-size: 14px;
+  line-height: 25px;
 }
 .tbl-1 td {
   border: 2px solid #fff;
@@ -357,6 +378,7 @@ body.candidate-form-v3 p {
 }
 .tbl-1 a {
   color: initial;
+  display: block;
 }
 .tbl-1 a .delete{
   color: #b3b3b3;
@@ -494,6 +516,16 @@ ul.languages-lst .dpdown:hover ul{
 .delete:hover{
   color: red !important;
 }
+.salary-expectations{}
+.salary-expectations input {
+  width: 85px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  font-size: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 
 
 
@@ -515,8 +547,11 @@ ul.languages-lst .dpdown:hover ul{
 
 
 
-
-
+@media (max-width: 1199px){
+  .previous-jobs-dtls ul {
+  width: 60%;
+}
+}
 @media (max-width: 991px){
 .candidate-form-content .top-mnu {
   flex-flow: column;
@@ -531,6 +566,9 @@ ul.languages-lst .dpdown:hover ul{
   margin: 20px auto;
   display: block;
   }
+.previous-jobs-dtls ul {
+  width: 85%;
+}
 }
 
 @media (max-width: 768px){
@@ -554,7 +592,14 @@ ul.languages-lst li {
 }
 }
 
-
+@media (max-width: 575px){
+  .previous-jobs-dtls.in input {
+  margin-bottom: 5px;
+}
+.previous-jobs-dtls li {
+  margin-left: 11px;
+}
+}
 
 
 
