@@ -118,6 +118,8 @@ li{
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  z-index: 9;
+  position: relative;
 }
 .img-block ul li:first-child {
   width: 29%;
@@ -128,7 +130,7 @@ li{
   padding-right: 20px;
 }
 .img-block ul li:first-child img {
-  padding-bottom: 10px;
+  padding: 5px 0;
 }
 .img-block ul li:last-child img {
   width: auto;
@@ -137,13 +139,18 @@ li{
 .img-block li{}
 .img-block {
   width: 90%;
-  background-image: url(img/gradient.png);
+  /*background-image: url(img/gradient.png);*/
   border-radius: 20px;
   margin: 15px auto;
   position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 .learn-more a {
   display: block;
@@ -306,6 +313,7 @@ li{
             <img src="img/key feature.png">
           </div>
           <div class="img-block">
+            <img src="img/gradient.png" class="gradient">
             <ul>
               <li><img src="img/Checker.png" title="Symptom Checker"></li>
               <li>
@@ -316,6 +324,7 @@ li{
             </ul>
           </div>
           <div class="img-block">
+            <img src="img/gradient.png" class="gradient">
             <ul>
               <li><img src="img/Healthcheck.png" title="Healthcheck"></li>
               <li>
@@ -326,6 +335,7 @@ li{
             </ul>
           </div>
           <div class="img-block">
+            <img src="img/gradient.png" class="gradient">
             <ul>
               <li><img src="img/Online Consultation.png" title="Online Consultation"></li>
               <li>
@@ -336,6 +346,7 @@ li{
             </ul>
           </div>
           <div class="img-block">
+            <img src="img/gradient.png" class="gradient">
             <ul>
               <li><img src="img/Dengue Alert.png" title="Dengue Alert"></li>
               <li>
@@ -346,6 +357,7 @@ li{
             </ul>
           </div>
           <div class="img-block">
+            <img src="img/gradient.png" class="gradient">
             <ul>
               <li><img src="img/Fitness Tracker.png" title="Fitness Challenge and Tracker"></li>
               <li>
