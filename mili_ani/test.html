@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logo Animation</title>
+</head>
+<body>
+
+<div class="anim animation-start">
+	<img src="img/logo34.png" class="base-img">
+	<img src="img/man.png" class="man-img">
+	<img src="img/strip0.png" class="strip-img">
+	<img src="img/strip2.png" class="strip2-img">
+	<img src="img/strip-text.png" class="strip-text-img">
+</div>
+<style type="text/css">
+img{
+	max-width: 100%;
+	height: auto;
+}
+.anim{
+	max-width: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+.animation-start > .man-img{
+	animation-name: man-ani;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	z-index: 9
+}
+@keyframes man-ani{
+	0%{
+		transform: translate3d(36%,-210%,0);
+		/*opacity: 0;*/
+	}
+	25%{
+		/*opacity: 1;*/
+	}
+	30%{
+		transform: translate3d(36%,-103%,0);
+		position: 1;
+	}
+	60%{
+		transform: translate3d(0%,-103%,0);
+		opacity: 1;
+	}
+	95%, 100%{
+		transform: translate3d(0%,-103%,0);
+		opacity: 1;
+	}
+}
+.animation-start > .strip-img {
+	position: absolute;
+	top: 0;
+	display: flex;
+}
+.animation-start > .strip2-img {
+	position: absolute;
+	top: 0;
+	display: flex;
+	animation: strip2-ani 6s ease-in-out infinite;
+}
+@keyframes strip2-ani{
+	0%{
+		left: 0%;
+	}
+	27%{
+		left: 0%;
+	}
+	61%, 100%{
+		left: -38%;
+	}
+}
+.animation-start > .strip-text-img {
+	position: absolute;
+	display: flex;
+	top: 0;
+}
+</style>
+</body>
+</html>
