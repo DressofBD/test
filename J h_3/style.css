@@ -280,7 +280,7 @@ body.candidate-form-v3 p {
 .previous-jobs-dtls {
   position: relative;
 }
-.previous-jobs-dtls::before {
+.previous-jobs-dtls .clickable-triangle::before {
   content: "";
   position: absolute;
   width: 0;
@@ -292,7 +292,7 @@ body.candidate-form-v3 p {
   right: -18px;
   top: 15px;
 }
-.previous-jobs-dtls.in::before{
+.previous-jobs-dtls.in .clickable-triangle::before{
   content: "";
   position: absolute;
   width: 0;
