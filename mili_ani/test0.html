@@ -8,9 +8,8 @@
 <div class="anim animation-start" id="anima" onmouseout="removeClass(this, 'open');" onmouseover="addClass(this, 'open');">
 	<img src="img/logo34.png" class="dft0 base-img">
 	<img src="img/man.png" class="dft0 man-img">
-	<img src="img/strip0.png" class="dft0 strip-img">
-	<img src="img/strip2.png" class="dft0 strip2-img">
-	<img src="img/strip-text.png" class="dft0 strip-text-img">
+	<img src="img/strip-text2.png" class="dft0 strip-img">
+	<img src="img/strip-cover.png" class="dft0 strip-cover">
 </div>
 <style type="text/css">
 img{
@@ -29,7 +28,7 @@ img{
 }
 .animation-start > .man-img{
 	animation-name: man-ani;
-	animation-duration: 6s;
+	animation-duration: 12s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 	position: relative;
@@ -38,55 +37,103 @@ img{
 @keyframes man-ani{
 	0%{
 		transform: translate3d(36%,-210%,0);
-		/*opacity: 0;*/
 	}
-	25%{
-		/*opacity: 1;*/
-	}
-	30%{
+	8%{
 		transform: translate3d(36%,-1%,0);
-		position: 1;
+		opacity: 1;
+	}
+	15%{
+		transform: translate3d(0%,-1%,0);
+		opacity: 1;
+	}
+	40%{
+		transform: translate3d(0%,-5%,0);
+		opacity: 1;
 	}
 	60%{
 		transform: translate3d(0%,-1%,0);
 		opacity: 1;
 	}
-	95%, 100%{
+	85%{
+		transform: translate3d(0%,-5%,0);
+		opacity: 1;
+	}
+	95%{
 		transform: translate3d(0%,-1%,0);
 		opacity: 1;
 	}
+	100%{
+		transform: translate3d(0%,-210%,0);
+		opacity: 1;
+	}
 }
-.animation-start > .strip2-img {
-	animation: strip2-ani 6s ease-in-out infinite;
+.animation-start > .strip-cover {
+	animation: strip_cover 12s ease-in-out infinite;
 }
-@keyframes strip2-ani{
+@keyframes strip_cover{
 	0%{
 		left: 0%;
 	}
-	27%{
+	7%{
 		left: 0%;
 	}
-	61%, 100%{
+	15.5%{
 		left: -38%;
 	}
+	95%{
+		left: -38%;
+		opacity: 0;
+	}
 }
-.open{
+.strip-img{
+	animation: hinge 12s ease-in-out infinite;
 }
-.open > .man-img, .open > .strip2-img{
+@keyframes hinge{
+	0%{
+		transform:rotate(0deg);
+		transform:translate3d(0,0,0);
+		opacity: 1;
+	}
+	95%{
+	transform-origin:59% 61%;
+		transform:rotate(0deg);
+		transform:translate3d(0,0,0);
+		opacity: 1;
+	}
+	100%{
+		transform-origin:50% 80%;
+		transform:translate3d(0,20%,0) rotate(60deg);
+		opacity:0
+	}
+}
+.open{}
+.open > .man-img, .open > .strip-cover{
 	animation: none;
 	position: absolute;
 	display: flex;
 	top: 0;
 }
 .open > .man-img{
-	transform: translate3d(0%,-41%,0) rotate(-45deg);
+	animation: open-man 5s ease-in-out infinite;
+	/*transform: translate3d(0%,-41%,0) rotate(-45deg);*/
 	opacity: 0.5;
+}
+@keyframes open-man{
+	0%{
+		transform: translate3d(0%,-41%,0) rotate(-45deg);
+	}
+	50%{
+		transform: translate3d(-10%,-41%,0) rotate(-45deg);
+	}
+	100%{
+		transform: translate3d(0%,-41%,0) rotate(-45deg);
+	}
 }
 .open > .strip-img{
 	animation: none;
 	opacity: 0.5;
 }
-.open > .strip2-img{
+.open > .strip-cover{
 	display: none !important;
 }
 </style>
