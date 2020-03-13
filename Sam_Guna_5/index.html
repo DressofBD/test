@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Buy ERC20 Tokens</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+      <!--Google Font Load-->
+      <link href="https://fonts.googleapis.com/css?family=Barlow:400" rel="stylesheet" type="text/css">
+      <!--Plugins Load-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/font-awesome.css">
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <!--Main Style Load -->
+      <link rel="stylesheet" href="assets/css/zodiac.min.css">
+      <!--Modal Style Load -->
+      <link rel="stylesheet" href="assets/css/modal.css">
+      <link rel="stylesheet" href="assets/css/modal-default-theme.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/widget.css">
+      <!-- Responsive Stylesheet -->
+      <link href="assets/css/responsive.css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Velocity Load-->
+      <script src="assets/js/velocity.min.js"></script>
+      <script src="assets/js/sorttable.js"></script>
+      <script src="assets/js/instant.js"></script>
+   </head>
+   <body>
+      <div class="remodal-bg stager" id="stage">
+         <div class="bg1 k am main">
+            <div class="app-navbar e aij top-holder">
+               <nav class="azg qz du bqq navbar navbar-expand-md navbar-dark">
+                  <a class="log-holder l navbar-brand" href="/">
+                  <img src="assets/img/logo-header.png" class="logo-header" alt="logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu"
+                     aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="blocker axv d-none collapse navbar-collapse" id="navMenu">
+                     <!--Main Menu Top-->
+                     <ul class="navbar-nav mr-auto">
+                        <li class="lister m">
+                           <a class="linkster qm" href="#">Purchase
+                           </a>
+                        </li>
+                        <li class="lister m">
+                           <a class="linkster qm" href="#">User Agreement
+                           </a>
+                        </li>
+                        <li class="lister m">
+                           <a class="linkster qm" href="#">ABOUT FINDEXX
+                           </a>
+                        </li>
+                        <li class="lister m">
+                           <a class="linkster qm" href="#">CONTACT US
+                           </a>
+                        </li>
+                        <!-- <li class="lister m">
+                           <a class="linkster qm special-buton" href="https://cryptobarterhub.com/" target="_blank">BUY ETHER
+                           </a> -->
+                        <li class="provider">
+                           <img src="assets/img/metamask.png" class="provider-image opacity0" id="provider-image" data-toggle="tooltip"
+                              title="" />
+                           <div id="masker"></div>
+                        </li>
+                     </ul>
+                     <!--Main Menu Top-->
+                  </div>
+               </nav>
+            </div>
+            <div class="titler sloger">
+               <div class="e">
+                  <div class="c">
+                     <div class="fv gt">
+                        <!--Main Titte -->
+                        <h1 class="bold" id="upper-title">Decentralized Exchange</h1>
+                        <p class="subtitle al an" id="upper-desc">Decentralized cryptocurrency exchanges have many advantages over centralized exchanges. <a id="sell-token" style="cursor:pointer; color:#BEC8CE !important">Give it a try!</a></p>
+                     </div>
+                     <div>
+                        <!-- <div class="drift">
+                           <div class="switch">
+                             <input type="radio" class="switch-input" name="view" value="week" id="week" checked>
+                             <label for="week" class="switch-label switch-label-off" id="buy-button">Buy Tokens</label>
+                             <input type="radio" class="switch-input" name="view" value="month" id="month">
+                             <label for="month" class="switch-label switch-label-on" id="sell-button">Sell Tokens</label>
+                             <span class="switch-selection"></span>
+                           </div>
+                           </div> -->
+                        <!--Main Buttons -->
+                        <!--<div class="buttons buysell">
+                           <button class="dm ox ap hidden-xs active" id="buy-button">Buy Tokens</button>
+                           <button class="dm ox ap hidden-xs" id="sell-button">Sell Tokens</button>
+                           </div>-->
+                        <!--Main Buttons -->
+                     </div>
+                  </div>
+                  <br>
+                  <div class="container lower">
+                     <div class="no-flex full-width container__currency-cards">
+                        <div class="card item sc-bHwgHz jhGeGP col-md-3">
+                           <div class="sc-krDsej cnHMkr inner-card">
+                              <img src="assets/img/icon/ALC.svg" alt="ALC">
+                              <h2 class="token">ALC</h2>
+                              <div class="padded">
+                                 <div class="smoked">Buy<span> Find sellers</span></div>
+                                 <div class="rate">Ξ 0.0002</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card item sc-bHwgHz jhGeGP col-md-3">
+                           <div class="sc-krDsej cnHMkr inner-card">
+                              <img src="assets/img/icon/OKM.svg" alt="OKM">
+                              <h2 class="token">OKM</h2>
+                              <div class="padded">
+                                 <div class="smoked">Buy<span> Find sellers</span></div>
+                                 <div class="rate">Ξ 0.0005</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card item sc-bHwgHz jhGeGP col-md-3 mobile-hidden">
+                           <div class="sc-krDsej cnHMkr inner-card">
+                              <img src="assets/img/icon/HDEX.svg" alt="HDEX">
+                              <h2 class="token">HDEX</h2>
+                              <div class="padded">
+                                 <div class="smoked">Buy<span> Find sellers</span></div>
+                                 <div class="rate">Ξ 0.0005</div>
+                              </div>
+                           </div>
+                        </div>
+                        <!--  <div class="card item sc-bHwgHz jhGeGP col-md-3">
+                           <div class="sc-krDsej cnHMkr inner-card">
+                             <img src="assets/img/icon/OPTI.svg" alt="OPTI">
+                             <h2 class="token">OPTI</h2>
+                             <div class="padded">
+                               <div class="smoked">Buy<span> Find sellers</span></div>
+                               <div class="rate">Ξ 0.0012</div>
+                             </div>
+                           </div>
+                           </div>
+                           
+                           <div class="card item sc-bHwgHz jhGeGP col-md-3">
+                           <div class="sc-krDsej cnHMkr inner-card">
+                             <img src="assets/img/icon/KIT.svg" alt="KIT">
+                             <h2 class="token">KIT</h2>
+                             <div class="padded">
+                               <div class="smoked">Buy<span> Find sellers</span></div>
+                               <div class="rate">Ξ 0.00025</div>
+                             </div>
+                           </div>
+                           </div> -->
+                        <div class="card item sc-bHwgHz jhGeGP col-md-3 disabled">
+                           <a href="https://www.facebook.com/samgunasekaran" target="_blank">
+                              <div class="sc-krDsej cnHMkr inner-card">
+                                 <img src="assets/img/icon/bat.svg" alt="BAT">
+                                 <h2 class="token h2small">ADD YOUR OWN TOKEN</h2>
+                                 <!--<h2 class="token">BAT</h2>-->
+                                 <div class="padded" id="rate-BAT">
+                                    <div class="smoked">Contact<span> Our Team</span></div>
+                                    <div class="rate hidden">Ξ 0.0000</div>
+                                    <div class="rater">Ξ 0.0000</div>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="card item sc-bHwgHz jhGeGP col-md-3 hidden">
+                           <a href="https://www.facebook.com/samgunasekaran" target="_blank">
+                              <div class="sc-krDsej cnHMkr inner-card">
+                                 <img src="assets/img/icon/mda.svg" alt="MDA">
+                                 <h2 class="token">MDA</h2>
+                                 <div class="padded" id="rate-MDA">
+                                    <div class="smoked">Buy<span> Find sellers</span></div>
+                                    <div class="rate">Ξ 0.0000</div>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="card item sc-bHwgHz jhGeGP col-md-3 disabled">
+                           <a href="https://www.facebook.com/samgunasekaran" target="_blank">
+                              <div class="sc-krDsej cnHMkr inner-card">
+                                 <img src="assets/img/icon/cvc.svg" alt="CVC">
+                                 <h2 class="token h2small">ADD YOUR OWN TOKEN</h2>
+                                 <!--<h2 class="token">CVC</h2>-->
+                                 <div class="padded" id="rate-CVC">
+                                    <div class="smoked">Contact<span> Our Team</span></div>
+                                    <div class="rate hidden">Ξ 0.0000</div>
+                                    <div class="rater">Ξ 0.0000</div>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="card item sc-bHwgHz jhGeGP col-md-3 disabled">
+                           <a href="https://www.facebook.com/samgunasekaran" target="_blank">
+                              <div class="sc-krDsej cnHMkr inner-card">
+                                 <img src="assets/img/icon/snt.svg" alt="SNT">
+                                 <h2 class="token h2small">ADD YOUR OWN TOKEN</h2>
+                                 <div class="padded" id="rate-SNT">
+                                    <div class="smoked">Contact<span> Our Team</span></div>
+                                    <div class="rate hidden">Ξ 0.0000</div>
+                                    <div class="rater">Ξ 0.0000</div>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="card item sc-bHwgHz jhGeGP col-md-3 disabled">
+                           <a href="https://www.facebook.com/samgunasekaran" target="_blank">
+                              <div class="sc-krDsej cnHMkr inner-card">
+                                 <img src="assets/img/icon/agi.svg" alt="AGI">
+                                 <h2 class="token h2small">ADD YOUR OWN TOKEN</h2>
+                                 <div class="padded" id="rate-AGI">
+                                    <div class="smoked">Contact<span> Our Team</span></div>
+                                    <div class="rate hidden">Ξ 0.0000</div>
+                                    <div class="rater">Ξ 0.0000</div>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="card item sc-bHwgHz jhGeGP col-md-3 mobile-hidden">
+                           <div class="sc-krDsej cnHMkr inner-card">
+                              <img src="assets/img/icon/zrx.svg" alt="ZRX">
+                              <h2 class="token">ZRX</h2>
+                              <div class="padded" id="rate-ZRX">
+                                 <div class="smoked">Buy<span> Find sellers</span></div>
+                                 <div class="rate">Ξ 0.0000</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="wpb_wrapper">
+                  <div class="wave_style_5b3776785c38d coinz-clouds-bg-bottom devider-position-bottom">
+                     <div class="coinz-clouds-bg-content-bottom">
+                        <img src="assets/img/icon/clouds.svg" alt="clouds">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="bg3" id="trades">
+            <div class="container">
+               <div class="wpb_wrapper">
+                  <div class="wpb_text_column wpb_content_element">
+                     <div class="wpb_wrapper">
+                        <h2 class="centner" id="main-title">Trading on the Blockchain</h2>
+                     </div>
+                  </div>
+                  <div class="wpb_text_column wpb_content_element ">
+                     <div class="wpb_wrapper">
+                        <p class="centner"><span class="desc-span" id="main-slogan">Trade ERC-20 tokens at best rates through decentralized exchange with blockchain engine</span></p>
+                     </div>
+                  </div>
+                  <div id="coinz-devider-5b327fa33d78c" class="coinz-devider-wrapper coinz-devider-align-centered">
+                     <div class="little-block">
+                        <img src="assets/img/icon/blocker.svg" alt="blocker">
+                     </div>
+                  </div>
+               </div>
+               <div class="coinz-vcw-container coinz-vcw-container-style-default_style ">
+                  <table class="vcw vcw-table vcw-white sortable" id="token-lister">
+                     <thead>
+                        <tr>
+                           <th class="vcw-name vcw-header">Token</th>
+                           <th class="vcw-rate vcw-header sorttable_numeric">Rate ETH</th>
+                           <th class="vcw-change vcw-header sorttable_numeric">Change % 24h</th>
+                           <th class="vcw-change vcw-header sorttable_numeric">Volume 24h</th>
+                           <th class="vcw-change vcw-header">Buy</th>
+                        </tr>
+                     </thead>
+                     <tbody id="vcw-body">
+                        <tr>
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="javascript:void(0)" target="_blank"><span class="fa fa-info-circle pointer"></span></a>
+                              <img src="assets/img/icon/ae.svg" alt="token">
+                              <font class="td_name"> Aeternity (AE)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.0006045</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-18.97%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="AE"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 37,390</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="AE">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_ANT">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x960b236A07cf122663c4303350609A66A7B288C0" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x960b236A07cf122663c4303350609A66A7B288C0" data-original-ticker="ANT"></span></a>
+                              <img src="assets/img/icon/ant.svg" alt="token">
+                              <font class="td_name"> Aragon Network (ANT)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.004339</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-23.94%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="ANT" data-original-title="0x960b236A07cf122663c4303350609A66A7B288C0"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 1,540</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="ANT">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_AST">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x27054b13b1b798b345b591a4d22e6562d47ea75a" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x27054b13b1b798b345b591a4d22e6562d47ea75a" data-original-ticker="AST"></span></a>
+                              <img src="assets/img/icon/ast.svg" alt="token">
+                              <font class="td_name"> Airswap Token (AST)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.00007321</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-19.37%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="AST" data-original-title="0x27054b13b1b798b345b591a4d22e6562d47ea75a"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 1,240</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="AST">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_REP">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x1985365e9f78359a9B6AD760e32412f4a445E862" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x1985365e9f78359a9B6AD760e32412f4a445E862" data-original-ticker="REP"></span></a>
+                              <img src="assets/img/icon/rep.svg" alt="token">
+                              <font class="td_name"> Augur (REP)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.05519</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-6.25%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="REP" data-original-title="0x1985365e9f78359a9B6AD760e32412f4a445E862"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 74,460</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="REP">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_BAT">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x0d8775f648430679a709e98d2b0cb6250d2887ef" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x0d8775f648430679a709e98d2b0cb6250d2887ef" data-original-ticker="BAT"></span></a>
+                              <img src="assets/img/icon/bat.svg" alt="token">
+                              <font class="td_name"> Basic Attention Token (BAT)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.0009564</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-4.74%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="BAT" data-original-title="0x0d8775f648430679a709e98d2b0cb6250d2887ef"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 174,680</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="BAT">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_CVC">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x41e5560054824ea6b0732e656e3ad64e20e94e45" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x41e5560054824ea6b0732e656e3ad64e20e94e45" data-original-ticker="CVC"></span></a>
+                              <img src="assets/img/icon/cvc.svg" alt="token">
+                              <font class="td_name"> Civic (CVC)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.0001059</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-14.80%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="CVC" data-original-title="0x41e5560054824ea6b0732e656e3ad64e20e94e45"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 20,510</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="CVC">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_DAI">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359" data-original-ticker="DAI"></span></a>
+                              <img src="assets/img/icon/dai.svg" alt="token">
+                              <font class="td_name"> Dai Token (DAI)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.008287</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_change">47.68%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="DAI" data-original-title="0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_volume">Ξ 268,380</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="DAI">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_DGD">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0xe0b7927c4af23765cb51314a0e0521a9645f0e2a" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0xe0b7927c4af23765cb51314a0e0521a9645f0e2a" data-original-ticker="DGD"></span></a>
+                              <img src="assets/img/icon/dgd.svg" alt="token">
+                              <font class="td_name"> Digix DAO (DGD)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.1797</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-1.41%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="DGD" data-original-title="0xe0b7927c4af23765cb51314a0e0521a9645f0e2a"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 3,260</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="DGD">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_DGX">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x4f3afec4e5a3f2a6a1a411def7d7dfe50ee057bf" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x4f3afec4e5a3f2a6a1a411def7d7dfe50ee057bf" data-original-ticker="DGX"></span></a>
+                              <img src="assets/img/icon/dgx.svg" alt="token">
+                              <font class="td_name"> Digix Gold (DGX)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.4062</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_change">45.96%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="DGX" data-original-title="0x4f3afec4e5a3f2a6a1a411def7d7dfe50ee057bf"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_volume">Ξ 763.24</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="DGX">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_DNT">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x0abdace70d3790235af448c88547603b945604ea" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x0abdace70d3790235af448c88547603b945604ea" data-original-ticker="DNT"></span></a>
+                              <img src="assets/img/icon/dnt.svg" alt="token">
+                              <font class="td_name"> DNT (DNT)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.00002249</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-19.12%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="DNT" data-original-title="0x0abdace70d3790235af448c88547603b945604ea"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 2,820</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="DNT">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_FUN">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x419d0d8bdd9af5e606ae2232ed285aff190e711b" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x419d0d8bdd9af5e606ae2232ed285aff190e711b" data-original-ticker="FUN"></span></a>
+                              <img src="assets/img/icon/fun.svg" alt="token">
+                              <font class="td_name"> Funfair (FUN)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.00001063</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-18.75%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="FUN" data-original-title="0x419d0d8bdd9af5e606ae2232ed285aff190e711b"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 3,460</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="FUN">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_GNO">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x6810e776880c02933d47db1b9fc05908e5386b96" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x6810e776880c02933d47db1b9fc05908e5386b96" data-original-ticker="GNO"></span></a>
+                              <img src="assets/img/icon/gno.svg" alt="token">
+                              <font class="td_name"> Gnosis (GNO)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.07444</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">0.00%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="GNO" data-original-title="0x6810e776880c02933d47db1b9fc05908e5386b96"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 493.89</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="GNO">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_LINK">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x514910771af9ca656af840dff83e8264ecf986ca" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x514910771af9ca656af840dff83e8264ecf986ca" data-original-ticker="LINK"></span></a>
+                              <img src="assets/img/icon/link.svg" alt="token">
+                              <font class="td_name"> Chainlink (LINK)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.01661</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-10.41%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="LINK" data-original-title="0x514910771af9ca656af840dff83e8264ecf986ca"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 3.31 M</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="LINK">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_LPT">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x58b6a8a3302369daec383334672404ee733ab239" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x58b6a8a3302369daec383334672404ee733ab239" data-original-ticker="LPT"></span></a>
+                              <img src="assets/img/icon/lpt.svg" alt="token">
+                              <font class="td_name"> Livepeer (LPT)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.004106</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-25.63%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="LPT" data-original-title="0x58b6a8a3302369daec383334672404ee733ab239"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 51.09</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="LPT">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_MANA">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x0f5d2fb29fb7d3cfee444a200298f468908cc942" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x0f5d2fb29fb7d3cfee444a200298f468908cc942" data-original-ticker="MANA"></span></a>
+                              <img src="assets/img/icon/mana.svg" alt="token">
+                              <font class="td_name"> Decentraland (MANA)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.0001460</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-15.40%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="MANA" data-original-title="0x0f5d2fb29fb7d3cfee444a200298f468908cc942"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 86,520</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="MANA">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_MKR">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2" data-original-ticker="MKR"></span></a>
+                              <img src="assets/img/icon/mkr.svg" alt="token">
+                              <font class="td_name"> Maker (MKR)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 1.89</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-23.01%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="MKR" data-original-title="0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 16,250</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="MKR">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_MLN">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0xec67005c4e498ec7f55e092bd1d35cbc47c91892" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0xec67005c4e498ec7f55e092bd1d35cbc47c91892" data-original-ticker="MLN"></span></a>
+                              <img src="assets/img/icon/mln.svg" alt="token">
+                              <font class="td_name"> Melon (MLN)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.01902</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_change">2.88%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="MLN" data-original-title="0xec67005c4e498ec7f55e092bd1d35cbc47c91892"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_volume">Ξ 547.14</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="MLN">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_OMG">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0xd26114cd6EE289AccF82350c8d8487fedB8A0C07" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0xd26114cd6EE289AccF82350c8d8487fedB8A0C07" data-original-ticker="OMG"></span></a>
+                              <img src="assets/img/icon/omg.svg" alt="token">
+                              <font class="td_name"> OMG (OMG)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.003325</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-13.00%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="OMG" data-original-title="0xd26114cd6EE289AccF82350c8d8487fedB8A0C07"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 141,880</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="OMG">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_POWR">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x595832f8fc6bf59c85c527fec3740a1b7a361269" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x595832f8fc6bf59c85c527fec3740a1b7a361269" data-original-ticker="POWR"></span></a>
+                              <img src="assets/img/icon/powr.svg" alt="token">
+                              <font class="td_name"> PowerLedger (POWR)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.0003125</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-16.50%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="POWR" data-original-title="0x595832f8fc6bf59c85c527fec3740a1b7a361269"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 14,760</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="POWR">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_REN">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x408e41876cccdc0f92210600ef50372656052a38" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x408e41876cccdc0f92210600ef50372656052a38" data-original-ticker="REN"></span></a>
+                              <img src="assets/img/icon/ren.svg" alt="token">
+                              <font class="td_name"> Republic Protocol (REN)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.0003022</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-18.25%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="REN" data-original-title="0x408e41876cccdc0f92210600ef50372656052a38"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 32,480</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="REN">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_REQ">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x8f8221afbb33998d8584a2b05749ba73c37a938a" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x8f8221afbb33998d8584a2b05749ba73c37a938a" data-original-ticker="REQ"></span></a>
+                              <img src="assets/img/icon/req.svg" alt="token">
+                              <font class="td_name"> Request Token (REQ)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.00004499</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-23.08%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="REQ" data-original-title="0x8f8221afbb33998d8584a2b05749ba73c37a938a"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 1,070</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="REQ">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_SALT">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x4156D3342D5c385a87D264F90653733592000581" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x4156D3342D5c385a87D264F90653733592000581" data-original-ticker="SALT"></span></a>
+                              <img src="assets/img/icon/salt.svg" alt="token">
+                              <font class="td_name"> SALT (SALT)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.0004446</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_change">8.04%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="SALT" data-original-title="0x4156D3342D5c385a87D264F90653733592000581"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_volume">Ξ 259.26</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="SALT">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_AGI">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x8eb24319393716668d768dcec29356ae9cffe285" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x8eb24319393716668d768dcec29356ae9cffe285" data-original-ticker="AGI"></span></a>
+                              <img src="assets/img/icon/agi.svg" alt="token">
+                              <font class="td_name"> Singularity (AGI)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.00007730</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-19.92%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="AGI" data-original-title="0x8eb24319393716668d768dcec29356ae9cffe285"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 5,890</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="AGI">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_SNT">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x744d70fdbe2ba4cf95131626614a1763df805b9e" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x744d70fdbe2ba4cf95131626614a1763df805b9e" data-original-ticker="SNT"></span></a>
+                              <img src="assets/img/icon/snt.svg" alt="token">
+                              <font class="td_name"> Status Network (SNT)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.00006462</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_change">2.60%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="SNT" data-original-title="0x744d70fdbe2ba4cf95131626614a1763df805b9e"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_volume">Ξ 32,700</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="SNT">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_SPANK">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x42d6622dece394b54999fbd73d108123806f6a18" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x42d6622dece394b54999fbd73d108123806f6a18" data-original-ticker="SPANK"></span></a>
+                              <img src="assets/img/icon/spank.svg" alt="token">
+                              <font class="td_name"> SPANK (SPANK)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.00002860</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_change">71.77%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="SPANK" data-original-title="0x42d6622dece394b54999fbd73d108123806f6a18"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_volume">Ξ 18.95</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="SPANK">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_USDC">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48" data-original-ticker="USDC"></span></a>
+                              <img src="assets/img/icon/usdc.svg" alt="token">
+                              <font class="td_name"> USD Coin (USDC)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.008050</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_change">47.33%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="USDC" data-original-title="0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_volume">Ξ 527,620</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="USDC">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_WAX">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x39bb259f66e1c59d5abef88375979b4d20d98022" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x39bb259f66e1c59d5abef88375979b4d20d98022" data-original-ticker="WAX"></span></a>
+                              <img src="assets/img/icon/wax.svg" alt="token">
+                              <font class="td_name"> Wax Token (WAX)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.0001513</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-15.72%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="WAX" data-original-title="0x39bb259f66e1c59d5abef88375979b4d20d98022"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 198.14</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="WAX">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_ZIL">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0x05f4a42e251f2d52b8ed15e9fedaacfcef1fad27" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0x05f4a42e251f2d52b8ed15e9fedaacfcef1fad27" data-original-ticker="ZIL"></span></a>
+                              <img src="assets/img/icon/zil.svg" alt="token">
+                              <font class="td_name"> Zilliqa (ZIL)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.00002454</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_change">-14.29%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="ZIL" data-original-title="0x05f4a42e251f2d52b8ed15e9fedaacfcef1fad27"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-down vcw-down-color"></i>
+                              <font class="td_volume">Ξ 59,830</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="ZIL">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                        <tr id="tr_ZRX">
+                           <td class="vcw-name vcw-text">
+                              <a class="token-link" href="https://etherscan.io/token/0xe41d2489571d322189246dafa5ebde1f4699f498" target="_blank"><span class="fa fa-info-circle pointer" data-toggle="tooltip" data-placement="right" data-original-title="0xe41d2489571d322189246dafa5ebde1f4699f498" data-original-ticker="ZRX"></span></a>
+                              <img src="assets/img/icon/zrx.svg" alt="token">
+                              <font class="td_name"> 0x Protocol (ZRX)</font>
+                           </td>
+                           <td class="vcw-rate vcw-text">Ξ 0.001205</td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_change">8.47%</font>
+                              <span class="fa fa-area-chart pointer" data-original-ticker="ZRX" data-original-title="0xe41d2489571d322189246dafa5ebde1f4699f498"></span>
+                           </td>
+                           <td class="vcw-change vcw-text"><i class="vcw fa per fa-caret-up vcw-up-color"></i>
+                              <font class="td_volume">Ξ 111,460</font>
+                           </td>
+                           <td class="vcw-change vcw-text fl">
+                              <div class="bb" data-buy="ZRX">Buy</div>
+                              <!--<div class="bb" data-buy="TRX">Sell</div>-->
+                           </td>
+                        </tr>
+                     </tbody>
+                     <!--<tbody>
+                        <tr id="tr_1">
+                          <td class="vcw-rate vcw-text" colspan="2">
+                            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScbD6JWKWenGZze-dNGg2vXerr4ZWA8IYGwZaQzSoLrT1Nbvw/viewform">
+                              <div class="bbc" data-buy="ZRX" style="width: 200px;">List Your Token</div>
+                            </a>
+                          </td>
+                          <td class="vcw-rate vcw-text" colspan="3"></td>
+                        </tr>
+                        </tbody>-->
+                  </table>
+               </div>
+            </div>
+         </div>
+         <!-- commented part -->
+         <div class="coinz-page-footer">
+            <div class="site-socket">
+               <img src="assets/img/favicon-white.png" class="lower-ico" alt="icon">Findexx. Copyrights © 2019. All Rights Reserved
+            </div>
+            <div class="remodal" data-remodal-id="error-dialog" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+               <button data-remodal-action="close" class="remodal-close" aria-label="Close" onclick="reopener()"></button>
+               <div style="display:flex; justify-content: center; height:100%; align-items: center; font-size: 20px; text-align: center;">You
+                  must have at least 0.1 ETH (Gas Fees) for trading. Unused ETH (Gas Fees) will be refunded to your wallet.
+               </div>
+            </div>
+            <div class="remodal" data-remodal-id="chart-dialog" role="dialog" aria-labelledby="modal4Title"
+               aria-describedby="modal4Desc">
+               <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+               <br>
+               <div class="rangeButtons">
+                  <div class="bbc p24" data-range="1D">1 Day</div>
+                  <div class="bbc p24" data-range="1W">1 Week</div>
+                  <div class="bbc p24" data-range="1M">1 Month</div>
+                  <div class="bbc p24" data-range="1Y">1 Year</div>
+               </div>
+               <br>
+               <div id="charter">
+                  <script type="text/javascript">
+                     var range = '1Y';
+                     var ticker = 'ZRX';
+                     function switchToBuy() {
+                       sayBuy();
+                       doSwitcher();
+                     }
+                     
+                     function switchToSell() {
+                       saySell();
+                       doSwitcher();
+                     }
+                     
+                     function doSwitcher() {
+                       var inst = $.remodal.lookup[$('[data-remodal-id=chart-dialog]').data('remodal')];
+                       inst.close();
+                       var inst = $.remodal.lookup[$('[data-remodal-id=trade-dialog]').data('remodal')];
+                       inst.open();
+                     }
+                     
+                     function doChart(_ticker) {
+                       ticker = _ticker;
+                       baseUrl = "https://widgets.cryptocompare.com/";
+                       var scripts = document.querySelector("#charter");
+                       var embedder = scripts[ scripts.length - 1 ];
+                       var appName = encodeURIComponent(window.location.hostname);
+                       if(appName==""){appName="local";}
+                       var s = document.createElement("script");
+                       s.type = "text/javascript";
+                       s.async = true;
+                       var theUrl = baseUrl+'serve/v2/coin/chart?fsym='+ticker+'&tsym=ETH&period='+range;
+                       s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                       scripts.innerHTML = '';
+                       scripts.appendChild(s);
+                     }
+                     
+                     $('.p24').click(function () {
+                       var newRange = $(this).attr('data-range');
+                       range = newRange;
+                       doChart(ticker);
+                     });
+                     
+                  </script>
+               </div>
+               <div class="rangeButtons">
+                  <div class="bbc p49" onclick="switchToBuy()">Buy</div>
+                  <!--<div class="bbc p49" onclick="switchToSell()">Sell</div>-->
+               </div>
+            </div>
+            <div class="remodal" data-remodal-id="welcome-dialog" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc" tabindex="-1">
+               <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+               <div style="text-align: left; padding-left: 20px; padding-right: 20px; overflow:auto; overflow-y:auto; -webkit-overflow-scrolling: touch;">
+                  <div>
+                     <br>
+                     <h2 class="center" style="text-align:center" id="Title">Welcome to FindexxERC20.com</h2>
+                     <br>
+                     <p id="p1"><strong><a href="http://findexxerc20.com/">FindexxERC20.com</a> is a platform where you can purchase ERC20 Tokens.<span class="deskContent">Please download Metamask Extension from <a href="https://metamask.io/" target="_blank">https://metamask.io/</a> to buy tokens!</span><span class="phoneContent">Please download <a href="https://wallet.coinbase.com" target="_blank">Coinbase Wallet</a> to buy tokens!</span></strong></p>
+                     <p class="no-margin" id="p2">How to purchase?</p>
+                     <ol class="phoneContent">
+                        <li id="p21-mobile">Download <a href="https://wallet.coinbase.com">Coinbase Wallet</a> Browser</li>
+                        <li id="p22-mobile">Create wallet and fund the wallet with Ethereum.</li>
+                        <li id="p23-mobile">Click Buy to purchase ERC20 Tokens with Ethereum.</li>
+                     </ol>
+                     <ol class="deskContent">
+                        <li id="p21">Download and login into your Metamask.</li>
+                        <li id="p22">Create wallet and fund the wallet with Ethereum.</li>
+                        <li id="p23">Click Buy to purchase ERC20 Tokens with Ethereum.</li>
+                     </ol>
+                     <p id="p3">Detailed agreement can be found on our <a href="/user-agreement">user agreement</a> page</p>
+                     <p id="p4">Findexx Team.</p>
+                     <p id="p5"></p>
+                  </div>
+               </div>
+            </div>
+            <div class="remodal" data-remodal-id="trade-dialog" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+               <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+               <div class="form-container">
+                  <div id="form-views">
+                     <div class="form-footer">
+                        <div class="btn-group order-type form-group full-width" role="group">
+                           <div class="form-actions clearfix full-width">
+                              <div class="col-md-6">
+                              </div>
+                              <div class="loading-ani ani hidden">
+                                 <div class="loader">
+                                 </div>
+                              </div>
+                              <div class="load-text blink-me ani hidden">
+                                 Broadcasting Transaction
+                              </div>
+                              <div class="tx hidden">
+                                 <div>
+                                    <h2 id="modal1Title">Transaction Accepted</h2>
+                                    <br>
+                                    <!--<p id="modal1Desc">
+                                       Recipient address<br>
+                                       <a href="" target="_blank">
+                                       0x641ad78baca220c5bd28b51ce8e0f495e85fe689
+                                       </a>
+                                       </p>-->
+                                    <p id="modal1Desc">
+                                       Transaction Hash<br>
+                                       <a id="etherscan-link"></a>
+                                       <a href="" target="_blank" class="hidden" id="a1"></a>
+                                       <a href="" target="_blank" class="hidden" id="a2"></a>
+                                       <a href="" target="_blank" class="hidden" id="a3"></a>
+                                    </p>
+                                 </div>
+                                 <br>
+                                 <div class="buttons">
+                                    <button class="dm ox ap" id="new-order">New Order
+                                    </button>
+                                    <button class="dm ox ap" id="view-order-2">Etherscan
+                                    </button>
+                                    <button class="dm ox ap" id="view-order-3">Ethplorer
+                                    </button>
+                                    <button class="dm ox ap visible-xs" id="view-order-1">Etherchain
+                                    </button>
+                                 </div>
+                              </div>
+                              <h3 class="max600">Please enter the number of tokens you want to buy</h3>
+                              <div class="cur-sel"></div>
+                              <div id="cryptozodiac-root" data-cryptozodiac-id="23c0750d-cbce-472e-b94d-e3018c1e6adf"></div>
+                              <div class="hero-box ng-pristine ng-invalid ng-invalid-required full-width">
+                                 <div class="row r">
+                                    <div class="col-sm-12 hidden">
+                                       <h3>Please enter the number of tokens you want to buy</h3>
+                                       <br>
+                                    </div>
+                                    <div class="col-sm-12 hero-coin-input your-deposit">
+                                       <div class="input-group hidden alt">
+                                          <label class="hero-label" id="action-labe">I want to buy
+                                          </label>
+                                          <div class="input-spinner" style="">
+                                             <i class="fa fa-circle-o-notch fa-spin fa-1x fa-fw">
+                                             </i>
+                                          </div>
+                                          <input aria-label="Your deposit" autocomplete="off" id="amount-custom" class="form-control currency-input ng-pristine ng-touched ng-not-empty ng-valid ng-valid-required w90"
+                                             name="deposito" placeholder="" required="" spellcheck="false" style="" type="text">
+                                          <div class="input-group-btn currency-group" style="">
+                                             <button aria-expanded="false" aria-haspopup="true" class="btn btn-hero-select ng-binding"
+                                                data-toggle="" id="fromButton" type="button">
+                                             <span aria-hidden="true" class="currency-icon" id="selected-ico"></span>
+                                             <span id="selected-one"></span>
+                                             </button>
+                                             <div class="dropdown-menu dropdown-menu-right">
+                                                <div class="currency-search">
+                                                   <div class="input-group">
+                                                      <div class="input-group-addon">
+                                                         <i class="fa fa-search">
+                                                         </i>
+                                                      </div>
+                                                      <input class="form-control ng-pristine ng-valid ng-empty ng-touched" id="fromFilter"
+                                                         placeholder="Search" style="">
+                                                   </div>
+                                                </div>
+                                                <div class="currency-wrap">
+                                                   <ul class="special currency-list">
+                                                      <li>
+                                                         <a href="#" class="promo">
+                                                            <span aria-hidden="true" class="currency-icon" style="background-image:url(assets/img/coin/art.png)">
+                                                            </span>
+                                                            <span class="currency-symbol ng-binding">VITO
+                                                            </span>
+                                                            <span class="currency-name ng-binding">VITO Token
+                                                            </span>
+                                                            <span class="currency-name full-opacity ng-binding">
+                                                               <!--<img src="/assets/images/star.png" class="star">-->
+                                                            </span>
+                                                         </a>
+                                                      </li>
+                                                   </ul>
+                                                   <ul class="main currency-list">
+                                                      <li>
+                                                         <a href="#" style="">
+                                                         <span aria-hidden="true" class="currency-icon" style="background-image:url(assets/img/icon/ALC.svg)">
+                                                         </span>
+                                                         <span class="currency-symbol ng-binding">ALC
+                                                         </span>
+                                                         <span class="currency-name ng-binding">Aladdin Coin
+                                                         </span>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#" style="">
+                                                         <span aria-hidden="true" class="currency-icon" style="background-image:url(assets/img/icon/bnb.svg)">
+                                                         </span>
+                                                         <span class="currency-symbol ng-binding">BNB
+                                                         </span>
+                                                         <span class="currency-name ng-binding">Binance token
+                                                         </span>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#">
+                                                         <span aria-hidden="true" class="currency-icon" style="background-image:url(assets/img/icon/elf.svg)">
+                                                         </span>
+                                                         <span class="currency-symbol ng-binding">ELF
+                                                         </span>
+                                                         <span class="currency-name ng-binding">ELF Token
+                                                         </span>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#">
+                                                         <span aria-hidden="true" class="currency-icon" style="background-image:url(assets/img/coin/lun.png)">
+                                                         </span>
+                                                         <span class="currency-symbol ng-binding">LUN
+                                                         </span>
+                                                         <span class="currency-name ng-binding">Lunyr
+                                                         </span>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#">
+                                                         <span aria-hidden="true" class="currency-icon" style="background-image:url(assets/img/icon/mda.svg)">
+                                                         </span>
+                                                         <span class="currency-symbol ng-binding">MDA
+                                                         </span>
+                                                         <span class="currency-name ng-binding">Moeda Loyalty Points
+                                                         </span>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#">
+                                                         <span aria-hidden="true" class="currency-icon" style="background-image:url(assets/img/coin/mdtk.png)">
+                                                         </span>
+                                                         <span class="currency-symbol ng-binding">MDTK
+                                                         </span>
+                                                         <span class="currency-name ng-binding">MD Tokens
+                                                         </span>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#">
+                                                         <span aria-hidden="true" class="currency-icon" style="background-image:url(assets/img/icon/rep.svg)">
+                                                         </span>
+                                                         <span class="currency-symbol ng-binding">REP
+                                                         </span>
+                                                         <span class="currency-name ng-binding">Augur
+                                                         </span>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#">
+                                                         <span aria-hidden="true" class="currency-icon" style="background-image:url(assets/img/icon/snt.svg)">
+                                                         </span>
+                                                         <span class="currency-symbol ng-binding">SNT
+                                                         </span>
+                                                         <span class="currency-name ng-binding">Status
+                                                         </span>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#">
+                                                         <span aria-hidden="true" class="currency-icon" style="background-image:url(assets/img/icon/wtc.svg)">
+                                                         </span>
+                                                         <span class="currency-symbol ng-binding">WTC
+                                                         </span>
+                                                         <span class="currency-name ng-binding">Waltonchain
+                                                         </span>
+                                                         </a>
+                                                      </li>
+                                                      <li>
+                                                         <a href="#">
+                                                         <span aria-hidden="true" class="currency-icon" style="background-image:url(assets/img/icon/zrx.svg)">
+                                                         </span>
+                                                         <span class="currency-symbol ng-binding">ZRX
+                                                         </span>
+                                                         <span class="currency-name ng-binding">0x Protocol
+                                                         </span>
+                                                         </a>
+                                                      </li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="flex">
+                                    <div class="input-group special-group">
+                                       <label class="hero-label">Total price &nbsp;(USD: <span id="usd-eth">0.00</span>)
+                                       </label>
+                                       <input aria-label="Your deposit" id="deposit" autocomplete="off" class="special-box form-control currency-input ng-pristine ng-touched ng-not-empty ng-valid ng-valid-required"
+                                          disabled="disabled" name="fromAmount" placeholder="0 ETH" required="" spellcheck="false"
+                                          style="" type="text">
+                                    </div>
+                                    <div class="input-group special-group last-group">
+                                       <label class="hero-label">
+                                          Average rate <!--&nbsp;<span id="usd-eth">(0.10$)</span>-->
+                                       </label>
+                                       <input id="rate" autocomplete="off" class="special-box form-control currency-input ng-pristine ng-touched ng-not-empty ng-valid ng-valid-required"
+                                          disabled="disabled" name="fromAmount" placeholder="0.00 ETH / DAI" required="" spellcheck="false"
+                                          style="" type="text">
+                                       <input id="rate_value" type="hidden" value="0.021">
+                                    </div>
+                                 </div>
+                                 <div class="input-group m-t-10">
+                                    <br>
+                                    <div class="flexer">
+                                       <div id="zf" class="fees zodiacfeedd">Exchange Fees Included: 0.0000 ETH</div>
+                                       <div id="err"></div>
+                                    </div>
+                                    <div class="terms hidden">
+                                       <div class="hidden">
+                                          <input type="checkbox" checked="checked" id="test1" />
+                                       </div>
+                                       <label for="test1" id="test1label"></label>
+                                       <div class="hidden">
+                                          <div class="terms-text">
+                                             <a href="/user-agreement" target="_blank">User Agreement</a>
+                                          </div>
+                                       </div>
+                                       <div class="sell-condition-text hidden text-center">
+                                       </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <button class="biga dm ox ap hidden" id="confirm-button">Confirm Order</button>
+                                    <!--<button class="biga dm ox ap" id="confirm-button-dis">Coming Soon...</button>-->
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <script src="assets/js/app.min.js"></script>
+            <script src="assets/js/modal.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script src="assets/js/react.min.js"></script>
+            <!--<script src="public/calculator.js?ver=4.2"></script>-->
+            <script src="assets/js/popper.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+            <script>
+               var requestString = '';
+               Object.keys(fullNames).map(function (value, key) {
+                 requestString = requestString + value + ','
+               });
+               
+               
+               var usd = 0;
+               //console.log("https://min-api.cryptocompare.com/data/pricemultifull?fsyms=" + requestString + "&tsyms=USD");
+               $.get("https://min-api.cryptocompare.com/data/pricemulti?fsyms=ETH&tsyms=USD", function(data) {
+                 //console.log(data);
+                 //console.log(data['ETH'].USD);
+                 usd = data['ETH'].USD;
+               });
+               
+               $(".navbar-nav li:first a").click(function (e) {
+                 e.preventDefault();
+                 var href = $(this).attr('href');
+                 $('body,html').animate({
+                   scrollTop: $(href).offset().top
+                 }, 2000, function () {
+                   window.location.hash = href;
+                 });
+                 return false;
+               });
+               
+               
+               function errka() {
+                 var inst = $.remodal.lookup[$('[data-remodal-id=error-dialog]').data('remodal')];
+                 inst.open();
+               }
+               
+               $(function () {
+                 var inst = $.remodal.lookup[$('[data-remodal-id=welcome-dialog]').data('remodal')];
+                 //inst.open();
+               
+               });
+               
+               
+               function opener() {
+                 var inst = $.remodal.lookup[$('[data-remodal-id=welcome-dialog]').data('remodal')];
+                 inst.open();
+                 setTimeout(function () {
+                   if (inst.state != 'opened') {
+                     opener();
+                   }
+                 }, 700);
+               }
+               
+               window.addEventListener("orientationchange", function () {
+                 var inst = $.remodal.lookup[$('[data-remodal-id=welcome-dialog]').data('remodal')];
+                 if (inst.state == 'opened') {
+                   inst.close();
+                   inst = $.remodal.lookup[$('[data-remodal-id=welcome-dialog]').data('remodal')];
+                   setTimeout(function () {
+                     opener();
+                   }, 700);
+                 }
+               });
+               
+               window.addEventListener('load', async () => {
+               // Modern dapp browsers...
+               if (window.ethereum) {
+               window.web3 = new Web3(ethereum);
+               try {
+                   // Request account access if needed
+                   await ethereum.enable();
+                   //web3.eth.sendTransaction({});
+               } catch (error) {
+                   // User denied account access...
+               }
+               }
+               // Legacy dapp browsers...
+               else if (window.web3) {
+               window.web3 = new Web3(web3.currentProvider);
+               //web3.eth.sendTransaction({});
+               }
+               // Non-dapp browsers...
+               else {
+               var inst = $.remodal.lookup[$('[data-remodal-id=welcome-dialog]').data('remodal')];
+               inst.open();
+               //alert('Non-dapp browser - Please Install Metamask or use Cipher App');
+               }
+               });
+               
+            </script>
+            <script src="assets/js/bundle.js"></script>
+         </div>
+      </div>
+      <style>
+         .tooltip.bs-tooltip-right {
+         position: fixed !important;
+         margin-left: -15px !important;
+         }
+         .pointer {
+         cursor: pointer;
+         }
+         .token-link span {
+         margin-left: -14px;
+         }
+         label.W5eX9TYCyOsOM0xuuanas  {
+         text-decoration: underline;
+         cursor: pointer;
+         }
+         canvas {
+         height: 300px !important;
+         }
+         .header-div {
+         /*border-top: 1px solid rgb(224, 230, 239);
+         box-sizing: border-box;
+         border-radius: 5px;*/
+         }
+         /*.header-div a:last-of-type {
+         display: none !important;
+         }*/
+         div[data-remodal-id="chart-dialog"] {
+         height: 620px !important;
+         }
+         .p49 {
+         margin-top: 20px;
+         width: 100%;
+         }
+         .p24 {
+         width: 24%;
+         }
+         .rangeButtons {
+         display: flex;
+         justify-content: space-between;
+         }
+         @media all and (min-width: 480px) {
+         .deskContent {display:block;}
+         .phoneContent {display:none;}
+         }
+         @media all and (max-width: 479px) {
+         .deskContent {display:none;}
+         .phoneContent {display:block;}
+         }
+         ._2eJojMfhwj15uss6nRl6Ko {
+         display: none !important;
+         }
+         .sc-bdVaJa.cACSE {
+         display: none;
+         }
+         .bb {
+         width: 100% !important;
+         }
+         .coinz-vcw-container.coinz-vcw-container-style-default_style .vcw.vcw-table td:last-child, .coinz-vcw-container.coinz-vcw-container-style-default_style .vcw.vcw-table th:last-child {
+         padding-right: 30px!important;
+         width: 240px!important;
+         }
+         .zeroExInstantOverlay {
+         z-index: 1000000 !important;
+         }
+         a:focus {
+         color: black;
+         }
+         .h2small {
+         font-size: 18px !important;
+         }
+         .rater {
+         margin-top: 10px;
+         }
+         @media only screen and (max-width: 580px) {
+         .mobile-hidden {
+         display: none;
+         }
+         }
+      </style>
+   </body>
+</html>
+
