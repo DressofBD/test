@@ -114,24 +114,21 @@ img{
 	top: 0;
 }
 .open > .man-img{
-	animation: open-man 5s ease-in-out infinite;
-	/*transform: translate3d(0%,-41%,0) rotate(-45deg);*/
-	opacity: 0.5;
+	animation: open-man 2s ease-in-out infinite;
+	animation-direction: alternate;
+	/*transform: translate3d(0%,9%,0) rotate(-7deg);*/
+	transform-origin: top left;
 }
 @keyframes open-man{
 	0%{
-		transform: translate3d(0%,-41%,0) rotate(-45deg);
-	}
-	50%{
-		transform: translate3d(-10%,-41%,0) rotate(-45deg);
+		transform: translate3d(0%,4%,0) rotate(-4deg);
 	}
 	100%{
-		transform: translate3d(0%,-41%,0) rotate(-45deg);
+		transform: translate3d(5%,-17%,0) rotate(18deg);
 	}
 }
 .open > .strip-img{
 	animation: none;
-	opacity: 0.5;
 }
 .open > .strip-cover{
 	display: none !important;
