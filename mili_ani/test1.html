@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logo Animation</title>
+</head>
+<body>
+<div class="anim animation-start" id="anima">
+	<img src="img/logo34.png" class="dft0 base-img">
+	<img src="img/man.png" class="dft0 man-img">
+	<img src="img/strip-text2.png" class="dft0 strip-img">
+	<img src="img/strip-cover.png" class="dft0 strip-cover">
+</div>
+<style type="text/css">
+img{
+	max-width: 100%;
+	height: auto;
+}
+.dft0{
+	display: flex;
+	position: absolute;
+	top: 0;
+}
+.anim{
+	max-width: 300px;
+	margin: 0 auto;
+	position: relative;
+	max-height: 146px;
+}
+.animation-start .man-img{
+	animation-delay: 0s;
+	animation-name: man-ani;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	position: relative;
+	z-index: 9;
+	transition: transform 2s ease-in-out;
+}
+@keyframes man-ani{
+	0%{
+		transform: translate3d(16%,-75%,0) scale(0.5);
+	}
+	8%{
+		transform: translate3d(16%,-22%,0) scale(0.5);
+		opacity: 1;
+	}
+	15%{
+		transform: translate3d(-20.7%,-22%,0) scale(0.5);
+		opacity: 1;
+	}
+	40%{
+		transform: translate3d(-20.7%,-25%,0) scale(0.5);
+		opacity: 1;
+	}
+	60%{
+		transform: translate3d(-20.7%,-20%,0) scale(0.5);
+		opacity: 1;
+	}
+	85%{
+		transform: translate3d(-20.7%,-25%,0) scale(0.5);
+		opacity: 1;
+	}
+	95%{
+		transform: translate3d(-20.7%,-20%,0) scale(0.5);
+		opacity: 1;
+	}
+	100%{
+		transform: translate3d(-20.7%,-75%,0) scale(0.5);
+		opacity: 1;
+	}
+}
+.animation-start .strip-cover {
+	animation: strip_cover 12s ease-in-out infinite;
+	transform:  translate3d(21.4%,79%,0) scale(0.38);
+}
+@keyframes strip_cover{
+	0%{
+		left: 0%;
+	}
+	7%{
+		left: 0%;
+	}
+	15.5%{
+		left: -38%;
+	}
+	95%{
+		left: -38%;
+	}
+}
+.strip-img{
+	animation: strip-img 12s ease-in-out infinite;
+}
+@keyframes strip-img{
+	0%{
+		transform:rotate(0deg);
+		transform:translate3d(0,0,0);
+		opacity: 1;
+	}
+	95%{
+	transform-origin:59% 61%;
+		transform:rotate(0deg);
+		transform:translate3d(0,0,0);
+		opacity: 1;
+	}
+	100%{
+		transform-origin:50% 80%;
+		transform:translate3d(0,20%,0) rotate(60deg);
+		opacity:0
+	}
+}
+@keyframes open-man{
+	0%{
+		transform: translate3d(-23%,3%,0) rotate(-5deg) scale(0.5);
+	}
+	100%{
+		transform: translate3d(-23%,3%,0) rotate(10deg) scale(0.5);
+	}
+}
+.anim:hover .man-img{
+	animation: open-man 2s ease-in-out infinite;
+	animation-direction: alternate;
+	transform-origin: top center;
+}
+.anim:hover .strip-cover{
+	animation: none;
+	display: none;
+}
+.anim:hover .strip-img{
+	animation: none;
+}
+</style>
+
+</body>
+</html>
