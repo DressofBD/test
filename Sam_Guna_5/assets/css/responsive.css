@@ -22,7 +22,7 @@
   }
 
   .logo-header {
-      width: 200px;
+      width: 80px;
       margin-left: 15px;
   }
 
@@ -46,7 +46,7 @@
   }
   .inner-card {
     width: 100%;
-    height: 225px;
+    height: auto;
     padding-top: 10px;
   }
 
@@ -140,7 +140,7 @@ and (orientation : landscape) {
   }
 
   .logo-header {
-      width: 240px;
+      width: 80px;
   }
 
   .navbar-nav.mr-auto {
@@ -433,7 +433,7 @@ and (orientation : landscape) {
     }
     .inner-card {
       width: 100%;
-      height: 225px;
+      height: auto;
       padding-top: 10px;
     }
     .app-navbar {
@@ -572,3 +572,4 @@ and (orientation : landscape) {
 ul.navbar-nav.mr-auto li {
     text-align: center;
 }
+.logo-header{}
