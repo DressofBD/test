@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html data-select2-id="12" lang="en">
+   <head runat="server">
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>Trading | Pinxchange.net</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" href="index_files/bootstrap.css">
+      <link rel="stylesheet" href="index_files/select2.css">
+      <script src="index_files/jquery-3.js"></script>
+
+      <div id="wrapper" style="min-height: 592px;">
+         <div class="content">
+            <ul class="nav nav-tabs token_tabs">
+               <li class="active"><a data-toggle="tab" href="#post">ORDERS</a></li>
+               <li class="closed_orders_li"><a data-toggle="tab" href="#close_post">CLOSED ORDERS</a></li>
+               <li style="float: right;"><a data-toggle="tab" href="#mypost" style="margin-right: 0;">MY ORDERS</a></li>
+            </ul>
+            <div class="tab-content" data-select2-id="10">
+               <div id="post" class="tab-pane fade in active" data-select2-id="post">
+                  <div class="row" data-select2-id="9">
+                     <div class="col-sm-12" data-select2-id="8">
+                        <div class="hpanel stats" data-select2-id="7">
+                           <div class="panel-body h-200" data-select2-id="6">
+                              <div class="row" data-select2-id="5">
+                                 <div class="col-sm-12 trading_col" style="position: relative;" data-select2-id="4">
+                                    <select class="form-control select2-hidden-accessible" id="token_select" style="width: 100px;" data-select2-id="token_select" tabindex="-1" aria-hidden="true">
+                                       <option value="0" data-select2-id="13" selected="selected">ALL</option>
+                                       <option value="6" data-select2-id="14">BCH</option>
+                                       <option value="8" data-select2-id="15">BNB</option>
+                                       <option value="10" data-select2-id="16">BSV</option>
+                                       <option value="1" data-select2-id="2">BTC</option>
+                                       <option value="18" data-select2-id="17">DASH</option>
+                                       <option value="25" data-select2-id="18">DGB</option>
+                                       <option value="28" data-select2-id="19">DOGE</option>
+                                       <option value="22" data-select2-id="20">ETC</option>
+                                       <option value="2" data-select2-id="21">ETH</option>
+                                       <option value="15" data-select2-id="22">LINK</option>
+                                       <option value="27" data-select2-id="23">LSK</option>
+                                       <option value="3" data-select2-id="24">LTC</option>
+                                       <option value="23" data-select2-id="25">NEO</option>
+                                       <option value="21" data-select2-id="26">QTUM</option>
+                                       <option value="13" data-select2-id="27">TRX</option>
+                                       <option value="24" data-select2-id="28">TUSD</option>
+                                       <option value="20" data-select2-id="29">USDT</option>
+                                       <option value="26" data-select2-id="30">XEM</option>
+                                       <option value="5" data-select2-id="31">XMR</option>
+                                       <option value="4" data-select2-id="32">XRP</option>
+                                       <option value="30" data-select2-id="33">ZB</option>
+                                       <option value="31" data-select2-id="34">ZEC</option>
+                                       <option value="14" data-select2-id="35">ZRX</option>
+                                    </select>
+                                    <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" data-select2-id="1" style="width: 100px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-token_select-container"><span class="select2-selection__rendered" id="select2-token_select-container" role="textbox" aria-readonly="true" title="ALL">ALL</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    <span class="balance_span" style="display: none;">
+                                    BALANCE: <strong class="text-info token_balance_span">0.00000000</strong> <strong class="token_name_span text-info">ALL</strong>
+                                    </span>
+                                    <span class="buy_price_span" style="display: none;">
+                                    BUY PRICE: <strong class="text-success token_buy_price_span">5407.8632 USD</strong>
+                                    </span>
+                                    <span class="sell_price_span" style="display: none;">
+                                    SELL PRICE: <strong class="text-danger token_sell_price_span">5300.7768 USD</strong>
+                                    </span>
+                                    <span class="sell_price_span" style="display: none;">
+                                    LAST PRICE: <strong class="text-white token_last_price_span">5512.8835 USD</strong>
+                                    </span>
+                                    <style>
+                                       .blinking{
+                                       animation:blinkingText 1s 1;
+                                       }
+                                       @keyframes blinkingText{
+                                       0%{      opacity: 1; }
+                                       50%{ opacity: 0; }
+                                       100%{    opacity: 1; }
+                                       }
+                                       #wrapper{
+                                       background: #262626;
+                                       }
+                                       .content{
+                                       color: white;
+                                       /* padding: 0; */
+                                       }
+                                       .token_tabs{
+                                       background: #262626;
+                                       border-bottom: 1px solid #eee;
+                                       }
+                                       .token_tabs>li.active>a, .token_tabs>li.active>a:focus, .token_tabs>li.active>a:hover{
+                                       border: none;
+                                       color: #EBECED;
+                                       background-color: #414F59;
+                                       border-radius: 0;
+                                       border-bottom: 3px solid #b920ad;
+                                       }
+                                       .hpanel .panel-body {
+                                       background: #262626;
+                                       padding: 10px 20px;
+                                       }
+                                       select.form-control{
+                                       width: 100px; display: inline-block;
+                                       }
+                                       .buy_price_span, .sell_price_span{
+                                       margin-left: 10px;
+                                       }
+                                       select.form-control, input[type="text"].form-control{
+                                       background: #384047;
+                                       color: #ffffff;
+                                       }
+                                       /* .row_marketplace{
+                                       height: 350px;
+                                       }
+                                       .row_marketplace .col_marketplace{
+                                       height: 100%; overflow-y: scroll;
+                                       } */
+                                       .col_marketplace thead, .col_marketplace tbody tr{
+                                       display: table;
+                                       table-layout: fixed;
+                                       width: 100%;
+                                       }
+                                       .col_marketplace tbody{
+                                       height: 177px;
+                                       overflow: auto;
+                                       display: block;
+                                       }
+                                       .marketplace_buy_col{
+                                       border-right: 1px solid #eee;
+                                       }
+                                       .buy_form_col, .sell_form_col{
+                                       /* margin-bottom: 30px; */
+                                       }
+                                       .buy_row, .sell_row{
+                                       cursor: pointer;
+                                       }
+                                       tr.even {
+                                       background: #424242;
+                                       }
+                                       .input-group{
+                                       width: 100%;
+                                       }
+                                       .input-group-addon{
+                                       width: 117px;
+                                       font-size: small;
+                                       font-weight: 600;
+                                       }
+                                       .sort_table thead th{
+                                       cursor: pointer;
+                                       }
+                                       @media(max-width: 1024px){
+                                       .col_marketplace table th:nth-child(2), .col_marketplace table td:nth-child(2){
+                                       display: none;
+                                       }
+                                       }
+                                       @media(max-width: 767px){
+                                       select.form-control, .balance_span, .buy_price_span, .sell_price_span{
+                                       display: block;
+                                       }
+                                       .balance_span, .buy_price_span, .sell_price_span{
+                                       margin-left: 0;
+                                       margin-top: 5px;
+                                       }
+                                       .marketplace_buy_col{
+                                       /* border-right: none;
+                                       padding-bottom: 10px;
+                                       border-bottom: 1px solid #eee; */
+                                       }
+                                       .marketplace_sell_col{
+                                       /* padding-top: 25px; */
+                                       }
+                                       .chart1_col{
+                                       border-right: none;
+                                       }
+                                       .chart2_col{
+                                       display: none;
+                                       }
+                                       .col_marketplace .table-responsive{
+                                       border: none;
+                                       }
+                                       .table-responsive{
+                                       overflow: auto;
+                                       }
+                                       .col_marketplace .table-responsive table, .col_marketplace .table-responsive{
+                                       overflow: hidden;
+                                       }
+                                       /* .row_marketplace{
+                                       height: 600px;
+                                       }
+                                       .row_marketplace .col_marketplace{
+                                       height: 47%;
+                                       margin-bottom: 25px;
+                                       }
+                                       .table-responsive{
+                                       border: none;
+                                       } */
+                                       }
+                                       @media(max-width: 700px){
+                                       .mobile_hide{
+                                       display: none;
+                                       }
+                                       }
+                                       @media(max-width: 550px){
+                                       .input-group-addon:last-child{
+                                       display: none;
+                                       }
+                                       .input-group .form-control:first-child{
+                                       border-radius: 4px;
+                                       font-size: 12px;
+                                       }
+                                       }
+                                       @media(max-width: 450px){
+                                       .row_marketplace{
+                                       font-size: 10px;
+                                       }
+                                       .marketplace_buy_col{
+                                       padding-right: 5px;
+                                       }
+                                       .marketplace_sell_col{
+                                       padding-left: 5px;
+                                       }
+                                       .col_marketplace tbody {
+                                       height: 187px;
+                                       padding: 0 3px 0 0;
+                                       }
+                                       .col_marketplace tbody, .col_marketplace .table-responsive{
+                                       overflow: hidden auto;
+                                       }
+                                       .col_marketplace>tbody>tr>td, .col_marketplace>tbody>tr>th, .col_marketplace>tfoot>tr>td, .col_marketplace>tfoot>tr>th, .col_marketplace>thead>tr>td, .col_marketplace>thead>tr>th{
+                                       padding: 5px 0;
+                                       }
+                                       .nav-tabs > li > a{
+                                       font-size: 10px;
+                                       }
+                                       }
+                                       @media(max-width: 375px){
+                                       .trading_col{
+                                       padding: 0 5px;
+                                       }
+                                       .text-left{
+                                       padding-left: 0 !important;
+                                       }
+                                       .text-right{
+                                       padding-right: 0 !important;
+                                       }
+                                       }
+                                       @media (max-width: 480px) and (min-width: 320px){
+                                       .text_note {
+                                       font-size: 10px;
+                                       right: 70px;
+                                       }
+                                       }
+                                    </style>
+                                    <span class="text-right text_note">
+                                    <strong class="">Note: You can trade with USD only.</strong>
+                                    </span>
+                                    <hr class="charts" style="margin: 10px 0px 0px; display: none;">
+                                    <div class="row charts" style="display: none;">
+                                       <div class="col-sm-6 chart1_col">
+                                          <div class="tradingview-widget-container">
+                                             <div id="tradingview_5b419">
+                                                <div id="tradingview_082ad-wrapper" style="position: relative;box-sizing: content-box;width: 508px;height: 200px;margin: 0 auto !important;padding: 0 !important;font-family:Arial,sans-serif;">
+                                                   <div style="width: 508px;height: 200px;background: transparent;padding: 0 !important;"><iframe id="tradingview_082ad" src="index_files/a.html" style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;" allowtransparency="true" scrolling="no" allowfullscreen="" frameborder="0"></iframe></div>
+                                                </div>
+                                             </div>
+                                             <div id="chart1">
+                                                <script type="text/javascript" src="index_files/tv.js"></script>
+                                                <script type="text/javascript">
+                                                   new TradingView.widget({
+                                                       "width": $('#chart1').width(),
+                                                       "height": 200,
+                                                       "symbol": "COINBASE:BTCUSD",
+                                                       "interval": "60",
+                                                       "timezone": "Asia/Singapore",
+                                                       "theme": "Dark",
+                                                       "style": "1",
+                                                       "locale": "en",
+                                                       "toolbar_bg": "#f1f3f6",
+                                                       "allow_symbol_change": false,
+                                                       "enable_publishing": false,
+                                                       "hide_legend": true,
+                                                       "save_image": false,
+                                                       "container_id": "tradingview_5b419"
+                                                   });
+                                                </script>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-sm-6 chart2_col">
+                                          <div class="tradingview-widget-container">
+                                             <div id="tradingview_5b420">
+                                                <div id="tradingview_35ca2-wrapper" style="position: relative;box-sizing: content-box;width: 509px;height: 200px;margin: 0 auto !important;padding: 0 !important;font-family:Arial,sans-serif;">
+                                                   <div style="width: 509px;height: 200px;background: transparent;padding: 0 !important;"><iframe id="tradingview_35ca2" src="index_files/a_002.html" style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;" allowtransparency="true" scrolling="no" allowfullscreen="" frameborder="0"></iframe></div>
+                                                </div>
+                                             </div>
+                                             <div id="chart2">
+                                                <script type="text/javascript" src="index_files/tv.js"></script>
+                                                <script type="text/javascript">
+                                                   new TradingView.widget({
+                                                       "width": $('#chart2').width(),
+                                                       "height": 200,
+                                                       "symbol": "COINBASE:BTCUSD",
+                                                       "interval": "60",
+                                                       "timezone": "Asia/Singapore",
+                                                       "theme": "Dark",
+                                                       "style": "2",
+                                                       "locale": "en",
+                                                       "toolbar_bg": "#f1f3f6",
+                                                       "allow_symbol_change": false,
+                                                       "enable_publishing": false,
+                                                       "hide_legend": true,
+                                                       "save_image": false,
+                                                       "container_id": "tradingview_5b420"
+                                                   });
+                                                </script>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <hr style="margin: 0;">
+                                    <div class="row row_marketplace">
+                                       <div class="col-xs-6 col_marketplace marketplace_buy_col">
+                                          <div class="table-responsive">
+                                             <div id="buy_table_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                                                <div class="top"></div>
+                                                <table id="buy_table" class="table text-uppercase text-center sort_table no-footer dataTable" style="white-space: nowrap; width: 510px;" role="grid">
+                                                   <thead class="text-info">
+                                                      <!-- <tr>
+                                                         <th colspan="2">BUY ORDERS (<span class="token_name_span"></span>)</th>
+                                                         </tr> -->
+                                                      <tr role="row">
+                                                         <th class="text-left text-success sorting" tabindex="0" aria-controls="buy_table" rowspan="1" colspan="1" style="width: 154px;" aria-label="Buy Orders ALL : activate to sort column ascending">Buy Orders <span class="token_name_span mobile_hide">ALL</span> <i class="fa fa-sort"></i></th>
+                                                         <th class="text-left sorting" tabindex="0" aria-controls="buy_table" rowspan="1" colspan="1" style="width: 154px;" aria-label="Price per Asset (USD)  --&gt;: activate to sort column ascending">
+                                                            Price per Asset <!-- <span class="mobile_hide">(USD)</span>  --><i class="fa fa-sort"></i>
+                                                         </th>
+                                                         <th class="text-right sorting" tabindex="0" aria-controls="buy_table" rowspan="1" colspan="1" style="width: 154px;" aria-label="Total (USD) : activate to sort column ascending">Total <span class="mobile_hide">(USD)</span> <i class="fa fa-sort"></i></th>
+                                                      </tr>
+                                                   </thead>
+                                                   <tbody>
+                                                      <tr class="sell_row odd" data-id="485216" data-amount="0.27544154" data-price="26.2671" role="row">
+                                                         <td class=" text-left">0.27544154 ZEC</td>
+                                                         <td class=" text-left">26.2671 USD</td>
+                                                         <td class=" text-right text-success">7.2351 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485214" data-amount="0.31257311" data-price="27.0061" role="row">
+                                                         <td class=" text-left">0.31257311 ZEC</td>
+                                                         <td class=" text-left">27.0061 USD</td>
+                                                         <td class=" text-right text-success">8.4414 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485215" data-amount="0.2182579" data-price="27.0605" role="row">
+                                                         <td class=" text-left">0.21825790 ZEC</td>
+                                                         <td class=" text-left">27.0605 USD</td>
+                                                         <td class=" text-right text-success">5.9062 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485212" data-amount="0.26500767" data-price="0.2241" role="row">
+                                                         <td class=" text-left">0.26500767 ZB</td>
+                                                         <td class=" text-left">0.2241 USD</td>
+                                                         <td class=" text-right text-success">0.0594 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485213" data-amount="0.00322591" data-price="0.2294" role="row">
+                                                         <td class=" text-left">0.00322591 ZB</td>
+                                                         <td class=" text-left">0.2294 USD</td>
+                                                         <td class=" text-right text-success">0.0007 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485211" data-amount="0.0389043" data-price="0.2289" role="row">
+                                                         <td class=" text-left">0.03890430 ZB</td>
+                                                         <td class=" text-left">0.2289 USD</td>
+                                                         <td class=" text-right text-success">0.0089 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485205" data-amount="0.10863051" data-price="0.8708" role="row">
+                                                         <td class=" text-left">0.10863051 LSK</td>
+                                                         <td class=" text-left">0.8708 USD</td>
+                                                         <td class=" text-right text-success">0.0946 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485206" data-amount="0.00461903" data-price="0.8754" role="row">
+                                                         <td class=" text-left">0.00461903 LSK</td>
+                                                         <td class=" text-left">0.8754 USD</td>
+                                                         <td class=" text-right text-success">0.0040 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485207" data-amount="0.04002828" data-price="0.8442" role="row">
+                                                         <td class=" text-left">0.04002828 LSK</td>
+                                                         <td class=" text-left">0.8442 USD</td>
+                                                         <td class=" text-right text-success">0.0338 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485199" data-amount="0.12999843" data-price="0.0036" role="row">
+                                                         <td class=" text-left">0.12999843 DGB</td>
+                                                         <td class=" text-left">0.0036 USD</td>
+                                                         <td class=" text-right text-success">0.0005 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485200" data-amount="0.04544834" data-price="0.0037" role="row">
+                                                         <td class=" text-left">0.04544834 DGB</td>
+                                                         <td class=" text-left">0.0037 USD</td>
+                                                         <td class=" text-right text-success">0.0002 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485201" data-amount="0.09176535" data-price="0.0036" role="row">
+                                                         <td class=" text-left">0.09176535 DGB</td>
+                                                         <td class=" text-left">0.0036 USD</td>
+                                                         <td class=" text-right text-success">0.0003 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485196" data-amount="0.25366936" data-price="1.023" role="row">
+                                                         <td class=" text-left">0.25366936 TUSD</td>
+                                                         <td class=" text-left">1.0230 USD</td>
+                                                         <td class=" text-right text-success">0.2595 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485197" data-amount="0.16962085" data-price="1.0426" role="row">
+                                                         <td class=" text-left">0.16962085 TUSD</td>
+                                                         <td class=" text-left">1.0426 USD</td>
+                                                         <td class=" text-right text-success">0.1768 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485198" data-amount="0.15338983" data-price="1.0439" role="row">
+                                                         <td class=" text-left">0.15338983 TUSD</td>
+                                                         <td class=" text-left">1.0439 USD</td>
+                                                         <td class=" text-right text-success">0.1601 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485195" data-amount="0.20778259" data-price="6.1594" role="row">
+                                                         <td class=" text-left">0.20778259 NEO</td>
+                                                         <td class=" text-left">6.1594 USD</td>
+                                                         <td class=" text-right text-success">1.2798 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485194" data-amount="0.13030844" data-price="6.2305" role="row">
+                                                         <td class=" text-left">0.13030844 NEO</td>
+                                                         <td class=" text-left">6.2305 USD</td>
+                                                         <td class=" text-right text-success">0.8119 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485193" data-amount="0.17076957" data-price="6.1545" role="row">
+                                                         <td class=" text-left">0.17076957 NEO</td>
+                                                         <td class=" text-left">6.1545 USD</td>
+                                                         <td class=" text-right text-success">1.0510 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485185" data-amount="0.14078705" data-price="1.0301" role="row">
+                                                         <td class=" text-left">0.14078705 USDT</td>
+                                                         <td class=" text-left">1.0301 USD</td>
+                                                         <td class=" text-right text-success">0.1450 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485186" data-amount="0.0523394" data-price="1.0191" role="row">
+                                                         <td class=" text-left">0.05233940 USDT</td>
+                                                         <td class=" text-left">1.0191 USD</td>
+                                                         <td class=" text-right text-success">0.0533 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485184" data-amount="0.16971045" data-price="1.0332" role="row">
+                                                         <td class=" text-left">0.16971045 USDT</td>
+                                                         <td class=" text-left">1.0332 USD</td>
+                                                         <td class=" text-right text-success">0.1753 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485181" data-amount="0.19562065" data-price="49.4431" role="row">
+                                                         <td class=" text-left">0.19562065 DASH</td>
+                                                         <td class=" text-left">49.4431 USD</td>
+                                                         <td class=" text-right text-success">9.6721 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485183" data-amount="0.02967658" data-price="49.0311" role="row">
+                                                         <td class=" text-left">0.02967658 DASH</td>
+                                                         <td class=" text-left">49.0311 USD</td>
+                                                         <td class=" text-right text-success">1.4551 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485182" data-amount="0.13576263" data-price="48.6382" role="row">
+                                                         <td class=" text-left">0.13576263 DASH</td>
+                                                         <td class=" text-left">48.6382 USD</td>
+                                                         <td class=" text-right text-success">6.6032 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485180" data-amount="0.32006389" data-price="2.3199" role="row">
+                                                         <td class=" text-left">0.32006389 LINK</td>
+                                                         <td class=" text-left">2.3199 USD</td>
+                                                         <td class=" text-right text-success">0.7425 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485179" data-amount="0.16279599" data-price="2.3322" role="row">
+                                                         <td class=" text-left">0.16279599 LINK</td>
+                                                         <td class=" text-left">2.3322 USD</td>
+                                                         <td class=" text-right text-success">0.3797 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485178" data-amount="0.29006201" data-price="2.382" role="row">
+                                                         <td class=" text-left">0.29006201 LINK</td>
+                                                         <td class=" text-left">2.3820 USD</td>
+                                                         <td class=" text-right text-success">0.6909 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485175" data-amount="0.33059199" data-price="0.1652" role="row">
+                                                         <td class=" text-left">0.33059199 ZRX</td>
+                                                         <td class=" text-left">0.1652 USD</td>
+                                                         <td class=" text-right text-success">0.0546 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485176" data-amount="0.33141064" data-price="0.164" role="row">
+                                                         <td class=" text-left">0.33141064 ZRX</td>
+                                                         <td class=" text-left">0.1640 USD</td>
+                                                         <td class=" text-right text-success">0.0544 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485177" data-amount="0.3313286" data-price="0.164" role="row">
+                                                         <td class=" text-left">0.33132860 ZRX</td>
+                                                         <td class=" text-left">0.1640 USD</td>
+                                                         <td class=" text-right text-success">0.0543 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485168" data-amount="0.17375051" data-price="10.7762" role="row">
+                                                         <td class=" text-left">0.17375051 BNB</td>
+                                                         <td class=" text-left">10.7762 USD</td>
+                                                         <td class=" text-right text-success">1.8724 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485166" data-amount="0.21159501" data-price="11.1237" role="row">
+                                                         <td class=" text-left">0.21159501 BNB</td>
+                                                         <td class=" text-left">11.1237 USD</td>
+                                                         <td class=" text-right text-success">2.3537 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485167" data-amount="0.03218117" data-price="11.1333" role="row">
+                                                         <td class=" text-left">0.03218117 BNB</td>
+                                                         <td class=" text-left">11.1333 USD</td>
+                                                         <td class=" text-right text-success">0.3583 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485155" data-amount="0.26516585" data-price="36.1544" role="row">
+                                                         <td class=" text-left">0.26516585 LTC</td>
+                                                         <td class=" text-left">36.1544 USD</td>
+                                                         <td class=" text-right text-success">9.5869 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485154" data-amount="0.2540026" data-price="36.9472" role="row">
+                                                         <td class=" text-left">0.25400260 LTC</td>
+                                                         <td class=" text-left">36.9472 USD</td>
+                                                         <td class=" text-right text-success">9.3847 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485156" data-amount="0.07494437" data-price="36.7136" role="row">
+                                                         <td class=" text-left">0.07494437 LTC</td>
+                                                         <td class=" text-left">36.7136 USD</td>
+                                                         <td class=" text-right text-success">2.7515 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485149" data-amount="0.18622715" data-price="5580.8835" role="row">
+                                                         <td class=" text-left">0.18622715 BTC</td>
+                                                         <td class=" text-left">5,580.8835 USD</td>
+                                                         <td class=" text-right text-success">1,039.3120 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485148" data-amount="0.0094791" data-price="5423.7435" role="row">
+                                                         <td class=" text-left">0.00947910 BTC</td>
+                                                         <td class=" text-left">5,423.7435 USD</td>
+                                                         <td class=" text-right text-success">51.4122 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485150" data-amount="0.1672396" data-price="5616.2802" role="row">
+                                                         <td class=" text-left">0.16723960 BTC</td>
+                                                         <td class=" text-left">5,616.2802 USD</td>
+                                                         <td class=" text-right text-success">939.2645 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485143" data-amount="0.02990631" data-price="0.2212" role="row">
+                                                         <td class=" text-left">0.02990631 ZB</td>
+                                                         <td class=" text-left">0.2212 USD</td>
+                                                         <td class=" text-right text-success">0.0066 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485142" data-amount="0.21572408" data-price="0.2231" role="row">
+                                                         <td class=" text-left">0.21572408 ZB</td>
+                                                         <td class=" text-left">0.2231 USD</td>
+                                                         <td class=" text-right text-success">0.0481 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485144" data-amount="0.07884948" data-price="0.2204" role="row">
+                                                         <td class=" text-left">0.07884948 ZB</td>
+                                                         <td class=" text-left">0.2204 USD</td>
+                                                         <td class=" text-right text-success">0.0174 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485137" data-amount="0.21870592" data-price="0.8554" role="row">
+                                                         <td class=" text-left">0.21870592 LSK</td>
+                                                         <td class=" text-left">0.8554 USD</td>
+                                                         <td class=" text-right text-success">0.1871 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485136" data-amount="0.24721778" data-price="0.8687" role="row">
+                                                         <td class=" text-left">0.24721778 LSK</td>
+                                                         <td class=" text-left">0.8687 USD</td>
+                                                         <td class=" text-right text-success">0.2148 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485138" data-amount="0.12955456" data-price="0.8534" role="row">
+                                                         <td class=" text-left">0.12955456 LSK</td>
+                                                         <td class=" text-left">0.8534 USD</td>
+                                                         <td class=" text-right text-success">0.1106 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485130" data-amount="0.11531802" data-price="0.0037" role="row">
+                                                         <td class=" text-left">0.11531802 DGB</td>
+                                                         <td class=" text-left">0.0037 USD</td>
+                                                         <td class=" text-right text-success">0.0004 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485131" data-amount="0.31102076" data-price="0.0036" role="row">
+                                                         <td class=" text-left">0.31102076 DGB</td>
+                                                         <td class=" text-left">0.0036 USD</td>
+                                                         <td class=" text-right text-success">0.0011 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485132" data-amount="0.15709615" data-price="0.0037" role="row">
+                                                         <td class=" text-left">0.15709615 DGB</td>
+                                                         <td class=" text-left">0.0037 USD</td>
+                                                         <td class=" text-right text-success">0.0006 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485124" data-amount="0.1444886" data-price="6.2022" role="row">
+                                                         <td class=" text-left">0.14448860 NEO</td>
+                                                         <td class=" text-left">6.2022 USD</td>
+                                                         <td class=" text-right text-success">0.8961 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485126" data-amount="0.17479803" data-price="6.2558" role="row">
+                                                         <td class=" text-left">0.17479803 NEO</td>
+                                                         <td class=" text-left">6.2558 USD</td>
+                                                         <td class=" text-right text-success">1.0935 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485125" data-amount="0.20814083" data-price="6.083" role="row">
+                                                         <td class=" text-left">0.20814083 NEO</td>
+                                                         <td class=" text-left">6.0830 USD</td>
+                                                         <td class=" text-right text-success">1.2661 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485123" data-amount="0.25430815" data-price="5.0924" role="row">
+                                                         <td class=" text-left">0.25430815 ETC</td>
+                                                         <td class=" text-left">5.0924 USD</td>
+                                                         <td class=" text-right text-success">1.2950 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485121" data-amount="0.08652537" data-price="4.9828" role="row">
+                                                         <td class=" text-left">0.08652537 ETC</td>
+                                                         <td class=" text-left">4.9828 USD</td>
+                                                         <td class=" text-right text-success">0.4311 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485122" data-amount="0.20782633" data-price="5.1017" role="row">
+                                                         <td class=" text-left">0.20782633 ETC</td>
+                                                         <td class=" text-left">5.1017 USD</td>
+                                                         <td class=" text-right text-success">1.0603 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485117" data-amount="0.20228106" data-price="1.0272" role="row">
+                                                         <td class=" text-left">0.20228106 USDT</td>
+                                                         <td class=" text-left">1.0272 USD</td>
+                                                         <td class=" text-right text-success">0.2078 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485116" data-amount="0.22494959" data-price="1.0368" role="row">
+                                                         <td class=" text-left">0.22494959 USDT</td>
+                                                         <td class=" text-left">1.0368 USD</td>
+                                                         <td class=" text-right text-success">0.2332 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485115" data-amount="0.18042194" data-price="1.0368" role="row">
+                                                         <td class=" text-left">0.18042194 USDT</td>
+                                                         <td class=" text-left">1.0368 USD</td>
+                                                         <td class=" text-right text-success">0.1871 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485110" data-amount="0.04472735" data-price="2.3647" role="row">
+                                                         <td class=" text-left">0.04472735 LINK</td>
+                                                         <td class=" text-left">2.3647 USD</td>
+                                                         <td class=" text-right text-success">0.1058 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485111" data-amount="0.14824556" data-price="2.3549" role="row">
+                                                         <td class=" text-left">0.14824556 LINK</td>
+                                                         <td class=" text-left">2.3549 USD</td>
+                                                         <td class=" text-right text-success">0.3491 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485109" data-amount="0.04015583" data-price="2.3199" role="row">
+                                                         <td class=" text-left">0.04015583 LINK</td>
+                                                         <td class=" text-left">2.3199 USD</td>
+                                                         <td class=" text-right text-success">0.0932 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485108" data-amount="0.19554028" data-price="0.1631" role="row">
+                                                         <td class=" text-left">0.19554028 ZRX</td>
+                                                         <td class=" text-left">0.1631 USD</td>
+                                                         <td class=" text-right text-success">0.0319 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485107" data-amount="0.16614402" data-price="0.163" role="row">
+                                                         <td class=" text-left">0.16614402 ZRX</td>
+                                                         <td class=" text-left">0.1630 USD</td>
+                                                         <td class=" text-right text-success">0.0271 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485106" data-amount="0.05116248" data-price="0.1663" role="row">
+                                                         <td class=" text-left">0.05116248 ZRX</td>
+                                                         <td class=" text-left">0.1663 USD</td>
+                                                         <td class=" text-right text-success">0.0085 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485100" data-amount="0.21797421" data-price="124.3404" role="row">
+                                                         <td class=" text-left">0.21797421 BSV</td>
+                                                         <td class=" text-left">124.3404 USD</td>
+                                                         <td class=" text-right text-success">27.1030 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485102" data-amount="0.28035798" data-price="124.0903" role="row">
+                                                         <td class=" text-left">0.28035798 BSV</td>
+                                                         <td class=" text-left">124.0903 USD</td>
+                                                         <td class=" text-right text-success">34.7897 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485101" data-amount="0.24840423" data-price="123.1613" role="row">
+                                                         <td class=" text-left">0.24840423 BSV</td>
+                                                         <td class=" text-left">123.1613 USD</td>
+                                                         <td class=" text-right text-success">30.5938 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485091" data-amount="0.3029432" data-price="39.0655" role="row">
+                                                         <td class=" text-left">0.30294320 XMR</td>
+                                                         <td class=" text-left">39.0655 USD</td>
+                                                         <td class=" text-right text-success">11.8346 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485092" data-amount="0.0666781" data-price="39.8608" role="row">
+                                                         <td class=" text-left">0.06667810 XMR</td>
+                                                         <td class=" text-left">39.8608 USD</td>
+                                                         <td class=" text-right text-success">2.6578 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485093" data-amount="0.05473062" data-price="39.538" role="row">
+                                                         <td class=" text-left">0.05473062 XMR</td>
+                                                         <td class=" text-left">39.5380 USD</td>
+                                                         <td class=" text-right text-success">2.1639 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485085" data-amount="0.02748496" data-price="36.8785" role="row">
+                                                         <td class=" text-left">0.02748496 LTC</td>
+                                                         <td class=" text-left">36.8785 USD</td>
+                                                         <td class=" text-right text-success">1.0136 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485087" data-amount="0.25823325" data-price="36.5084" role="row">
+                                                         <td class=" text-left">0.25823325 LTC</td>
+                                                         <td class=" text-left">36.5084 USD</td>
+                                                         <td class=" text-right text-success">9.4277 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485086" data-amount="0.12983499" data-price="35.7823" role="row">
+                                                         <td class=" text-left">0.12983499 LTC</td>
+                                                         <td class=" text-left">35.7823 USD</td>
+                                                         <td class=" text-right text-success">4.6458 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485080" data-amount="0.03933113" data-price="5498.6235" role="row">
+                                                         <td class=" text-left">0.03933113 BTC</td>
+                                                         <td class=" text-left">5,498.6235 USD</td>
+                                                         <td class=" text-right text-success">216.2671 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485079" data-amount="0.25683629" data-price="5591.5761" role="row">
+                                                         <td class=" text-left">0.25683629 BTC</td>
+                                                         <td class=" text-left">5,591.5761 USD</td>
+                                                         <td class=" text-right text-success">1,436.1197 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485081" data-amount="0.25978857" data-price="5608.1366" role="row">
+                                                         <td class=" text-left">0.25978857 BTC</td>
+                                                         <td class=" text-left">5,608.1366 USD</td>
+                                                         <td class=" text-right text-success">1,456.9298 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485078" data-amount="0.00476111" data-price="26.8244" role="row">
+                                                         <td class=" text-left">0.00476111 ZEC</td>
+                                                         <td class=" text-left">26.8244 USD</td>
+                                                         <td class=" text-right text-success">0.1277 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485077" data-amount="0.17206287" data-price="26.3476" role="row">
+                                                         <td class=" text-left">0.17206287 ZEC</td>
+                                                         <td class=" text-left">26.3476 USD</td>
+                                                         <td class=" text-right text-success">4.5334 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485076" data-amount="0.17911256" data-price="26.5963" role="row">
+                                                         <td class=" text-left">0.17911256 ZEC</td>
+                                                         <td class=" text-left">26.5963 USD</td>
+                                                         <td class=" text-right text-success">4.7637 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485074" data-amount="0.14051761" data-price="0.2228" role="row">
+                                                         <td class=" text-left">0.14051761 ZB</td>
+                                                         <td class=" text-left">0.2228 USD</td>
+                                                         <td class=" text-right text-success">0.0313 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485075" data-amount="0.20969134" data-price="0.2258" role="row">
+                                                         <td class=" text-left">0.20969134 ZB</td>
+                                                         <td class=" text-left">0.2258 USD</td>
+                                                         <td class=" text-right text-success">0.0473 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485073" data-amount="0.28838666" data-price="0.2237" role="row">
+                                                         <td class=" text-left">0.28838666 ZB</td>
+                                                         <td class=" text-left">0.2237 USD</td>
+                                                         <td class=" text-right text-success">0.0645 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485069" data-amount="0.04974338" data-price="0.8763" role="row">
+                                                         <td class=" text-left">0.04974338 LSK</td>
+                                                         <td class=" text-left">0.8763 USD</td>
+                                                         <td class=" text-right text-success">0.0436 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485068" data-amount="0.08297404" data-price="0.8478" role="row">
+                                                         <td class=" text-left">0.08297404 LSK</td>
+                                                         <td class=" text-left">0.8478 USD</td>
+                                                         <td class=" text-right text-success">0.0703 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485067" data-amount="0.14085977" data-price="0.877" role="row">
+                                                         <td class=" text-left">0.14085977 LSK</td>
+                                                         <td class=" text-left">0.8770 USD</td>
+                                                         <td class=" text-right text-success">0.1235 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485055" data-amount="0.20200131" data-price="6.0769" role="row">
+                                                         <td class=" text-left">0.20200131 NEO</td>
+                                                         <td class=" text-left">6.0769 USD</td>
+                                                         <td class=" text-right text-success">1.2275 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485056" data-amount="0.19841652" data-price="6.2285" role="row">
+                                                         <td class=" text-left">0.19841652 NEO</td>
+                                                         <td class=" text-left">6.2285 USD</td>
+                                                         <td class=" text-right text-success">1.2358 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485057" data-amount="0.23238075" data-price="6.0901" role="row">
+                                                         <td class=" text-left">0.23238075 NEO</td>
+                                                         <td class=" text-left">6.0901 USD</td>
+                                                         <td class=" text-right text-success">1.4152 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485054" data-amount="0.27371936" data-price="4.8946" role="row">
+                                                         <td class=" text-left">0.27371936 ETC</td>
+                                                         <td class=" text-left">4.8946 USD</td>
+                                                         <td class=" text-right text-success">1.3397 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485052" data-amount="0.25984483" data-price="5.0479" role="row">
+                                                         <td class=" text-left">0.25984483 ETC</td>
+                                                         <td class=" text-left">5.0479 USD</td>
+                                                         <td class=" text-right text-success">1.3117 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485053" data-amount="0.20294791" data-price="5.0537" role="row">
+                                                         <td class=" text-left">0.20294791 ETC</td>
+                                                         <td class=" text-left">5.0537 USD</td>
+                                                         <td class=" text-right text-success">1.0256 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485029" data-amount="0.32841194" data-price="11.0155" role="row">
+                                                         <td class=" text-left">0.32841194 BNB</td>
+                                                         <td class=" text-left">11.0155 USD</td>
+                                                         <td class=" text-right text-success">3.6176 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485028" data-amount="0.23008433" data-price="10.9734" role="row">
+                                                         <td class=" text-left">0.23008433 BNB</td>
+                                                         <td class=" text-left">10.9734 USD</td>
+                                                         <td class=" text-right text-success">2.5248 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485030" data-amount="0.18818574" data-price="10.8493" role="row">
+                                                         <td class=" text-left">0.18818574 BNB</td>
+                                                         <td class=" text-left">10.8493 USD</td>
+                                                         <td class=" text-right text-success">2.0417 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485025" data-amount="0.28079702" data-price="173.76" role="row">
+                                                         <td class=" text-left">0.28079702 BCH</td>
+                                                         <td class=" text-left">173.7600 USD</td>
+                                                         <td class=" text-right text-success">48.7913 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485026" data-amount="0.08893639" data-price="174.0464" role="row">
+                                                         <td class=" text-left">0.08893639 BCH</td>
+                                                         <td class=" text-left">174.0464 USD</td>
+                                                         <td class=" text-right text-success">15.4791 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485027" data-amount="0.09266324" data-price="175.192" role="row">
+                                                         <td class=" text-left">0.09266324 BCH</td>
+                                                         <td class=" text-left">175.1920 USD</td>
+                                                         <td class=" text-right text-success">16.2339 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485024" data-amount="0.10351025" data-price="39.4472" role="row">
+                                                         <td class=" text-left">0.10351025 XMR</td>
+                                                         <td class=" text-left">39.4472 USD</td>
+                                                         <td class=" text-right text-success">4.0832 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485023" data-amount="0.1750966" data-price="38.9806" role="row">
+                                                         <td class=" text-left">0.17509660 XMR</td>
+                                                         <td class=" text-left">38.9806 USD</td>
+                                                         <td class=" text-right text-success">6.8254 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row odd" data-id="485022" data-amount="0.0597588" data-price="39.0838" role="row">
+                                                         <td class=" text-left">0.05975880 XMR</td>
+                                                         <td class=" text-left">39.0838 USD</td>
+                                                         <td class=" text-right text-success">2.3356 USD</td>
+                                                      </tr>
+                                                      <tr class="sell_row even" data-id="485021" data-amount="0.10301043" data-price="0.156" role="row">
+                                                         <td class=" text-left">0.10301043 XRP</td>
+                                                         <td class=" text-left">0.1560 USD</td>
+                                                         <td class=" text-right text-success">0.0161 USD</td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                                <div class="bottom"></div>
+                                                <div class="clear"></div>
+                                             </div>
+                                          </div>
+                                          <hr style="margin: 0 0 10px;">
+                                          <div class="buy_form_col">
+                                             <div class="form-group">
+                                                <p>Click on the order to sell your digital assets</p>
+                                             </div>
+                                             <div class="form-group">
+                                                <div class="input-group">
+                                                   <input type="text" class="form-control" name="sell_price" placeholder="Price" required="">
+                                                   <span class="input-group-addon selling_assets_label">Price Per ALL</span>
+                                                </div>
+                                             </div>
+                                             <div class="form-group">
+                                                <div class="input-group">
+                                                   <input type="text" class="form-control" name="sell_amount" placeholder="Amount (1.0)" required="">
+                                                   <span class="input-group-addon">No of assets</span>
+                                                </div>
+                                             </div>
+                                             <div class="form-group">
+                                                <p>
+                                                   Total: <span class="text-danger sell_total_amount">0.0000</span> USD<!-- <span class="token_name_span"></span> -->
+                                                </p>
+                                             </div>
+                                             <div class="form-group">
+                                                <button type="submit" class="btn btn-danger btn-block sell_market_btn" value="" name="sell_asset_btn">
+                                                   SELL<!--  <span class="token_name_span"></span> -->
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-xs-6 col_marketplace marketplace_sell_col">
+                                          <div class="table-responsive">
+                                             <div id="sell_table_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                                                <div class="top"></div>
+                                                <table id="sell_table" class="table text-uppercase text-center sort_table no-footer dataTable" style="white-space: nowrap; width: 510px;" role="grid">
+                                                   <thead class="text-info">
+                                                      <!-- <tr>
+                                                         <th colspan="2">SELL ORDERS (<span class="token_name_span"></span>)</th>
+                                                         </tr> -->
+                                                      <tr role="row">
+                                                         <th class="text-left sorting" tabindex="0" aria-controls="sell_table" rowspan="1" colspan="1" style="width: 154px;" aria-label="Total (USD) : activate to sort column ascending">Total <span class="mobile_hide">(USD)</span> <i class="fa fa-sort"></i></th>
+                                                         <th class="text-left sorting" tabindex="0" aria-controls="sell_table" rowspan="1" colspan="1" style="width: 154px;" aria-label="Price per Asset (USD)  --&gt;: activate to sort column ascending">
+                                                            Price per Asset <!-- <span class="mobile_hide">(USD)</span>  --><i class="fa fa-sort"></i>
+                                                         </th>
+                                                         <th class="text-right text-danger sorting" tabindex="0" aria-controls="sell_table" rowspan="1" colspan="1" style="width: 154px;" aria-label="Sell Order ALL : activate to sort column ascending">Sell Order <span class="token_name_span mobile_hide">ALL</span> <i class="fa fa-sort"></i></th>
+                                                      </tr>
+                                                   </thead>
+                                                   <tbody>
+                                                      <tr class="buy_row odd" data-id="485210" data-amount="0.18096381" data-price="0.0016" role="row">
+                                                         <td class=" text-left text-danger">0.0003 USD</td>
+                                                         <td class=" text-left">0.0016 USD</td>
+                                                         <td class=" text-right">0.18096381 DOGE</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485208" data-amount="0.14829532" data-price="0.0017" role="row">
+                                                         <td class=" text-left text-danger">0.0003 USD</td>
+                                                         <td class=" text-left">0.0017 USD</td>
+                                                         <td class=" text-right">0.14829532 DOGE</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485209" data-amount="0.26637241" data-price="0.0016" role="row">
+                                                         <td class=" text-left text-danger">0.0004 USD</td>
+                                                         <td class=" text-left">0.0016 USD</td>
+                                                         <td class=" text-right">0.26637241 DOGE</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485202" data-amount="0.16187149" data-price="0.0329" role="row">
+                                                         <td class=" text-left text-danger">0.0053 USD</td>
+                                                         <td class=" text-left">0.0329 USD</td>
+                                                         <td class=" text-right">0.16187149 XEM</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485203" data-amount="0.05291086" data-price="0.034" role="row">
+                                                         <td class=" text-left text-danger">0.0018 USD</td>
+                                                         <td class=" text-left">0.0340 USD</td>
+                                                         <td class=" text-right">0.05291086 XEM</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485204" data-amount="0.30007031" data-price="0.0341" role="row">
+                                                         <td class=" text-left text-danger">0.0102 USD</td>
+                                                         <td class=" text-left">0.0341 USD</td>
+                                                         <td class=" text-right">0.30007031 XEM</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485190" data-amount="0.32054081" data-price="4.7896" role="row">
+                                                         <td class=" text-left text-danger">1.5353 USD</td>
+                                                         <td class=" text-left">4.7896 USD</td>
+                                                         <td class=" text-right">0.32054081 ETC</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485192" data-amount="0.224623" data-price="4.6823" role="row">
+                                                         <td class=" text-left text-danger">1.0518 USD</td>
+                                                         <td class=" text-left">4.6823 USD</td>
+                                                         <td class=" text-right">0.22462300 ETC</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485191" data-amount="0.24458854" data-price="4.6902" role="row">
+                                                         <td class=" text-left text-danger">1.1472 USD</td>
+                                                         <td class=" text-left">4.6902 USD</td>
+                                                         <td class=" text-right">0.24458854 ETC</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485188" data-amount="0.06131959" data-price="1.1775" role="row">
+                                                         <td class=" text-left text-danger">0.0722 USD</td>
+                                                         <td class=" text-left">1.1775 USD</td>
+                                                         <td class=" text-right">0.06131959 QTUM</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485187" data-amount="0.10256188" data-price="1.1709" role="row">
+                                                         <td class=" text-left text-danger">0.1201 USD</td>
+                                                         <td class=" text-left">1.1709 USD</td>
+                                                         <td class=" text-right">0.10256188 QTUM</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485189" data-amount="0.15738101" data-price="1.1909" role="row">
+                                                         <td class=" text-left text-danger">0.1874 USD</td>
+                                                         <td class=" text-left">1.1909 USD</td>
+                                                         <td class=" text-right">0.15738101 QTUM</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485173" data-amount="0.17801342" data-price="0.01" role="row">
+                                                         <td class=" text-left text-danger">0.0018 USD</td>
+                                                         <td class=" text-left">0.0100 USD</td>
+                                                         <td class=" text-right">0.17801342 TRX</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485172" data-amount="0.10465638" data-price="0.01" role="row">
+                                                         <td class=" text-left text-danger">0.0010 USD</td>
+                                                         <td class=" text-left">0.0100 USD</td>
+                                                         <td class=" text-right">0.10465638 TRX</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485174" data-amount="0.28908435" data-price="0.0098" role="row">
+                                                         <td class=" text-left text-danger">0.0028 USD</td>
+                                                         <td class=" text-left">0.0098 USD</td>
+                                                         <td class=" text-right">0.28908435 TRX</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485171" data-amount="0.18111113" data-price="115.2783" role="row">
+                                                         <td class=" text-left text-danger">20.8782 USD</td>
+                                                         <td class=" text-left">115.2783 USD</td>
+                                                         <td class=" text-right">0.18111113 BSV</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485169" data-amount="0.33264342" data-price="116.2664" role="row">
+                                                         <td class=" text-left text-danger">38.6753 USD</td>
+                                                         <td class=" text-left">116.2664 USD</td>
+                                                         <td class=" text-right">0.33264342 BSV</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485170" data-amount="0.10737145" data-price="115.7069" role="row">
+                                                         <td class=" text-left text-danger">12.4236 USD</td>
+                                                         <td class=" text-left">115.7069 USD</td>
+                                                         <td class=" text-right">0.10737145 BSV</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485163" data-amount="0.06660482" data-price="166.1004" role="row">
+                                                         <td class=" text-left text-danger">11.0631 USD</td>
+                                                         <td class=" text-left">166.1004 USD</td>
+                                                         <td class=" text-right">0.06660482 BCH</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485165" data-amount="0.01446322" data-price="162.7054" role="row">
+                                                         <td class=" text-left text-danger">2.3532 USD</td>
+                                                         <td class=" text-left">162.7054 USD</td>
+                                                         <td class=" text-right">0.01446322 BCH</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485164" data-amount="0.17648632" data-price="161.7548" role="row">
+                                                         <td class=" text-left text-danger">28.5475 USD</td>
+                                                         <td class=" text-left">161.7548 USD</td>
+                                                         <td class=" text-right">0.17648632 BCH</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485161" data-amount="0.08139019" data-price="36.887" role="row">
+                                                         <td class=" text-left text-danger">3.0022 USD</td>
+                                                         <td class=" text-left">36.8870 USD</td>
+                                                         <td class=" text-right">0.08139019 XMR</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485162" data-amount="0.23513171" data-price="36.9677" role="row">
+                                                         <td class=" text-left text-danger">8.6923 USD</td>
+                                                         <td class=" text-left">36.9677 USD</td>
+                                                         <td class=" text-right">0.23513171 XMR</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485160" data-amount="0.08149834" data-price="36.8448" role="row">
+                                                         <td class=" text-left text-danger">3.0028 USD</td>
+                                                         <td class=" text-left">36.8448 USD</td>
+                                                         <td class=" text-right">0.08149834 XMR</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485157" data-amount="0.10517576" data-price="0.1441" role="row">
+                                                         <td class=" text-left text-danger">0.0152 USD</td>
+                                                         <td class=" text-left">0.1441 USD</td>
+                                                         <td class=" text-right">0.10517576 XRP</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485158" data-amount="0.18838978" data-price="0.147" role="row">
+                                                         <td class=" text-left text-danger">0.0277 USD</td>
+                                                         <td class=" text-left">0.1470 USD</td>
+                                                         <td class=" text-right">0.18838978 XRP</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485159" data-amount="0.1504119" data-price="0.1487" role="row">
+                                                         <td class=" text-left text-danger">0.0224 USD</td>
+                                                         <td class=" text-left">0.1487 USD</td>
+                                                         <td class=" text-right">0.15041190 XRP</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485153" data-amount="0.24245065" data-price="122.1602" role="row">
+                                                         <td class=" text-left text-danger">29.6178 USD</td>
+                                                         <td class=" text-left">122.1602 USD</td>
+                                                         <td class=" text-right">0.24245065 ETH</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485152" data-amount="0.03863494" data-price="121.5747" role="row">
+                                                         <td class=" text-left text-danger">4.6970 USD</td>
+                                                         <td class=" text-left">121.5747 USD</td>
+                                                         <td class=" text-right">0.03863494 ETH</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485151" data-amount="0.31772495" data-price="123.4458" role="row">
+                                                         <td class=" text-left text-danger">39.2218 USD</td>
+                                                         <td class=" text-left">123.4458 USD</td>
+                                                         <td class=" text-right">0.31772495 ETH</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485146" data-amount="0.00153709" data-price="24.8531" role="row">
+                                                         <td class=" text-left text-danger">0.0382 USD</td>
+                                                         <td class=" text-left">24.8531 USD</td>
+                                                         <td class=" text-right">0.00153709 ZEC</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485145" data-amount="0.19422804" data-price="25.3849" role="row">
+                                                         <td class=" text-left text-danger">4.9305 USD</td>
+                                                         <td class=" text-left">25.3849 USD</td>
+                                                         <td class=" text-right">0.19422804 ZEC</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485147" data-amount="0.17421435" data-price="25.6365" role="row">
+                                                         <td class=" text-left text-danger">4.4662 USD</td>
+                                                         <td class=" text-left">25.6365 USD</td>
+                                                         <td class=" text-right">0.17421435 ZEC</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485139" data-amount="0.14461719" data-price="0.0016" role="row">
+                                                         <td class=" text-left text-danger">0.0002 USD</td>
+                                                         <td class=" text-left">0.0016 USD</td>
+                                                         <td class=" text-right">0.14461719 DOGE</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485140" data-amount="0.1751012" data-price="0.0016" role="row">
+                                                         <td class=" text-left text-danger">0.0003 USD</td>
+                                                         <td class=" text-left">0.0016 USD</td>
+                                                         <td class=" text-right">0.17510120 DOGE</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485141" data-amount="0.2212166" data-price="0.0017" role="row">
+                                                         <td class=" text-left text-danger">0.0004 USD</td>
+                                                         <td class=" text-left">0.0017 USD</td>
+                                                         <td class=" text-right">0.22121660 DOGE</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485134" data-amount="0.14505845" data-price="0.033" role="row">
+                                                         <td class=" text-left text-danger">0.0048 USD</td>
+                                                         <td class=" text-left">0.0330 USD</td>
+                                                         <td class=" text-right">0.14505845 XEM</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485133" data-amount="0.00085672" data-price="0.0333" role="row">
+                                                         <td class=" text-left text-danger">0.0000 USD</td>
+                                                         <td class=" text-left">0.0333 USD</td>
+                                                         <td class=" text-right">0.00085672 XEM</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485135" data-amount="0.07136288" data-price="0.0338" role="row">
+                                                         <td class=" text-left text-danger">0.0024 USD</td>
+                                                         <td class=" text-left">0.0338 USD</td>
+                                                         <td class=" text-right">0.07136288 XEM</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485129" data-amount="0.17681982" data-price="0.9604" role="row">
+                                                         <td class=" text-left text-danger">0.1698 USD</td>
+                                                         <td class=" text-left">0.9604 USD</td>
+                                                         <td class=" text-right">0.17681982 TUSD</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485128" data-amount="0.20181855" data-price="0.9546" role="row">
+                                                         <td class=" text-left text-danger">0.1927 USD</td>
+                                                         <td class=" text-left">0.9546 USD</td>
+                                                         <td class=" text-right">0.20181855 TUSD</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485120" data-amount="0.24472068" data-price="1.1418" role="row">
+                                                         <td class=" text-left text-danger">0.2794 USD</td>
+                                                         <td class=" text-left">1.1418 USD</td>
+                                                         <td class=" text-right">0.24472068 QTUM</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485119" data-amount="0.28590909" data-price="1.1652" role="row">
+                                                         <td class=" text-left text-danger">0.3331 USD</td>
+                                                         <td class=" text-left">1.1652 USD</td>
+                                                         <td class=" text-right">0.28590909 QTUM</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485118" data-amount="0.30266383" data-price="1.1592" role="row">
+                                                         <td class=" text-left text-danger">0.3508 USD</td>
+                                                         <td class=" text-left">1.1592 USD</td>
+                                                         <td class=" text-right">0.30266383 QTUM</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485114" data-amount="0.19169984" data-price="47.076" role="row">
+                                                         <td class=" text-left text-danger">9.0245 USD</td>
+                                                         <td class=" text-left">47.0760 USD</td>
+                                                         <td class=" text-right">0.19169984 DASH</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485113" data-amount="0.23351294" data-price="46.4478" role="row">
+                                                         <td class=" text-left text-danger">10.8462 USD</td>
+                                                         <td class=" text-left">46.4478 USD</td>
+                                                         <td class=" text-right">0.23351294 DASH</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485112" data-amount="0.17007085" data-price="45.6341" role="row">
+                                                         <td class=" text-left text-danger">7.7610 USD</td>
+                                                         <td class=" text-left">45.6341 USD</td>
+                                                         <td class=" text-right">0.17007085 DASH</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485105" data-amount="0.33284365" data-price="0.01" role="row">
+                                                         <td class=" text-left text-danger">0.0033 USD</td>
+                                                         <td class=" text-left">0.0100 USD</td>
+                                                         <td class=" text-right">0.33284365 TRX</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485103" data-amount="0.32259307" data-price="0.0098" role="row">
+                                                         <td class=" text-left text-danger">0.0032 USD</td>
+                                                         <td class=" text-left">0.0098 USD</td>
+                                                         <td class=" text-right">0.32259307 TRX</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485104" data-amount="0.14603294" data-price="0.01" role="row">
+                                                         <td class=" text-left text-danger">0.0015 USD</td>
+                                                         <td class=" text-left">0.0100 USD</td>
+                                                         <td class=" text-right">0.14603294 TRX</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485098" data-amount="0.05144112" data-price="10.136" role="row">
+                                                         <td class=" text-left text-danger">0.5214 USD</td>
+                                                         <td class=" text-left">10.1360 USD</td>
+                                                         <td class=" text-right">0.05144112 BNB</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485099" data-amount="0.21612799" data-price="10.3454" role="row">
+                                                         <td class=" text-left text-danger">2.2359 USD</td>
+                                                         <td class=" text-left">10.3454 USD</td>
+                                                         <td class=" text-right">0.21612799 BNB</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485097" data-amount="0.29547691" data-price="10.4127" role="row">
+                                                         <td class=" text-left text-danger">3.0767 USD</td>
+                                                         <td class=" text-left">10.4127 USD</td>
+                                                         <td class=" text-right">0.29547691 BNB</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485095" data-amount="0.32483465" data-price="161.8227" role="row">
+                                                         <td class=" text-left text-danger">52.5656 USD</td>
+                                                         <td class=" text-left">161.8227 USD</td>
+                                                         <td class=" text-right">0.32483465 BCH</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485094" data-amount="0.19423549" data-price="167.4753" role="row">
+                                                         <td class=" text-left text-danger">32.5296 USD</td>
+                                                         <td class=" text-left">167.4753 USD</td>
+                                                         <td class=" text-right">0.19423549 BCH</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485096" data-amount="0.31463707" data-price="161.3644" role="row">
+                                                         <td class=" text-left text-danger">50.7712 USD</td>
+                                                         <td class=" text-left">161.3644 USD</td>
+                                                         <td class=" text-right">0.31463707 BCH</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485090" data-amount="0.31598598" data-price="0.1433" role="row">
+                                                         <td class=" text-left text-danger">0.0453 USD</td>
+                                                         <td class=" text-left">0.1433 USD</td>
+                                                         <td class=" text-right">0.31598598 XRP</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485089" data-amount="0.10741122" data-price="0.1464" role="row">
+                                                         <td class=" text-left text-danger">0.0157 USD</td>
+                                                         <td class=" text-left">0.1464 USD</td>
+                                                         <td class=" text-right">0.10741122 XRP</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485088" data-amount="0.20505122" data-price="0.1464" role="row">
+                                                         <td class=" text-left text-danger">0.0300 USD</td>
+                                                         <td class=" text-left">0.1464 USD</td>
+                                                         <td class=" text-right">0.20505122 XRP</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485084" data-amount="0.11149639" data-price="121.2656" role="row">
+                                                         <td class=" text-left text-danger">13.5207 USD</td>
+                                                         <td class=" text-left">121.2656 USD</td>
+                                                         <td class=" text-right">0.11149639 ETH</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485083" data-amount="0.1521582" data-price="123.2072" role="row">
+                                                         <td class=" text-left text-danger">18.7470 USD</td>
+                                                         <td class=" text-left">123.2072 USD</td>
+                                                         <td class=" text-right">0.15215820 ETH</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485082" data-amount="0.11105298" data-price="125.1107" role="row">
+                                                         <td class=" text-left text-danger">13.8939 USD</td>
+                                                         <td class=" text-left">125.1107 USD</td>
+                                                         <td class=" text-right">0.11105298 ETH</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485072" data-amount="0.01510298" data-price="0.0017" role="row">
+                                                         <td class=" text-left text-danger">0.0000 USD</td>
+                                                         <td class=" text-left">0.0017 USD</td>
+                                                         <td class=" text-right">0.01510298 DOGE</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485071" data-amount="0.00940023" data-price="0.0016" role="row">
+                                                         <td class=" text-left text-danger">0.0000 USD</td>
+                                                         <td class=" text-left">0.0016 USD</td>
+                                                         <td class=" text-right">0.00940023 DOGE</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485070" data-amount="0.28553125" data-price="0.0016" role="row">
+                                                         <td class=" text-left text-danger">0.0005 USD</td>
+                                                         <td class=" text-left">0.0016 USD</td>
+                                                         <td class=" text-right">0.28553125 DOGE</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485064" data-amount="0.01099308" data-price="0.0328" role="row">
+                                                         <td class=" text-left text-danger">0.0004 USD</td>
+                                                         <td class=" text-left">0.0328 USD</td>
+                                                         <td class=" text-right">0.01099308 XEM</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485065" data-amount="0.03840182" data-price="0.0328" role="row">
+                                                         <td class=" text-left text-danger">0.0013 USD</td>
+                                                         <td class=" text-left">0.0328 USD</td>
+                                                         <td class=" text-right">0.03840182 XEM</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485066" data-amount="0.30389444" data-price="0.0336" role="row">
+                                                         <td class=" text-left text-danger">0.0102 USD</td>
+                                                         <td class=" text-left">0.0336 USD</td>
+                                                         <td class=" text-right">0.30389444 XEM</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485063" data-amount="0.15539325" data-price="0.0035" role="row">
+                                                         <td class=" text-left text-danger">0.0005 USD</td>
+                                                         <td class=" text-left">0.0035 USD</td>
+                                                         <td class=" text-right">0.15539325 DGB</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485062" data-amount="0.26592793" data-price="0.0034" role="row">
+                                                         <td class=" text-left text-danger">0.0009 USD</td>
+                                                         <td class=" text-left">0.0034 USD</td>
+                                                         <td class=" text-right">0.26592793 DGB</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485061" data-amount="0.22217325" data-price="0.0035" role="row">
+                                                         <td class=" text-left text-danger">0.0008 USD</td>
+                                                         <td class=" text-left">0.0035 USD</td>
+                                                         <td class=" text-right">0.22217325 DGB</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485060" data-amount="0.2876366" data-price="0.9743" role="row">
+                                                         <td class=" text-left text-danger">0.2802 USD</td>
+                                                         <td class=" text-left">0.9743 USD</td>
+                                                         <td class=" text-right">0.28763660 TUSD</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485058" data-amount="0.15192202" data-price="0.9507" role="row">
+                                                         <td class=" text-left text-danger">0.1444 USD</td>
+                                                         <td class=" text-left">0.9507 USD</td>
+                                                         <td class=" text-right">0.15192202 TUSD</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485059" data-amount="0.03581738" data-price="0.9692" role="row">
+                                                         <td class=" text-left text-danger">0.0347 USD</td>
+                                                         <td class=" text-left">0.9692 USD</td>
+                                                         <td class=" text-right">0.03581738 TUSD</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485049" data-amount="0.01815147" data-price="1.1654" role="row">
+                                                         <td class=" text-left text-danger">0.0212 USD</td>
+                                                         <td class=" text-left">1.1654 USD</td>
+                                                         <td class=" text-right">0.01815147 QTUM</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485051" data-amount="0.01440212" data-price="1.1724" role="row">
+                                                         <td class=" text-left text-danger">0.0169 USD</td>
+                                                         <td class=" text-left">1.1724 USD</td>
+                                                         <td class=" text-right">0.01440212 QTUM</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485050" data-amount="0.2168501" data-price="1.1409" role="row">
+                                                         <td class=" text-left text-danger">0.2474 USD</td>
+                                                         <td class=" text-left">1.1409 USD</td>
+                                                         <td class=" text-right">0.21685010 QTUM</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485048" data-amount="0.32247981" data-price="0.9557" role="row">
+                                                         <td class=" text-left text-danger">0.3082 USD</td>
+                                                         <td class=" text-left">0.9557 USD</td>
+                                                         <td class=" text-right">0.32247981 USDT</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485047" data-amount="0.05508395" data-price="0.9714" role="row">
+                                                         <td class=" text-left text-danger">0.0535 USD</td>
+                                                         <td class=" text-left">0.9714 USD</td>
+                                                         <td class=" text-right">0.05508395 USDT</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485046" data-amount="0.27491116" data-price="0.983" role="row">
+                                                         <td class=" text-left text-danger">0.2702 USD</td>
+                                                         <td class=" text-left">0.9830 USD</td>
+                                                         <td class=" text-right">0.27491116 USDT</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485045" data-amount="0.04174397" data-price="45.6192" role="row">
+                                                         <td class=" text-left text-danger">1.9043 USD</td>
+                                                         <td class=" text-left">45.6192 USD</td>
+                                                         <td class=" text-right">0.04174397 DASH</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485044" data-amount="0.297911" data-price="46.6534" role="row">
+                                                         <td class=" text-left text-danger">13.8986 USD</td>
+                                                         <td class=" text-left">46.6534 USD</td>
+                                                         <td class=" text-right">0.29791100 DASH</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485043" data-amount="0.2406703" data-price="45.6948" role="row">
+                                                         <td class=" text-left text-danger">10.9974 USD</td>
+                                                         <td class=" text-left">45.6948 USD</td>
+                                                         <td class=" text-right">0.24067030 DASH</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485041" data-amount="0.14730502" data-price="2.2345" role="row">
+                                                         <td class=" text-left text-danger">0.3292 USD</td>
+                                                         <td class=" text-left">2.2345 USD</td>
+                                                         <td class=" text-right">0.14730502 LINK</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485042" data-amount="0.02998591" data-price="2.1512" role="row">
+                                                         <td class=" text-left text-danger">0.0645 USD</td>
+                                                         <td class=" text-left">2.1512 USD</td>
+                                                         <td class=" text-right">0.02998591 LINK</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485040" data-amount="0.16684703" data-price="2.1899" role="row">
+                                                         <td class=" text-left text-danger">0.3654 USD</td>
+                                                         <td class=" text-left">2.1899 USD</td>
+                                                         <td class=" text-right">0.16684703 LINK</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485037" data-amount="0.06752052" data-price="0.1579" role="row">
+                                                         <td class=" text-left text-danger">0.0107 USD</td>
+                                                         <td class=" text-left">0.1579 USD</td>
+                                                         <td class=" text-right">0.06752052 ZRX</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485038" data-amount="0.0604833" data-price="0.1553" role="row">
+                                                         <td class=" text-left text-danger">0.0094 USD</td>
+                                                         <td class=" text-left">0.1553 USD</td>
+                                                         <td class=" text-right">0.06048330 ZRX</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485039" data-amount="0.27532238" data-price="0.1541" role="row">
+                                                         <td class=" text-left text-danger">0.0424 USD</td>
+                                                         <td class=" text-left">0.1541 USD</td>
+                                                         <td class=" text-right">0.27532238 ZRX</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485034" data-amount="0.28824836" data-price="0.0099" role="row">
+                                                         <td class=" text-left text-danger">0.0029 USD</td>
+                                                         <td class=" text-left">0.0099 USD</td>
+                                                         <td class=" text-right">0.28824836 TRX</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485035" data-amount="0.24588804" data-price="0.01" role="row">
+                                                         <td class=" text-left text-danger">0.0025 USD</td>
+                                                         <td class=" text-left">0.0100 USD</td>
+                                                         <td class=" text-right">0.24588804 TRX</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485036" data-amount="0.25361431" data-price="0.0098" role="row">
+                                                         <td class=" text-left text-danger">0.0025 USD</td>
+                                                         <td class=" text-left">0.0098 USD</td>
+                                                         <td class=" text-right">0.25361431 TRX</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485031" data-amount="0.08245782" data-price="112.6357" role="row">
+                                                         <td class=" text-left text-danger">9.2877 USD</td>
+                                                         <td class=" text-left">112.6357 USD</td>
+                                                         <td class=" text-right">0.08245782 BSV</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485032" data-amount="0.03870319" data-price="113.4919" role="row">
+                                                         <td class=" text-left text-danger">4.3925 USD</td>
+                                                         <td class=" text-left">113.4919 USD</td>
+                                                         <td class=" text-right">0.03870319 BSV</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485033" data-amount="0.11002356" data-price="113.4332" role="row">
+                                                         <td class=" text-left text-danger">12.4803 USD</td>
+                                                         <td class=" text-left">113.4332 USD</td>
+                                                         <td class=" text-right">0.11002356 BSV</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485014" data-amount="0.20117546" data-price="122.3077" role="row">
+                                                         <td class=" text-left text-danger">24.6053 USD</td>
+                                                         <td class=" text-left">122.3077 USD</td>
+                                                         <td class=" text-right">0.20117546 ETH</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485015" data-amount="0.24527496" data-price="121.7246" role="row">
+                                                         <td class=" text-left text-danger">29.8560 USD</td>
+                                                         <td class=" text-left">121.7246 USD</td>
+                                                         <td class=" text-right">0.24527496 ETH</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485013" data-amount="0.10846419" data-price="123.9304" role="row">
+                                                         <td class=" text-left text-danger">13.4420 USD</td>
+                                                         <td class=" text-left">123.9304 USD</td>
+                                                         <td class=" text-right">0.10846419 ETH</td>
+                                                      </tr>
+                                                      <tr class="buy_row odd" data-id="485010" data-amount="0.2791406" data-price="5155.9276" role="row">
+                                                         <td class=" text-left text-danger">1,439.2287 USD</td>
+                                                         <td class=" text-left">5,155.9276 USD</td>
+                                                         <td class=" text-right">0.27914060 BTC</td>
+                                                      </tr>
+                                                      <tr class="buy_row even" data-id="485011" data-amount="0.2812202" data-price="5201.2767" role="row">
+                                                         <td class=" text-left text-danger">1,462.7041 USD</td>
+                                                         <td class=" text-left">5,201.2767 USD</td>
+                                                         <td class=" text-right">0.28122020 BTC</td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                                <div class="bottom"></div>
+                                                <div class="clear"></div>
+                                             </div>
+                                          </div>
+                                          <hr style="margin: 0 0 10px;">
+                                          <div class="sell_form_col">
+                                             <div class="form-group">
+                                                <p>Click on the order to buy the digital assets</p>
+                                             </div>
+                                             <div class="form-group">
+                                                <div class="input-group">
+                                                   <input type="text" class="form-control" name="buy_price" placeholder="Price" required="">
+                                                   <span class="input-group-addon selling_assets_label">Price Per ALL</span>
+                                                </div>
+                                             </div>
+                                             <div class="form-group">
+                                                <div class="input-group">
+                                                   <input type="text" class="form-control" name="buy_amount" placeholder="Amount (1.0)" required="">
+                                                   <span class="input-group-addon">No. of assets</span>
+                                                </div>
+                                             </div>
+                                             <div class="form-group">
+                                                <p>
+                                                   Total: <span class="text-success buy_total_amount">0.0000</span> USD<!-- <span class="token_name_span"></span> -->
+                                                </p>
+                                             </div>
+                                             <div class="form-group">
+                                                <button type="submit" class="btn btn-success btn-block buy_market_btn" value="" name="buy_asset_btn">
+                                                   BUY<!--  <span class="token_name_span"></span> -->
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <hr style="margin: 0;">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="close_post" class="tab-pane fade">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <div class="hpanel stats">
+                           <div class="panel-body h-200">
+                              <div class="row">
+                                 <div class="col-sm-12">
+                                    <h3 style="font-weight: bold;">CLOSED ORDERS</h3>
+                                    <h5>
+                                       Total 24H Volume: <span id="24h_closed_volume" class="text-info"></span> <span class="text-info">USD</span>
+                                       <br><br>
+                                       Commission Earned in 24 hours by Exchange: <span id="24h_commission_earned" class="text-success"></span> <span class="text-success">USD</span>
+                                    </h5>
+                                    <div class="table-responsive">
+                                       <table class="table sort_table text-uppercase text-center trading_table closed_order_table" style="white-space: nowrap;" id="closed_order_table" data-order="[[ 0, &quot;desc&quot; ]]">
+                                          <thead>
+                                             <tr class="text-info">
+                                                <th>Date <i class="fa fa-sort"></i></th>
+                                                <th>Type <i class="fa fa-sort"></i></th>
+                                                <th>ASSET <i class="fa fa-sort"></i></th>
+                                                <th>Price per asset <i class="fa fa-sort"></i></th>
+                                                <th>Total Price <i class="fa fa-sort"></i></th>
+                                                <th>Commission <i class="fa fa-sort"></i></th>
+                                             </tr>
+                                          </thead>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="mypost" class="tab-pane fade">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <div class="hpanel stats">
+                           <div class="panel-body h-200">
+                              <div class="row">
+                                 <div class="col-sm-12">
+                                    <h3 style="font-weight: bold;">MY ORDERS</h3>
+                                    <div class="table-responsive">
+                                       <table class="table text-uppercase text-center trading_table" style="white-space: nowrap;">
+                                          <tbody>
+                                             <tr class="text-info">
+                                                <th>Date</th>
+                                                <th>Type</th>
+                                                <th>ASSET</th>
+                                                <th>Price per token</th>
+                                                <th>Value</th>
+                                                <th>Commission</th>
+                                                <th>Status</th>
+                                                <!-- <th>Action</th> -->
+                                             </tr>
+                                             <tr>
+                                                <td colspan="8">
+                                                   <h4 class="no_record_heading text-center">No Record Found</h4>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+
+
+         
+        <script src="index_files/bootstrap.js"></script>
+   </body>
+</html>
+
+
