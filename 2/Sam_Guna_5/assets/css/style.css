@@ -233,9 +233,33 @@ svg:not(:root) {
 .order-table{
 	padding-bottom: 80px;
 }
-
-
-
+ul.order-mnu {
+	width: 100%;
+	display: block;
+	clear: both;
+	height: 20px;
+	padding: 0;
+}
+ul.order-mnu li {
+	list-style: none;
+	float: left;
+	text-transform: uppercase;
+}
+ul.order-mnu li a {
+	color: #fff;
+	margin: 0 10px;
+	position: relative;
+}
+ul.order-mnu li a::before {
+	content: "|";
+	position: absolute;
+	left: -11px;
+}
+ul.order-mnu li a.b-none::before{
+	display: none;
+	position: absolute;
+	content: "";
+}
 
 
 
