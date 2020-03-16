@@ -5,9 +5,9 @@
 </head>
 <body>
 <div class="anim animation-start" id="anima">
-	<img src="img/logo34.png" class="dft0 base-img">
+	<img src="img/anilogo.png" class="dft0 base-img">
 	<img src="img/man.png" class="dft0 man-img">
-	<img src="img/strip-text2.png" class="dft0 strip-img">
+	<img src="img/strip-text.png" class="dft0 strip-img">
 	<img src="img/strip-cover.png" class="dft0 strip-cover">
 </div>
 <style type="text/css">
@@ -25,6 +25,7 @@ img{
 	margin: 0 auto;
 	position: relative;
 	max-height: 146px;
+	overflow: hidden;
 }
 .animation-start .man-img{
 	animation-delay: 0s;
@@ -35,52 +36,69 @@ img{
 	position: relative;
 	z-index: 9;
 	transition: transform 2s ease-in-out;
+	transform-origin: top center;
 }
 @keyframes man-ani{
 	0%{
-		transform: translate3d(16%,-75%,0) scale(0.5);
+		transform: translate3d(75%,3.5%,0) scale(0.47);
 	}
-	8%{
-		transform: translate3d(16%,-22%,0) scale(0.5);
+	10%{
+		transform: translate3d(-13%,3.5%,0) scale(0.47);
 		opacity: 1;
 	}
 	15%{
-		transform: translate3d(-20.7%,-22%,0) scale(0.5);
+		transform: translate3d(-13%,3.5%,0) rotate(-10deg) scale(0.47);
+		opacity: 1;
+	}
+	30%{
+		transform: translate3d(-13%,3.5%,0) rotate(20deg) scale(0.47);
 		opacity: 1;
 	}
 	40%{
-		transform: translate3d(-20.7%,-25%,0) scale(0.5);
+		transform: translate3d(-13%,3.5%,0) rotate(-10deg) scale(0.47);
+		opacity: 1;
+	}
+	50%{
+		transform: translate3d(-13%,3.5%,0) rotate(20deg) scale(0.47);
 		opacity: 1;
 	}
 	60%{
-		transform: translate3d(-20.7%,-20%,0) scale(0.5);
+		transform: translate3d(-13%,3.5%,0) rotate(-10deg) scale(0.47);
 		opacity: 1;
 	}
-	85%{
-		transform: translate3d(-20.7%,-25%,0) scale(0.5);
+	70%{
+		transform: translate3d(-13%,3.5%,0) rotate(20deg) scale(0.47);
 		opacity: 1;
 	}
-	95%{
-		transform: translate3d(-20.7%,-20%,0) scale(0.5);
+	80%{
+		transform: translate3d(-13%,3.5%,0) rotate(-10deg) scale(0.47);
 		opacity: 1;
+	}
+	90%{
+		transform: translate3d(-13%,3.5%,0) rotate(20deg) scale(0.47);
+		opacity: 1;
+	}
+	98%{
+		transform: translate3d(-13%,3.5%,0) rotate(-10deg) scale(0.47);
+		opacity: 0;
 	}
 	100%{
-		transform: translate3d(-20.7%,-75%,0) scale(0.5);
-		opacity: 1;
+		transform: translate3d(-13%,3.5%,0) rotate(2deg) scale(0.47);
+		opacity: 0;
 	}
 }
 .animation-start .strip-cover {
 	animation: strip_cover 12s ease-in-out infinite;
-	transform:  translate3d(21.4%,79%,0) scale(0.38);
+	transform:  translate3d(29.4%,75%,0) scale(0.38);
 }
 @keyframes strip_cover{
 	0%{
 		left: 0%;
 	}
-	7%{
+	4%{
 		left: 0%;
 	}
-	15.5%{
+	9%{
 		left: -38%;
 	}
 	95%{
@@ -110,14 +128,14 @@ img{
 }
 @keyframes open-man{
 	0%{
-		transform: translate3d(-23%,3%,0) rotate(-5deg) scale(0.5);
+		transform: translate3d(-15%,3.5%,0) rotate(-5deg) scale(0.5);
 	}
 	100%{
-		transform: translate3d(-23%,3%,0) rotate(10deg) scale(0.5);
+		transform: translate3d(-15%,3.5%,0) rotate(10deg) scale(0.5);
 	}
 }
 .anim:hover .man-img{
-	animation: open-man 2s ease-in-out infinite;
+	animation: open-man 1s ease-in-out infinite;
 	animation-direction: alternate;
 	transform-origin: top center;
 }
