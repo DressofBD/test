@@ -164,33 +164,12 @@
                                  <div class="panel-body h-200" data-select2-id="6">
                                     <div class="row" data-select2-id="5">
                                        <div class="col-sm-12 trading_col" style="position: relative;" data-select2-id="4">
-                                          <select class="form-control select2-hidden-accessible" id="token_select" style="width: 100px;" data-select2-id="token_select" tabindex="-1" aria-hidden="true">
-                                             <option value="0" data-select2-id="13" selected="selected">ALL</option>
-                                             <option value="6" data-select2-id="14">BCH</option>
-                                             <option value="8" data-select2-id="15">BNB</option>
-                                             <option value="10" data-select2-id="16">BSV</option>
-                                             <option value="1" data-select2-id="2">BTC</option>
-                                             <option value="18" data-select2-id="17">DASH</option>
-                                             <option value="25" data-select2-id="18">DGB</option>
-                                             <option value="28" data-select2-id="19">DOGE</option>
-                                             <option value="22" data-select2-id="20">ETC</option>
-                                             <option value="2" data-select2-id="21">ETH</option>
-                                             <option value="15" data-select2-id="22">LINK</option>
-                                             <option value="27" data-select2-id="23">LSK</option>
-                                             <option value="3" data-select2-id="24">LTC</option>
-                                             <option value="23" data-select2-id="25">NEO</option>
-                                             <option value="21" data-select2-id="26">QTUM</option>
-                                             <option value="13" data-select2-id="27">TRX</option>
-                                             <option value="24" data-select2-id="28">TUSD</option>
-                                             <option value="20" data-select2-id="29">USDT</option>
-                                             <option value="26" data-select2-id="30">XEM</option>
-                                             <option value="5" data-select2-id="31">XMR</option>
-                                             <option value="4" data-select2-id="32">XRP</option>
-                                             <option value="30" data-select2-id="33">ZB</option>
-                                             <option value="31" data-select2-id="34">ZEC</option>
-                                             <option value="14" data-select2-id="35">ZRX</option>
-                                          </select>
-                                          <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" data-select2-id="1" style="width: 100px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-token_select-container"><span class="select2-selection__rendered" id="select2-token_select-container" role="textbox" aria-readonly="true" title="ALL">ALL</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                          <ul class="order-mnu">
+                                             <li>Markets:</li>
+                                             <li><a href="" class="b-none">SGDC</a></li>
+                                             <li><a href="">USDT</a></li>
+                                             <li><a href="">ETH</a></li>
+                                          </ul>
                                           <span class="balance_span" style="display: none;">
                                           BALANCE: <strong class="text-info token_balance_span">0.00000000</strong> <strong class="token_name_span text-info">ALL</strong>
                                           </span>
@@ -1345,12 +1324,14 @@
                                              <table class="table sort_table text-uppercase text-center trading_table closed_order_table" style="white-space: nowrap;" id="closed_order_table" data-order="[[ 0, &quot;desc&quot; ]]">
                                                 <thead>
                                                    <tr class="text-info">
-                                                      <th>Date <i class="fa fa-sort"></i></th>
-                                                      <th>Type <i class="fa fa-sort"></i></th>
-                                                      <th>ASSET <i class="fa fa-sort"></i></th>
-                                                      <th>Price per asset <i class="fa fa-sort"></i></th>
-                                                      <th>Total Price <i class="fa fa-sort"></i></th>
-                                                      <th>Commission <i class="fa fa-sort"></i></th>
+                                                      <th>Date/Time <i class="fa fa-sort"></i></th>
+                                                      <th>Buy/Sell <i class="fa fa-sort"></i></th>
+                                                      <th>Market <i class="fa fa-sort"></i></th>
+                                                      <th>Name of token <i class="fa fa-sort"></i></th>
+                                                      <th>No of tokens <i class="fa fa-sort"></i></th>
+                                                      <th>Price <i class="fa fa-sort"></i></th>
+                                                      <th>Exchange Commission <i class="fa fa-sort"></i></th>
+                                                      <th>Status <i class="fa fa-sort"></i></th>
                                                    </tr>
                                                 </thead>
                                              </table>
@@ -1374,18 +1355,18 @@
                                              <table class="table text-uppercase text-center trading_table" style="white-space: nowrap;">
                                                 <tbody>
                                                    <tr class="text-info">
-                                                      <th>Date</th>
-                                                      <th>Type</th>
-                                                      <th>ASSET</th>
-                                                      <th>Price per token</th>
-                                                      <th>Value</th>
-                                                      <th>Commission</th>
+                                                      <th>Date/Time</th>
+                                                      <th>Buy/Sell</th>
+                                                      <th>Market</th>
+                                                      <th>Name of token</th>
+                                                      <th>No of tokens</th>
+                                                      <th>Price</th>
+                                                      <th>Exchange Commission</th>
                                                       <th>Status</th>
-                                                      <!-- <th>Action</th> -->
                                                    </tr>
                                                    <tr>
                                                       <td colspan="8">
-                                                         <h4 class="no_record_heading text-center">No Record Found</h4>
+                                                         <h4 class="no_record_heading text-center">No Records Found!</h4>
                                                       </td>
                                                    </tr>
                                                 </tbody>
