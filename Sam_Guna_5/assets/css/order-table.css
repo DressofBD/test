@@ -162,6 +162,7 @@ padding-right: 5px;
 }
 .marketplace_sell_col{
 padding-left: 5px;
+max-width: 48%;
 }
 .col_marketplace tbody {
 height: 187px;
