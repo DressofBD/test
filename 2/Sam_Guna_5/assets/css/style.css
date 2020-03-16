@@ -303,7 +303,7 @@ h1#upper-title{
 .container__currency-cards {
 	display: flex;
 	justify-content: space-around;
-	flex-flow: wrap;
+	flex-wrap: wrap;
 }
 .card {
 	background: #fff;
