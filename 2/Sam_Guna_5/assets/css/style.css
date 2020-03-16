@@ -263,15 +263,6 @@ ul.order-mnu li a.b-none::before{
 
 
 
-
-
-
-
-
-
-
-
-
 .top-bg{
 	background-color: #000;
 	padding-bottom: 30px;
@@ -379,6 +370,10 @@ h1#upper-title{
 	color: red !important;
 	display: block;
 }
+.token span {
+	font-size: 17px;
+	color: gray;
+}
 .inner-card a {
 	font-size: 15px;
 }
@@ -428,21 +423,6 @@ h1#upper-title{
 	width: 40px;
 	margin-right: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
