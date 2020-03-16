@@ -1,0 +1,575 @@
+.navbar-nav.mr-auto {
+  position: absolute;
+  right: -20px;
+}
+
+.provider {
+  position: absolute; left: -80px;
+}
+
+.visible-xs {
+  display: none;
+}
+
+.remodal {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1024px){
+
+  *{
+      -webkit-overflow-scrolling: touch;
+  }
+
+  .logo-header {
+      width: 80px;
+      margin-left: 15px;
+  }
+
+  .coinz-vcw-container.coinz-vcw-container-style-default_style .vcw.vcw-table td:first-child, .coinz-vcw-container.coinz-vcw-container-style-default_style .vcw.vcw-table th:first-child {
+    padding-left: 20px!important;
+    width: 250px;
+    max-width: 320px!important;
+  }
+
+  .coinz-vcw-container.coinz-vcw-container-style-default_style .vcw.vcw-table td:last-child, .coinz-vcw-container.coinz-vcw-container-style-default_style .vcw.vcw-table th:last-child {
+    padding-right: 30px!important;
+    width: 200px!important;
+  }
+
+  .container__currency-cards .card{
+      padding: 0 !important;
+      justify-content: center;
+      align-items: center;
+      width: 22%;
+      flex: 0 0 22%
+  }
+  .inner-card {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+  }
+
+    .vcw-rate {
+      /*white-space: nowrap;
+      text-align: right !important;*/
+    }
+
+    .vcw-header  {
+      /*text-align: center !important;*/
+    }
+
+    .fv.gt{
+        max-width: 100%;
+        padding-left: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .drift{
+        margin-top: 0;
+    }
+    .container__currency-cards{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+    }
+
+
+}
+
+@media only screen
+and (orientation : portrait) {
+
+._2ECIU3fmdu8I0aeTXp8x1F {
+  margin-right: 2px !important;
+  }
+}
+
+
+
+
+
+.remodal.remodal-is-initialized.remodal-is-opened {
+  overflow-y: hidden;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+
+    .remodal.remodal-is-initialized.remodal-is-opened {
+      overflow-y: scroll;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+
+  .provider {
+    position: relative;
+    left: -10px;
+  }
+
+  .loading-ani {
+    margin-top:70px !important;
+  }
+  ._2NzhzNpNAzsKaioxKCehx-._2FnLbRRhJPM_Hsx4p0VktC {
+    padding: .5rem 1rem!important;
+    z-index: 1000!important;
+    position: relative!important;
+    height: 300px!important;
+    margin-bottom: -165px!important;
+    margin-top: -60px!important;
+  }
+
+  .subtitle,
+  .bold {
+    text-align: center;
+  }
+
+  .logo-header {
+      width: 80px;
+  }
+
+  .navbar-nav.mr-auto {
+    position: relative;
+    right: 0px;
+  }
+
+    .k .al {
+      font-size: 25px;
+    }
+    ._35AHGdq94fqX_aHSlyoYvb {
+      z-index: 10;
+    }
+    .hero-box {
+      padding: 25px 15px 0 15px;
+    }
+    .max600 {
+      max-width: 600px;
+      margin-top: 10px;
+      padding: 20px;
+      padding-bottom: 0px;
+      margin-bottom: -20px;
+    }
+    .navbar-dark{
+        background-color: rgba(25,25,25,.95);
+    }
+    .bg1.main{
+        padding: 60px 0 0;
+    }
+    .fv.gt{
+        max-width: 96%;
+        padding: 0 10px;
+        padding-left: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .fv.gt + div{
+        margin: auto;
+    }
+    .drift{
+        margin: 0 2px;
+        margin-bottom: 50px;
+    }
+    .switch{
+        max-width: 100%;
+        margin: 0 !important;
+    }
+    .container__currency-cards .card{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .container.lower{
+        max-width: 96%;
+    }
+    #trades > .container{
+        max-width: 98%;
+    }
+    .coinz-clouds-bg-bottom .coinz-clouds-bg-content-bottom{
+        margin-bottom: -55px !important;
+    }
+    .coinz-clouds-bg-content-bottom img{
+        max-width: unset;
+        width: 115%;
+    }
+    .coinz-vcw-container{
+        padding: 0;
+    }
+    .coinz-vcw-container .vcw.vcw-table th.vcw-name.vcw-header{
+        padding-left: 10px !important;
+        text-align: center;
+        max-width: 150px !important;
+        width: 150px;
+    }
+    .coinz-vcw-container .vcw.vcw-table tr th.vcw-change.vcw-header:last-child {
+        padding-right: 10px !important;
+        width: unset !important;
+        max-width: unset !important;
+        text-align: center;
+    }
+    .coinz-vcw-container .vcw.vcw-table td.vcw-name.vcw-text{
+        padding-left: 10px !important;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        /*max-width: 120px !important;*/
+        width: unset;
+        text-align: center !important;
+        margin-top: 10px;
+    }
+    .coinz-vcw-container.coinz-vcw-container-style-default_style .vcw.vcw-table tr td {
+      padding-top: 0px !important;
+    }
+    .coinz-vcw-container .vcw.vcw-table td.vcw-text.fl{
+        width: unset !important;
+        padding-right: 0 !important;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .coinz-vcw-container .vcw.vcw-table td.vcw-text.fl .bb{
+        margin: 5px auto;
+        width: 90%;
+    }
+
+    /* MODAL */
+    .remodal-wrapper.remodal-is-opened{
+        left: -15px;
+    }
+
+    .hero-box .flex {
+      display: block;
+    }
+
+    .hero-box .currency-input {
+      height: 60px;
+    }
+
+    .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+      height: 60px;
+      padding-top: 0px;
+    }
+
+    .your-deposit {
+      padding-right: 0px !important;
+    }
+
+    ._3KTRYp3X1nQQ0-wYbh3UnA {
+      bottom: 0px !important;
+      width: 95%!important;
+      margin-left: 2px;
+    }
+
+    .special-group {
+        float: left;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .remodal.remodal-is-initialized.remodal-is-opened{
+        padding: 0px;
+        width: 96%;
+        height: 96%;
+        margin-left: 4%;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    .remodal-is-opened .flexer{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .remodal-is-opened .form-actions #confirm-button{
+        /* bottom: 32px !important; */
+        top: 90px;
+    }
+    .app-navbar {
+      padding: 0px;
+      width: 100%;
+      max-width: 100% !important;
+    }
+    .container__currency-cards .card{
+        padding: 0 !important;
+        justify-content: center;
+        align-items: center;
+        width: 23%;
+    }
+    .inner-card {
+      width: 100%;
+      height: auto;
+      padding-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 680px){
+
+    .remodal.remodal-is-initialized.remodal-is-opened {
+      overflow-y: scroll;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .provider {
+        display: none;
+    }
+
+    .cur-sel {
+      width: 200px !important;
+    }
+    .load-text {
+      height: 100px;
+    }
+    .coinz-clouds-bg-bottom .coinz-clouds-bg-content-bottom{
+        margin-bottom: -60px !important;
+    }
+    .coinz-clouds-bg-content-bottom img{
+        width: 125%;
+    }
+    .container__currency-cards .card{
+        padding: 0 !important;
+        justify-content: center;
+        align-items: center;
+        width: 47%;
+        flex: 0 0 47%
+    }
+    .inner-card {
+      width: 100%;
+      height: auto;
+      padding-top: 10px;
+    }
+    .app-navbar {
+      padding: 0px;
+    }
+}
+
+.lister.m {
+  position: relative;
+  z-index: 1000;
+}
+
+@media only screen and (max-width: 1025px){
+
+  #masker {
+    display: none;
+  }
+
+  .provider-image.opacity0 {
+    opacity: 1 !important;
+    margin-top: 20px;
+  }
+
+  .rangeButtons {
+    margin: 20px 20px 0;
+  }
+}
+
+@media only screen and (max-width: 580px){
+
+    .remodal.remodal-is-initialized.remodal-is-opened {
+      overflow-y: scroll;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+
+  .provider {
+    margin-top:10px;
+  }
+  .load-text {
+    height: 100px;
+  }
+    .remodal .buttons  {
+      flex-direction: column;
+    }
+    .remodal .buttons button  {
+      margin-bottom:10px;
+      width:200px;
+    }
+    .coinz-clouds-bg-bottom .coinz-clouds-bg-content-bottom{
+        margin-bottom: -72px !important;
+    }
+    .container__currency-cards .card{
+        padding: 0 !important;
+        justify-content: center;
+        align-items: center;
+        width: 47%;
+        flex: 0 0 47%
+    }
+    .inner-card {
+      width: 100%;
+      height: auto;
+      padding-top: 10px;
+    }
+    .app-navbar {
+      padding: 0px;
+    }
+    .loading-ani {
+      margin-top:70px !important;
+    }
+    td.vcw-change.vcw-text.fl {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px !important;
+      padding: 0px !important;
+      margin: 0px !important;
+      position: absolute;
+      max-width: 90px !important;
+      width: 100% !important;
+    }
+
+    .coinz-vcw-container.coinz-vcw-container-style-default_style .vcw.vcw-table tr td:last-child {
+      width: 100% !important;
+    }
+
+    td.vcw-name.vcw-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px !important;
+      margin: 0px !important;
+      padding: 0px !important;
+      padding-bottom: 0px !important
+    }
+
+    .coinz-vcw-container.coinz-vcw-container-style-default_style .vcw.vcw-table tr td {
+      padding-bottom: 0px !important
+    }
+
+
+    #masker {
+      display: none;
+    }
+
+    .provider-image.opacity0 {
+      opacity: 1 !important;
+    }
+
+    .hero-label {
+      font-size: 16px !important;
+      position: absolute;
+      top: 6px;
+    }
+
+    .hero-box .currency-input.special-box {
+      margin-top: 10px;
+    }
+
+    #amount {
+      font-size: 18px!important;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+  ._3KTRYp3X1nQQ0-wYbh3UnA {
+    width: 92% !important;
+  }
+  .load-text {
+    height: 100px;
+  }
+    .visible-xs {
+      display: initial
+    }
+    #trades > .container{
+        max-width: 100%;
+    }
+    .switch{
+        width: 92vw;
+    }
+    .switch-label{
+        width: 50%;
+    }
+    .switch-selection{
+        width: 50%;
+    }
+    .switch-input:checked+.switch-label-on~.switch-selection{
+        left: 50%;
+    }
+    .coinz-clouds-bg-bottom{
+        display: none;
+    }
+    .container.lower{
+        max-width: 100%;
+        margin: 0 0 30px;
+    }
+    .container__currency-cards .card{
+        padding: 0 !important;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        flex: 0 0 45%
+    }
+    .inner-card {
+      width: 100%;
+      height: auto;
+      padding-top: 10px;
+    }
+    .coinz-vcw-container .vcw.vcw-table th{
+        font-size: 15px !important;
+    }
+    .coinz-vcw-container .vcw.vcw-table th.vcw-name.vcw-header,
+    .coinz-vcw-container .vcw.vcw-table td.vcw-name.vcw-text{
+        padding-left: 0px !important;
+        margin-top: 10px;
+    }
+    .coinz-vcw-container .vcw.vcw-table tr th.vcw-change.vcw-header:last-child{
+        padding-right: 0 !important;
+        width: 25% !important;
+    }
+
+    .coinz-vcw-container > table thead > tr th:nth-child(2),
+    .coinz-vcw-container > table thead > tr th:nth-child(4),
+    #vcw-body tr td:nth-child(2),
+    #vcw-body tr td:nth-child(4){
+        display: none;
+    }
+    .loading-ani {
+      margin-top:70px !important;
+    }
+
+}
+
+#navMenu.collapse.show{
+    display: block !important;
+}
+ul.navbar-nav.mr-auto li {
+    text-align: center;
+}
+.logo-header{}

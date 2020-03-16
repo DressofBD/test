@@ -1,0 +1,197 @@
+.blinking{
+animation:blinkingText 1s 1;
+}
+@keyframes blinkingText{
+0%{      opacity: 1; }
+50%{ opacity: 0; }
+100%{    opacity: 1; }
+}
+#wrapper{
+background: #262626;
+}
+.content{
+color: white;
+/* padding: 0; */
+}
+.content .input-group .form-control{
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+.content::after{
+  border-left: 0;
+}
+.sell_market_btn:hover, .sell_market_btn:active, .sell_market_btn:focus {
+  color: inherit;
+}
+.token_tabs{
+background: #262626;
+border-bottom: 1px solid #eee;
+}
+.token_tabs a{
+color: #fff;
+}
+.token_tabs>li>a.active, .token_tabs>li.active>a:focus, .token_tabs>li.active>a:hover{
+border: none;
+color: #EBECED;
+background-color: #414F59;
+border-radius: 0;
+border-bottom: 3px solid #b920ad;
+}
+.hpanel .panel-body {
+background: #262626;
+padding: 10px 20px;
+}
+select.form-control{
+width: 100px; display: inline-block;
+}
+.buy_price_span, .sell_price_span{
+margin-left: 10px;
+}
+select.form-control, input[type="text"].form-control{
+background: #384047;
+color: #ffffff;
+}
+/* .row_marketplace{
+height: 350px;
+}
+.row_marketplace .col_marketplace{
+height: 100%; overflow-y: scroll;
+} */
+.col_marketplace thead, .col_marketplace tbody tr{
+display: table;
+table-layout: fixed;
+width: 100%;
+}
+.col_marketplace tbody{
+height: 177px;
+overflow: auto;
+display: block;
+}
+.marketplace_buy_col{
+border-right: 1px solid #eee;
+}
+.buy_form_col, .sell_form_col{
+/* margin-bottom: 30px; */
+}
+.buy_row, .sell_row{
+cursor: pointer;
+}
+tr.even {
+background: #424242;
+}
+.input-group{
+width: 100%;
+}
+.input-group-addon{
+width: 117px;
+font-size: small;
+font-weight: 600;
+}
+.sort_table thead th{
+cursor: pointer;
+}
+@media(max-width: 1024px){
+.col_marketplace table th:nth-child(2), .col_marketplace table td:nth-child(2){
+display: none;
+}
+}
+@media(max-width: 767px){
+select.form-control, .balance_span, .buy_price_span, .sell_price_span{
+display: block;
+}
+.balance_span, .buy_price_span, .sell_price_span{
+margin-left: 0;
+margin-top: 5px;
+}
+.marketplace_buy_col{
+/* border-right: none;
+padding-bottom: 10px;
+border-bottom: 1px solid #eee; */
+}
+.marketplace_sell_col{
+/* padding-top: 25px; */
+}
+.chart1_col{
+border-right: none;
+}
+.chart2_col{
+display: none;
+}
+.col_marketplace .table-responsive{
+border: none;
+}
+.table-responsive{
+overflow: auto;
+}
+.col_marketplace .table-responsive table, .col_marketplace .table-responsive{
+overflow: hidden;
+}
+/* .row_marketplace{
+height: 600px;
+}
+.row_marketplace .col_marketplace{
+height: 47%;
+margin-bottom: 25px;
+}
+.table-responsive{
+border: none;
+} */
+}
+@media(max-width: 700px){
+.mobile_hide{
+display: none;
+}
+}
+@media(max-width: 550px){
+.input-group-addon:last-child{
+display: none;
+}
+.input-group .form-control:first-child{
+border-radius: 4px;
+font-size: 12px;
+}
+}
+@media(max-width: 450px){
+.row_marketplace{
+font-size: 10px;
+}
+.marketplace_buy_col{
+padding-right: 5px;
+}
+.marketplace_sell_col{
+padding-left: 5px;
+max-width: 48%;
+}
+.col_marketplace tbody {
+height: 187px;
+padding: 0 3px 0 0;
+}
+.col_marketplace tbody, .col_marketplace .table-responsive{
+overflow: hidden auto;
+}
+.col_marketplace>tbody>tr>td, .col_marketplace>tbody>tr>th, .col_marketplace>tfoot>tr>td, .col_marketplace>tfoot>tr>th, .col_marketplace>thead>tr>td, .col_marketplace>thead>tr>th{
+padding: 5px 0;
+}
+.nav-tabs > li > a{
+font-size: 10px;
+}
+}
+@media(max-width: 375px){
+.trading_col{
+padding: 0 5px;
+}
+.text-left{
+padding-left: 0 !important;
+}
+.text-right{
+padding-right: 0 !important;
+}
+}
+@media (max-width: 480px) and (min-width: 320px){
+.text_note {
+font-size: 10px;
+right: 70px;
+}
+}
