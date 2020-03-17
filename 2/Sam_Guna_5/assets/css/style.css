@@ -437,7 +437,7 @@ h1#upper-title{
 .card {
 	margin-left: 5px;
 	margin-right: 5px;
-	padding: 10px 0;
+	/*padding: 10px 0;*/
 }
 .inner-card img {
 	width: 100px;
