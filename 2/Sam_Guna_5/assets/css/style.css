@@ -437,8 +437,8 @@ h1#upper-title{
 
 @media(max-width: 767px){
 .card {
-	max-width: 40%;
-	flex: 1 1 40%;
+	max-width: 120px;
+	flex: 1 1 120px;
 	margin-left: 5px;
 	margin-right: 5px;
 }
