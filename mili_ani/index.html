@@ -40,11 +40,12 @@ img{
 }
 @keyframes man-ani{
 	0%{
-		transform: translate3d(75%,3.5%,0) scale(0.47);
+		transform: translate3d(75%,3.5%,0) rotate(0deg) scale(0.47);
 	}
 	10%{
-		transform: translate3d(-10%,3.5%,0) scale(0.47);
+		transform: translate3d(-10%,3.5%,0) rotate(0deg) scale(0.47);
 		opacity: 1;
+		animation-timing-function: cubic-bezier(0,0,1,1);
 	}
 	20%{
 		transform: translate3d(-10%,3.5%,0) rotate(15deg) scale(0.47);
@@ -125,26 +126,6 @@ img{
 		transform:translate3d(0,20%,0) rotate(60deg);
 		opacity:0
 	}
-}
-@keyframes open-man{
-	0%{
-		transform: translate3d(-15%,3.5%,0) rotate(-5deg) scale(0.5);
-	}
-	100%{
-		transform: translate3d(-15%,3.5%,0) rotate(10deg) scale(0.5);
-	}
-}
-.anim:hover .man-img{
-	animation: open-man 1s ease-in-out infinite;
-	animation-direction: alternate;
-	transform-origin: top center;
-}
-.anim:hover .strip-cover{
-	animation: none;
-	display: none;
-}
-.anim:hover .strip-img{
-	animation: none;
 }
 </style>
 
