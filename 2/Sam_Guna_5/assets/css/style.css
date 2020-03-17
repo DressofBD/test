@@ -320,7 +320,7 @@ h1#upper-title{
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	max-width: 100%;
 }
 .card {
@@ -328,13 +328,11 @@ h1#upper-title{
 	border-style: solid;
 	border-color: #e7e7e7;
 	background: #fff;
-	padding-bottom: 10px;
 	border-radius: 10px;
 	color: #000;
-	margin-left: 10px;
-	margin-right: 10px;
 	margin-bottom: 20px;
 	float: left;
+	padding: 10px;
 }
 .full-width {
 	width: 100%;
