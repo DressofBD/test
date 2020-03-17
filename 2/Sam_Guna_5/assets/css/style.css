@@ -434,7 +434,7 @@ h1#upper-title{
 }
 
 @media(max-width: 767px){
-	.card {
+.card {
 	min-width: 120px;
 	margin-left: 5px;
 	margin-right: 5px;
@@ -471,7 +471,6 @@ h1#upper-title{
 	outline: 0 !important;
 }
 }
-
 
 
 
