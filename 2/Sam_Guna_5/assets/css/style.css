@@ -434,7 +434,7 @@ h1#upper-title{
 }
 
 @media(max-width: 767px){
-	.lower .card {
+	.card {
 	min-width: 130px;
 }
 .inner-card img {
