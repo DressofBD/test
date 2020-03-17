@@ -314,9 +314,6 @@ h1#upper-title{
 	padding-left: 20px;
 	margin-top: 50px;
 }
-.lower{
-	max-width: 100%;
-}
 .container__currency-cards {
 	display: flex;
 	justify-content: center;
@@ -336,7 +333,7 @@ h1#upper-title{
 .full-width {
 	width: 100%;
 }
-.lower .card {
+.card {
 	max-width: 20%;
 	min-width: 170px;
 	border-width: 3px;
@@ -438,7 +435,7 @@ h1#upper-title{
 }
 
 @media(max-width: 767px){
-	.lower .card {
+	.card {
 	min-width: 130px;
 }
 .inner-card img {
