@@ -324,7 +324,7 @@ h1#upper-title{
 	max-width: 100%;
 }
 .card {
-	max-width: 16%;
+	max-width: 14%;
 	min-width: 170px;
 	border-width: 3px;
 	border-style: solid;
@@ -337,7 +337,7 @@ h1#upper-title{
 	margin-right: 10px;
 	margin-bottom: 20px;
 	float: left;
-	flex: 1 1 16%;
+	flex: 1 1 14%;
 }
 .full-width {
 	width: 100%;
