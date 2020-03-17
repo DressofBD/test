@@ -329,6 +329,7 @@ h1#upper-title{
 	margin-right: 10px;
 	margin-bottom: 20px;
 	float: left;
+	flex: 1;
 }
 .full-width {
 	width: 100%;
