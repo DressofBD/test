@@ -314,10 +314,14 @@ h1#upper-title{
 	padding-left: 20px;
 	margin-top: 50px;
 }
+.lower{
+	max-width: 100%;
+}
 .container__currency-cards {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	max-width: 100%;
 }
 .card {
 	background: #fff;
