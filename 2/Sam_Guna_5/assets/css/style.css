@@ -431,9 +431,13 @@ h1#upper-title{
 }
 
 @media(max-width: 767px){
+.navbar-brand img {
+	width: 50px;
+}
 .card {
 	margin-left: 5px;
 	margin-right: 5px;
+	padding: 10px 0;
 }
 .inner-card img {
 	width: 100px;
@@ -448,9 +452,6 @@ h1#upper-title{
 	margin: 0 auto;
 	text-align: center;
 	width: 100px;
-	position: absolute;
-	left: 50%;
-	margin-left: -50px;
 }
 .navbar-nav {
 	float: none;
