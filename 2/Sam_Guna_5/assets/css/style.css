@@ -1,486 +1,483 @@
+.blinking{
+animation:blinkingText 1s 1;
+}
+@keyframes blinkingText{
+0%{      opacity: 1; }
+50%{ opacity: 0; }
+100%{    opacity: 1; }
+}
+#wrapper{
+background: #262626;
+}
+.content{
+color: white;
+/* padding: 0; */
+}
+.content .input-group .form-control{
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+.content::after{
+  border-left: 0;
+}
+.sell_market_btn:hover, .sell_market_btn:active, .sell_market_btn:focus {
+  color: inherit;
+}
+.token_tabs{
+background: #262626;
+border-bottom: 1px solid #eee;
+}
+.token_tabs a{
+color: #fff;
+}
+.token_tabs>li>a:hover, .token_tabs>li>a:focus, .token_tabs>li>a:active{
+	background-color: transparent !important;
+	color: inherit !important;
+	border:0 !important;
+}
+.token_tabs>li>a[aria-expanded="true"], .token_tabs>li.active a{
+border: none !important;
+color: #EBECED !important;
+background-color: #414F59 !important;
+border-radius: 0 !important;
+border-bottom: 3px solid #b920ad  !important;
+}
+.hpanel .panel-body {
+background: #262626;
+padding: 10px 20px 30px 20px;
+}
+select.form-control{
+width: 100px; display: inline-block;
+}
+.buy_price_span, .sell_price_span{
+margin-left: 10px;
+}
+select.form-control, input[type="text"].form-control{
+background: #384047;
+color: #ffffff;
+}
+/* .row_marketplace{
+height: 350px;
+}
+.row_marketplace .col_marketplace{
+height: 100%; overflow-y: scroll;
+} */
+.col_marketplace thead, .col_marketplace tbody tr{
+display: table;
+table-layout: fixed;
+width: 100%;
+}
+.col_marketplace tbody{
+height: auto;
+overflow: auto;
+display: block;
+}
+.marketplace_buy_col{
+border-right: 1px solid #eee;
+}
+.buy_form_col, .sell_form_col{
+/* margin-bottom: 30px; */
+}
+.buy_row, .sell_row{
+cursor: pointer;
+}
+tr.even {
+background: #424242;
+}
+.input-group{
+width: 100%;
+}
+.input-group-addon{
+width: 117px;
+font-size: small;
+font-weight: 600;
+}
+.sort_table thead th{
+cursor: pointer;
+}
+@media(max-width: 1024px){
+.col_marketplace table th:nth-child(2), .col_marketplace table td:nth-child(2){
+display: none;
+}
+}
+@media(max-width: 767px){
+select.form-control, .balance_span, .buy_price_span, .sell_price_span{
+display: block;
+}
+.balance_span, .buy_price_span, .sell_price_span{
+margin-left: 0;
+margin-top: 5px;
+}
+.marketplace_buy_col{
+/* border-right: none;
+padding-bottom: 10px;
+border-bottom: 1px solid #eee; */
+}
+.marketplace_sell_col{
+/* padding-top: 25px; */
+}
+.chart1_col{
+border-right: none;
+}
+.chart2_col{
+display: none;
+}
+.col_marketplace .table-responsive{
+border: none;
+}
+.table-responsive{
+overflow: auto;
+}
+.col_marketplace .table-responsive table, .col_marketplace .table-responsive{
+overflow: hidden;
+}
+/* .row_marketplace{
+height: 600px;
+}
+.row_marketplace .col_marketplace{
+height: 47%;
+margin-bottom: 25px;
+}
+.table-responsive{
+border: none;
+} */
+}
+@media(max-width: 700px){
+.mobile_hide{
+display: none;
+}
+}
+@media(max-width: 550px){
+.input-group-addon:last-child{
+display: none;
+}
+.input-group .form-control:first-child{
+border-radius: 4px;
+font-size: 12px;
+}
+}
+@media(max-width: 450px){
+.row_marketplace{
+font-size: 10px;
+}
+.marketplace_buy_col{
+padding-right: 5px;
+}
+.marketplace_sell_col{
+padding-left: 5px;
+max-width: 48%;
+}
+.col_marketplace tbody {
+height: auto;
+padding: 0 3px 0 0;
+}
+.col_marketplace tbody, .col_marketplace .table-responsive{
+overflow: hidden auto;
+}
+.col_marketplace>tbody>tr>td, .col_marketplace>tbody>tr>th, .col_marketplace>tfoot>tr>td, .col_marketplace>tfoot>tr>th, .col_marketplace>thead>tr>td, .col_marketplace>thead>tr>th{
+padding: 5px 0;
+}
+.nav-tabs > li > a{
+font-size: 10px;
+}
+}
+@media(max-width: 375px){
+.trading_col{
+padding: 0 5px;
+}
+.text-left{
+padding-left: 0 !important;
+}
+.text-right{
+padding-right: 0 !important;
+}
+}
+@media (max-width: 480px) and (min-width: 320px){
+.text_note {
+font-size: 10px;
+right: 70px;
+}
+}
+.provider img {
+	width: 48px;
+	margin-left: 20px;
+	cursor: pointer;
+	z-index: 100;
+	z-index: 100;
+	position: relative;
+}
+.grayedout {
+	-webkit-filter: grayscale(1);
+}
+.provider-image {
+	z-index: 100 !important;
+}
+#masker {
+	width: 50px;
+	height: 10px;
+	position: absolute;
+	top: -5px;
+	right: 250px;
+}
+#masker svg {
+	height: 60px !important;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+.provider img.opacity0 {
+	opacity: 0;
+}
+.order-table{
+	padding-bottom: 80px;
+}
+ul.order-mnu {
+	width: 100%;
+	display: block;
+	clear: both;
+	height: 20px;
+	padding: 0;
+}
+ul.order-mnu li {
+	list-style: none;
+	float: left;
+	text-transform: uppercase;
+}
+ul.order-mnu li a {
+	color: #fff;
+	margin: 0 10px;
+	position: relative;
+}
+ul.order-mnu li a::before {
+	content: "|";
+	position: absolute;
+	left: -11px;
+}
+ul.order-mnu li a.b-none::before{
+	display: none;
+	position: absolute;
+	content: "";
+}
 
 
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <title>Buy ERC20 Tokens</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo.png">
-      <!--Google Font Load-->
-      <link href="https://fonts.googleapis.com/css?family=Barlow:400" rel="stylesheet" type="text/css">
-      <!--Plugins Load-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="assets/css/font-awesome.css">
-      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-      <!--Main Style -->
-      <link href="assets/css/style.css" rel="stylesheet">
-   </head>
-   <body>
-      <div class="top-bg">
-         <div class="container">
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-               <i class="fa fa-bars"></i>
-               </button>
-               <a class="navbar-brand" href="#"><img src="assets/img/logo.png"></a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-               <ul class="nav navbar-nav">
-                  <li class="provider">
-                     <img src="assets/img/metamask.png" class="provider-image opacity0" id="provider-image" data-toggle="tooltip"
-                        title="" />
-                     <div id="masker"></div>
-                  </li>
-                  <li class="active"><a href="#">About Us</a></li>
-                  <li><a href="#about">Trade</a></li>
-                  <li><a href="#about">STO Launch Pad</a></li>
-                  <li><a href="#contact">CONTACT US</a></li>
-               </ul>
-            </div>
-            <!--/.nav-collapse -->
-         </div>
-         <div class="container titler sloger">
-            <div class="fv gt">
-               <!--Main Titte -->
-               <h1 id="upper-title">Recognized Market Operator</h1>
-               <p class="subtitle al an" id="upper-desc">A platform to bring together buyers and sellers of Securities Tokens!</p>
-            </div>
-            <br>
-               <div class="container__currency-cards">
-                  <div class="card item">
-                     <div class="inner-card">
-                        <img src="assets/img/token-name.png" alt="ALC">
-                        <h2 class="token">Token Name</h2>
-                        <div class="smoked"><a href="" class="why-buy">Why buy?</a></div>
-                        <h2 class="token"><span>1000 Token</span> <br> 14.11 SGDC</h2>
-                        <a href="">Buy Now</a>
-                        <h2 class="token"><span>1000 Token</span> <br> 10 USDT</h2>
-                        <a href="">Buy Now</a>
-                        <h2 class="token"><span>1000 Token</span> <br> 0.07550666 ETH</h2>
-                        <a href="">Buy Now</a>
-                     </div>
-                  </div>
-                  <div class="card item">
-                     <div class="inner-card">
-                        <img src="assets/img/token-name.png" alt="ALC">
-                        <h2 class="token">Token Name</h2>
-                        <div class="smoked"><a href="" class="why-buy">Why buy?</a></div>
-                        <h2 class="token"><span>1000 Token</span> <br> 14.11 SGDC</h2>
-                        <a href="">Buy Now</a>
-                        <h2 class="token"><span>1000 Token</span> <br> 10 USDT</h2>
-                        <a href="">Buy Now</a>
-                        <h2 class="token"><span>1000 Token</span> <br> 0.07550666 ETH</h2>
-                        <a href="">Buy Now</a>
-                     </div>
-                  </div>
-                  <div class="card item">
-                     <div class="inner-card">
-                        <img src="assets/img/token-name.png" alt="ALC">
-                        <h2 class="token">Token Name</h2>
-                        <div class="smoked"><a href="" class="why-buy">Why buy?</a></div>
-                        <h2 class="token"><span>1000 Token</span> <br> 14.11 SGDC</h2>
-                        <a href="">Buy Now</a>
-                        <h2 class="token"><span>1000 Token</span> <br> 10 USDT</h2>
-                        <a href="">Buy Now</a>
-                        <h2 class="token"><span>1000 Token</span> <br> 0.07550666 ETH</h2>
-                        <a href="">Buy Now</a>
-                     </div>
-                  </div>
-                  <div class="card item">
-                     <div class="inner-card">
-                        <img src="assets/img/token-name.png" alt="ALC">
-                        <h2 class="token">Token Name</h2>
-                        <div class="smoked"><a href="" class="why-buy">Why buy?</a></div>
-                        <h2 class="token"><span>1000 Token</span> <br> 14.11 SGDC</h2>
-                        <a href="">Buy Now</a>
-                        <h2 class="token"><span>1000 Token</span> <br> 10 USDT</h2>
-                        <a href="">Buy Now</a>
-                        <h2 class="token"><span>1000 Token</span> <br> 0.07550666 ETH</h2>
-                        <a href="">Buy Now</a>
-                     </div>
-                  </div>
-                  <div class="card item">
-                     <div class="inner-card">
-                        <img src="assets/img/token-name.png" alt="ALC">
-                        <h2 class="token">Token Name</h2>
-                        <div class="smoked"><a href="" class="why-buy">Why buy?</a></div>
-                        <h2 class="token"><span>1000 Token</span> <br> 14.11 SGDC</h2>
-                        <a href="">Buy Now</a>
-                        <h2 class="token"><span>1000 Token</span> <br> 10 USDT</h2>
-                        <a href="">Buy Now</a>
-                        <h2 class="token"><span>1000 Token</span> <br> 0.07550666 ETH</h2>
-                        <a href="">Buy Now</a>
-                     </div>
-                  </div>
-                  <div class="card item">
-                     <div class="inner-card">
-                        <img src="assets/img/token-name.png" alt="ALC">
-                        <h2 class="token">Token Name</h2>
-                        <div class="smoked"><a href="" class="why-buy">Why buy?</a></div>
-                        <h2 class="token"><span>1000 Token</span> <br> 14.11 SGDC</h2>
-                        <a href="">Buy Now</a>
-                        <h2 class="token"><span>1000 Token</span> <br> 10 USDT</h2>
-                        <a href="">Buy Now</a>
-                        <h2 class="token"><span>1000 Token</span> <br> 0.07550666 ETH</h2>
-                        <a href="">Buy Now</a>
-                     </div>
-                  </div>
-               </div>
-         </div>
-      </div>
-      <div class="clouds">
-         <div class="wpb_wrapper">
-            <div class="wave_style_5b3776785c38d coinz-clouds-bg-bottom devider-position-bottom">
-               <div class="coinz-clouds-bg-content-bottom">
-                  <img src="assets/img/clouds.svg" alt="clouds">
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="bg3" id="trades">
-         <div class="container trading-blockchain">
-            <h2 class="text-centner" id="main-title">Trading on the Blockchain</h2>
-            <p class="text-centner"><span class="desc-span" id="main-slogan">Only for Accredited Investors. You control your investments!</span></p>
-            <img src="assets/img/blocker.svg" alt="blocker">
-         </div>
-         <div class="container order-table">
-            <div id="wrapper" style="min-height: 592px;">
-               <div class="content" style="width: 100% !important; margin: 0; float: none;">
-                  <ul class="nav nav-tabs token_tabs">
-                     <li class="active"><a class="active" data-toggle="tab" href="#post">ORDERS</a></li>
-                     <li class="closed_orders_li"><a data-toggle="tab" href="#close_post">CLOSED ORDERS</a></li>
-                     <li style="float: right;margin-left: auto;"><a data-toggle="tab" href="#mypost" style="margin-right: 0;">MY ORDERS</a></li>
-                  </ul>
-                  <div class="tab-content" data-select2-id="10">
-                     <div id="post" class="tab-pane active" data-select2-id="post">
-                        <div class="row" data-select2-id="9">
-                           <div class="col-sm-12" data-select2-id="8">
-                              <div class="hpanel stats" data-select2-id="7">
-                                 <div class="panel-body h-200" data-select2-id="6">
-                                    <div class="row" data-select2-id="5">
-                                       <div class="col-sm-12 trading_col" style="position: relative;" data-select2-id="4">
-                                          <ul class="order-mnu">
-                                             <li>Markets:</li>
-                                             <li><a href="" class="b-none">SGDC</a></li>
-                                             <li><a href="">USDT</a></li>
-                                             <li><a href="">ETH</a></li>
-                                          </ul>
-                                          <hr style="margin: 0;">
-                                          <div class="row row_marketplace">
-                                             <div class="col-xs-6 col_marketplace marketplace_buy_col">
-                                                <div class="table-responsive">
-                                                   <div id="buy_table_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                                                      <div class="top"></div>
-                                                      <table id="buy_table" class="table text-uppercase text-center sort_table no-footer dataTable" style="white-space: nowrap; width: 510px;" role="grid">
-                                                         <thead class="text-info">
-                                                            <!-- <tr>
-                                                               <th colspan="2">BUY ORDERS (<span class="token_name_span"></span>)</th>
-                                                               </tr> -->
-                                                            <tr role="row">
-                                                               <th class="text-left text-success sorting" tabindex="0" aria-controls="buy_table" rowspan="1" colspan="1" style="width: 154px;" aria-label="Buy Orders ALL : activate to sort column ascending">Buy Orders <i class="fa fa-sort"></i></th>
-                                                               <th class="text-left sorting" tabindex="0" aria-controls="buy_table" rowspan="1" colspan="1" style="width: 154px;" aria-label="Price per Asset (USD)  --&gt;: activate to sort column ascending">
-                                                                  Price per Asset <!-- <span class="mobile_hide">(USD)</span>  --><i class="fa fa-sort"></i>
-                                                               </th>
-                                                               <th class="text-right sorting" tabindex="0" aria-controls="buy_table" rowspan="1" colspan="1" style="width: 154px;" aria-label="Total (USD) : activate to sort column ascending">Total <i class="fa fa-sort"></i></th>
-                                                            </tr>
-                                                         </thead>
-                                                         <tbody>
-                                                            <tr class="sell_row odd" role="row">
-                                                               <td class=" text-left">0.000 ZEC</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right text-success">0.000 USD</td>
-                                                            </tr>
-                                                            <tr class="sell_row even" role="row">
-                                                               <td class=" text-left">0.000 ZEC</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right text-success">0.000 USD</td>
-                                                            </tr>
-                                                            <tr class="sell_row odd" role="row">
-                                                               <td class=" text-left">0.000 ZEC</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right text-success">0.000 USD</td>
-                                                            </tr>
-                                                            <tr class="sell_row even" role="row">
-                                                               <td class=" text-left">0.000 ZEC</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right text-success">0.000 USD</td>
-                                                            </tr>
-                                                            <tr class="sell_row odd" role="row">
-                                                               <td class=" text-left">0.000 ZEC</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right text-success">0.000 USD</td>
-                                                            </tr>
-                                                            <tr class="sell_row even" role="row">
-                                                               <td class=" text-left">0.000 ZEC</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right text-success">0.000 USD</td>
-                                                            </tr>
-                                                            <tr class="sell_row odd" role="row">
-                                                               <td class=" text-left">0.000 ZEC</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right text-success">0.000 USD</td>
-                                                            </tr>
-                                                            <tr class="sell_row even" role="row">
-                                                               <td class=" text-left">0.000 ZEC</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right text-success">0.000 USD</td>
-                                                            </tr>
-                                                            <tr class="sell_row odd" role="row">
-                                                               <td class=" text-left">0.000 ZEC</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right text-success">0.000 USD</td>
-                                                            </tr>
-                                                            <tr class="sell_row even" role="row">
-                                                               <td class=" text-left">0.000 ZEC</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right text-success">0.000 USD</td>
-                                                            </tr>
-                                                         </tbody>
-                                                      </table>
-                                                      <div class="bottom"></div>
-                                                      <div class="clear"></div>
-                                                   </div>
-                                                </div>
-                                                <hr style="margin: 0 0 10px;">
-                                                <div class="buy_form_col">
-                                                   <div class="form-group">
-                                                      <p>Click on the order to sell your digital assets</p>
-                                                   </div>
-                                                   <div class="form-group">
-                                                      <div class="input-group">
-                                                         <input type="text" class="form-control" name="sell_price" placeholder="Price" required="">
-                                                         <span class="input-group-addon selling_assets_label">Price</span>
-                                                      </div>
-                                                   </div>
-                                                   <div class="form-group">
-                                                      <div class="input-group">
-                                                         <input type="text" class="form-control" name="sell_amount" placeholder="Amount (1.0)" required="">
-                                                         <span class="input-group-addon">No of assets</span>
-                                                      </div>
-                                                   </div>
-                                                   <div class="form-group">
-                                                      <p>
-                                                         Total: <span class="text-danger sell_total_amount">0.0000</span> USD<!-- <span class="token_name_span"></span> -->
-                                                      </p>
-                                                   </div>
-                                                   <div class="form-group">
-                                                      <button type="submit" class="btn btn-danger btn-block sell_market_btn" value="" name="sell_asset_btn">
-                                                         SELL<!--  <span class="token_name_span"></span> -->
-                                                      </button>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="col-xs-6 col_marketplace marketplace_sell_col">
-                                                <div class="table-responsive">
-                                                   <div id="sell_table_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                                                      <div class="top"></div>
-                                                      <table id="sell_table" class="table text-uppercase text-center sort_table no-footer dataTable" style="white-space: nowrap; width: 510px;" role="grid">
-                                                         <thead class="text-info">
-                                                            <!-- <tr>
-                                                               <th colspan="2">SELL ORDERS (<span class="token_name_span"></span>)</th>
-                                                               </tr> -->
-                                                            <tr role="row">
-                                                               <th class="text-left sorting" tabindex="0" aria-controls="sell_table" rowspan="1" colspan="1" style="width: 154px;" aria-label="Total (USD) : activate to sort column ascending">Sell Order <i class="fa fa-sort"></i></th>
-                                                               <th class="text-left sorting" tabindex="0" aria-controls="sell_table" rowspan="1" colspan="1" style="width: 154px;" aria-label="Price per Asset (USD)  --&gt;: activate to sort column ascending">
-                                                                  Price per Asset <!-- <span class="mobile_hide">(USD)</span>  --><i class="fa fa-sort"></i>
-                                                               </th>
-                                                               <th class="text-right text-danger sorting" tabindex="0" aria-controls="sell_table" rowspan="1" colspan="1" style="width: 154px;" aria-label="Sell Order ALL : activate to sort column ascending">Total <i class="fa fa-sort"></i></th>
-                                                            </tr>
-                                                         </thead>
-                                                         <tbody>
-                                                            <tr class="buy_row odd" role="row">
-                                                               <td class=" text-left text-danger">0.000 USD</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right">0.000 DOGE</td>
-                                                            </tr>
-                                                            <tr class="buy_row even" role="row">
-                                                               <td class=" text-left text-danger">0.000 USD</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right">0.000 DOGE</td>
-                                                            </tr>
-                                                            <tr class="buy_row odd" role="row">
-                                                               <td class=" text-left text-danger">0.000 USD</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right">0.000 DOGE</td>
-                                                            </tr>
-                                                            <tr class="buy_row even" role="row">
-                                                               <td class=" text-left text-danger">0.000 USD</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right">0.000 DOGE</td>
-                                                            </tr>
-                                                            <tr class="buy_row odd" role="row">
-                                                               <td class=" text-left text-danger">0.000 USD</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right">0.000 DOGE</td>
-                                                            </tr>
-                                                            <tr class="buy_row even" role="row">
-                                                               <td class=" text-left text-danger">0.000 USD</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right">0.000 DOGE</td>
-                                                            </tr>
-                                                            <tr class="buy_row odd" role="row">
-                                                               <td class=" text-left text-danger">0.000 USD</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right">0.000 DOGE</td>
-                                                            </tr>
-                                                            <tr class="buy_row even" role="row">
-                                                               <td class=" text-left text-danger">0.000 USD</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right">0.000 DOGE</td>
-                                                            </tr>
-                                                            <tr class="buy_row odd" role="row">
-                                                               <td class=" text-left text-danger">0.000 USD</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right">0.000 DOGE</td>
-                                                            </tr>
-                                                            <tr class="buy_row even" role="row">
-                                                               <td class=" text-left text-danger">0.000 USD</td>
-                                                               <td class=" text-left">0.000 USD</td>
-                                                               <td class=" text-right">0.000 DOGE</td>
-                                                            </tr>
-                                                         </tbody>
-                                                      </table>
-                                                      <div class="bottom"></div>
-                                                      <div class="clear"></div>
-                                                   </div>
-                                                </div>
-                                                <hr style="margin: 0 0 10px;">
-                                                <div class="sell_form_col">
-                                                   <div class="form-group">
-                                                      <p>Click on the order to buy the digital assets</p>
-                                                   </div>
-                                                   <div class="form-group">
-                                                      <div class="input-group">
-                                                         <input type="text" class="form-control" name="buy_price" placeholder="Price" required="">
-                                                         <span class="input-group-addon selling_assets_label">Price</span>
-                                                      </div>
-                                                   </div>
-                                                   <div class="form-group">
-                                                      <div class="input-group">
-                                                         <input type="text" class="form-control" name="buy_amount" placeholder="Amount (1.0)" required="">
-                                                         <span class="input-group-addon">No. of assets</span>
-                                                      </div>
-                                                   </div>
-                                                   <div class="form-group">
-                                                      <p>
-                                                         Total: <span class="text-success buy_total_amount">0.0000</span> USD<!-- <span class="token_name_span"></span> -->
-                                                      </p>
-                                                   </div>
-                                                   <div class="form-group">
-                                                      <button type="submit" class="btn btn-success btn-block buy_market_btn" value="" name="buy_asset_btn">
-                                                         BUY<!--  <span class="token_name_span"></span> -->
-                                                      </button>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <hr style="margin: 0;">
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div id="close_post" class="tab-pane fade">
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <div class="hpanel stats">
-                                 <div class="panel-body h-200">
-                                    <div class="row">
-                                       <div class="col-sm-12">
-                                          <h3 style="font-weight: bold;">CLOSED ORDERS</h3>
-                                          <h5>
-                                             Total 24H Volume: <span id="24h_closed_volume" class="text-info"></span> 
-                                             <br><br>
-                                             Commission Earned in 24 hours by RMO: <span id="24h_commission_earned" class="text-success"></span> 
-                                          </h5>
-                                          <div class="table-responsive">
-                                             <table class="table sort_table text-uppercase text-center trading_table closed_order_table" style="white-space: nowrap;" id="closed_order_table" data-order="[[ 0, &quot;desc&quot; ]]">
-                                                <thead>
-                                                   <tr class="text-info">
-                                                      <th>Date/Time <i class="fa fa-sort"></i></th>
-                                                      <th>Buy/Sell <i class="fa fa-sort"></i></th>
-                                                      <th>Market <i class="fa fa-sort"></i></th>
-                                                      <th>Name of token <i class="fa fa-sort"></i></th>
-                                                      <th>No of tokens <i class="fa fa-sort"></i></th>
-                                                      <th>Price <i class="fa fa-sort"></i></th>
-                                                      <th>Exchange Commission <i class="fa fa-sort"></i></th>
-                                                      <th>Status <i class="fa fa-sort"></i></th>
-                                                   </tr>
-                                                   <tr>
-                                                      <td colspan="8">
-                                                         <h4 class="no_record_heading text-center">No Records Found!</h4>
-                                                      </td>
-                                                   </tr>
-                                                </thead>
-                                             </table>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div id="mypost" class="tab-pane fade">
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <div class="hpanel stats">
-                                 <div class="panel-body h-200">
-                                    <div class="row">
-                                       <div class="col-sm-12">
-                                          <h3 style="font-weight: bold;">MY ORDERS</h3>
-                                          <div class="table-responsive">
-                                             <table class="table text-uppercase text-center trading_table" style="white-space: nowrap;">
-                                                <tbody>
-                                                   <tr class="text-info">
-                                                      <th>Date/Time</th>
-                                                      <th>Buy/Sell</th>
-                                                      <th>Market</th>
-                                                      <th>Name of token</th>
-                                                      <th>No of tokens</th>
-                                                      <th>Price</th>
-                                                      <th>Exchange Commission</th>
-                                                      <th>Status</th>
-                                                   </tr>
-                                                   <tr>
-                                                      <td colspan="8">
-                                                         <h4 class="no_record_heading text-center">No Records Found!</h4>
-                                                      </td>
-                                                   </tr>
-                                                </tbody>
-                                             </table>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      </div>
-      </div>
-      <!-- commented part -->
-      <div class="footer">
-         <div class="container">
-            <div class="site-socket">
-               <a href=""><img src="assets/img/logo.png" class="lower-ico" alt="icon"></a>Copyrights © 2020. All Rights Reserved
-            </div>
-         </div>
-      </div>
-      <script src="assets/js/jquery-3.js"></script>
-      <script src="assets/js/popper.min.js"></script>
-      <script src="assets/js/bootstrap.min.js"></script>
-      <script src="assets/js/bundle.js"></script>
-   </body>
-</html>
+
+.top-bg{
+	background-color: #000;
+	padding-bottom: 30px;
+}
+.navbar-nav{
+	float: right;
+	padding-top: 24px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, div, h1, h2, h3, h4, h5, h6, p, span {
+	font-family: Barlow;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, div, h1, h2, h3, h4, h5, h6, p, span {
+	font-family: Barlow;
+}
+.navbar-brand img{
+	width: 100px;
+}
+.navbar-nav > li > a{
+	text-transform: uppercase;
+	font-family: Barlow;
+	color: #fff;
+	font-size: 16px;
+font-weight: 700;
+padding-right: 1rem;
+padding-left: 1rem;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+	background-color: transparent;
+	color: #ccc;
+}
+
+h1#upper-title{
+	font-size: 3.5rem;
+	margin-bottom: .5rem;
+	color: #fff;
+}
+.provider {
+	margin-right: 30px;
+}
+.al {
+	color: rgba(255,255,255,.7) !important;
+	font-size: 22.5px;
+	font-weight: 300;
+	line-height: 1.6;
+	letter-spacing: -.02em;
+}
+.fv.gt {
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-top: 50px;
+}
+.lower{
+	max-width: 100%;
+}
+.container__currency-cards {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+.card {
+	background: #fff;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	color: #000;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	float: left;
+}
+.full-width {
+	width: 100%;
+}
+.lower .card {
+	max-width: 20%;
+	min-width: 170px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #e7e7e7;
+	flex: 1;
+}
+.inner-card {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.inner-card img {
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px auto;
+	border: 1px solid #000;
+	border-radius: 50%;
+	height: 160px;
+	padding: 12px;
+}
+.inner-card h2 {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.smoked {
+	font-size: 18px;
+}
+.why-buy {
+	color: red !important;
+	display: block;
+}
+.token span {
+	font-size: 17px;
+	color: gray;
+}
+.inner-card a {
+	font-size: 15px;
+}
+.inner-card h2 {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.trading-blockchain{
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	align-items: center;
+	padding-bottom: 60px;
+}
+.trading-blockchain img {
+	max-width: 100px;
+	margin: 0 auto;
+}
+.bg3{
+	background-color: #fff;
+	background-image: url(../img/main-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.clouds{
+	background-color: #000;
+}
+.clouds img{
+	margin-bottom: -1px;
+}
+.footer {
+	color: #fff;
+	text-align: center;
+	background-color: #141420;
+	display: block;
+	padding: 2rem;
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: .25em;
+	font-family: Ubuntu,sans-serif;
+}
+.footer img{
+	width: 40px;
+	margin-right: 10px;
+}
+
+
+
+
+@media(max-width: 991px){
+.provider {
+	margin-right: 0px;
+}
+}
+
+@media(max-width: 767px){
+	.lower .card {
+	min-width: 130px;
+}
+.inner-card img {
+	width: 100px;
+	height: 100px;
+}
+.fv.gt {
+	max-width: 100%;
+}
+.navbar-toggle {
+	color: rgba(255,255,255,.7) !important;
+	font-size: 25px;
+	margin: 0 auto;
+	text-align: center;
+	width: 100px;
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+}
+.navbar-nav {
+	float: none;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+.provider{
+	display: none !important;
+}
+.collapse.in{
+	border: 0 !important;
+	box-shadow: none !important;
+	outline: 0 !important;
+}
+.card {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+}
+
+
+
 
