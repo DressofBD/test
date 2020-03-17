@@ -70,7 +70,7 @@ table-layout: fixed;
 width: 100%;
 }
 .col_marketplace tbody{
-height: 177px;
+height: auto;
 overflow: auto;
 display: block;
 }
@@ -315,9 +315,9 @@ h1#upper-title{
 	margin-top: 50px;
 }
 .container__currency-cards {
-/*	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;*/
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 .card {
 	background: #fff;
