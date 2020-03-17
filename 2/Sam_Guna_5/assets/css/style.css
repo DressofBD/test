@@ -333,7 +333,7 @@ h1#upper-title{
 .full-width {
 	width: 100%;
 }
-.card {
+.lower .card {
 	max-width: 20%;
 	min-width: 170px;
 	border-width: 3px;
@@ -435,7 +435,7 @@ h1#upper-title{
 }
 
 @media(max-width: 767px){
-	.card {
+	.lower .card {
 	min-width: 130px;
 }
 .inner-card img {
