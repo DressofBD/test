@@ -333,13 +333,12 @@ h1#upper-title{
 .full-width {
 	width: 100%;
 }
-.lower .card {
+.card {
 	max-width: 20%;
 	min-width: 170px;
 	border-width: 3px;
 	border-style: solid;
 	border-color: #e7e7e7;
-	flex: 1;
 }
 .inner-card {
 	text-align: center;
