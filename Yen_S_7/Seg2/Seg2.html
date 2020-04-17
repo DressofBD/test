@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <title>Happy Borth Day! | PRUDENTIAL </title>
+    <link rel="shortcut icon" type="image/icon" href="img/Prudential.png">
+<style>
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #666;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.container {
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(to right, #2e384f , #272736);
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.pabsolute{
+  position: absolute;
+}
+.prudential-logo {
+  max-width:  30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+.hbd {
+  top: 7%;
+  width: 93%;
+  height: auto;
+  left: 3%;
+  z-index: 9;
+}
+.hbdm{
+  display: none;
+}
+p {
+  margin: 6px 0;
+  font-size: 18px;
+  color: red;
+  color: #66737b;
+}
+.bg {
+  height: auto;
+  margin-bottom: -20px;
+}
+h3{
+  margin: 0;
+  color: #57585c;
+}
+.text-box {
+  top: 38%;
+  right: 2%;
+  text-align: left;
+  z-index: 9;
+}
+@keyframes confetti {
+    0% { transform: translateY(0%); opacity: 0; }
+    10% { transform: translateY(20%); opacity: 1; }
+    90% { transform: translateY(180%); opacity: 1; }
+    100% { transform: translateY(200%); opacity: 0; }
+}
+.c{
+  width: 20%;
+  animation: confetti 4s linear infinite;
+  animation-direction: revert;
+  z-index: 1;
+  top: 34%;
+  left: 13%;
+}
+.c1 {
+  left: 13%;
+}
+.c2 {
+  left: 37%;
+  animation-delay: 0.5s;
+}
+.c3 {
+  top: 40%;
+  left: 7%;
+  animation-delay: 2s;
+}
+.c4 {
+  left: 27%;
+  animation-delay: 0.8s;
+}
+.bgm{
+  display: none;
+}
+.tbox {
+  bottom: 23%;
+  width: 50%;
+  left: 50%;
+  margin-left: -25%;
+}
+.light {
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+@keyframes man {
+    0% { transform: scale(1, 1) rotate(0deg); }
+    100% { transform: scale(0.9, 1.1) rotate(-10deg); }
+}
+.man{
+  animation: man 3s linear infinite alternate;
+  width: 24%;
+  z-index: 4;
+  transform-origin: bottom center;
+}
+.man1 {
+  top: 41%;
+  left: 14%;
+  animation-delay: 1s;
+}
+.man2 {
+  top: 48%;
+  left: 34%;
+  animation-delay: 2s;
+}
+.man3 {
+  top: 67%;
+  left: 62%;
+  animation-delay: 3s;
+}
+@media screen and (max-width:979px){
+.container {
+  width: 100%;
+  width: 400px;
+  height: 800px;
+}
+.hbd {
+  display: none;
+}
+.hbdm {
+  display: block;
+  top: 10%;
+  width: 80%;
+  left: 50%;
+  margin-left: -40%;
+}
+p {
+  line-height: 17px;
+  font-size: 11px;
+  color: #4d4d4d;
+}
+h3 {
+  font-size: 16px;
+}
+.text-box {
+  top: 41%;
+  right: 0%;
+}
+.bg{
+  display: none;
+}
+.bgm {
+  height: 800px;
+  display: block;
+}
+.man1 {
+  top: 51%;
+  left: 12%;
+}
+.man2 {
+  top: 56%;
+  left: 40%;
+}
+.man3 {
+  top: 72%;
+  left: 71%;
+}
+.c {
+  top: 47%;
+}
+}
+</style>
+</head>
+   <body>
+      <!-- Main Content -->
+      <section class="container">
+        <img src="img/bg.jpg" class=" bg">
+        <img src="img/bgm.jpg" class=" bgm">
+        <img src="img/Prudential.png" class="pabsolute prudential-logo">
+        <img src="img/hbd.png" class="pabsolute hbd">
+        <img src="img/hbdm.png" class="pabsolute hbd hbdm">
+        <img src="img/c1.png" class="pabsolute c c1">
+        <img src="img/c2.png" class="pabsolute c c2">
+        <img src="img/c3.png" class="pabsolute c c3">
+        <img src="img/c4.png" class="pabsolute c c4">
+        <img src="img/light.png" class="pabsolute light">
+        <img src="img/man1.png" class="pabsolute man man1">
+        <img src="img/man2.png" class="pabsolute man man2">
+        <img src="img/man3.png" class="pabsolute man man3">
+        <div class="pabsolute text-box">
+          <h3>Welcome to another <br>great year of your life!</h3>
+          <p>Time to blow your candles and make<br>a wish. It’s never too late to keep<br> dreaming and pursuing new dreams.</p>
+        </div>
+      </section>
+   </body>
+</html>
+

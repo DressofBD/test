@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <title>Happy Borth Day! | PRUDENTIAL </title>
+    <link rel="shortcut icon" type="image/icon" href="img/Prudential.png">
+<style>
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #666;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.container {
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(to right, #2e384f , #272736);
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.pabsolute{
+  position: absolute;
+}
+.prudential-logo {
+  max-width:  30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+p {
+  margin: 0;
+  font-size: 15px;
+  color: #1B365D;
+}
+.bg {
+  height: auto;
+  margin-bottom: -20px;
+}
+h3 {
+  margin: 0;
+  color: #1B365D;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.text-box {
+  bottom: 9%;
+  text-align: center;
+  z-index: 9;
+  width: 100%;
+}
+.b{
+  transform-origin: bottom center;
+  animation: ballon 3s ease-in-out alternate infinite;
+}
+.b1 {
+  width: 27%;
+  left: 1%;
+  top: 28%;
+}
+.b2 {
+  transform: rotate(5deg);
+  width: 23%;
+  right: 2%;
+  top: 28%;
+  animation-delay: 2s;
+}
+@keyframes ballon {
+    0% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
+@keyframes star {
+    0% { transform: scale(0); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+.star{
+  width: 6%;
+  animation: star 2s linear infinite;
+  animation-direction: reverse;
+  z-index: 11;
+}
+.star1 {
+  left: 31%;
+  top: 32%;
+}
+.star2 {
+  left: 59%;
+  top: 38%;
+  animation-delay: 0.5s;
+}
+.star3 {
+  top: 47%;
+  left: 60%;
+  animation-delay: 0.2s;
+}
+.star4 {
+  left: 46%;
+  top: 55%;
+  animation-delay: 0.8s;
+}
+.star5 {
+  left: 60%;
+  top: 60%;
+  animation-delay: 0.4s;
+}
+.star6 {
+  left: 21%;
+  top: 64%;
+  animation-delay: 0.5s;
+}
+.star7 {
+  left: 74%;
+  top: 65%;
+  animation-delay: 1s;
+}
+.star8 {
+  left: 18.6%;
+  top: 82%;
+  animation-delay: 1s;
+}
+.star9 {
+  left: 75%;
+  top: 90.5%;
+  animation-delay: 0s;
+}
+.bgm{
+  display: none;
+}
+.tbox {
+  bottom: 7%;
+  width: 56%;
+  left: 50%;
+  margin-left: -28%;
+  height: 9%;
+}
+@keyframes confetti {
+    0% { transform: scale(1, 1) rotate(0deg); }
+    100% { transform: scale(0.9, 1.1) rotate(-10deg); }
+}
+.g{
+  animation: confetti 3s linear infinite alternate;
+  width: 7%;
+  z-index: 4;
+  transform-origin: bottom center;
+}
+.g1 {
+  top: 4%;
+  left: 14%;
+  animation-delay: 1s;
+}
+.g2 {
+  top: -1%;
+  left: 57%;
+  animation-delay: 2s;
+}
+.g3 {
+  bottom: 1%;
+  left: -1%;
+  animation-delay: 3s;
+  width: 11%;
+}
+.g4 {
+  bottom: 12%;
+  right: -1%;
+  animation-delay: 3s;
+  width: 9%;
+}
+@media screen and (max-width:979px){
+.container {
+  width: 100%;
+  width: 400px;
+  height: 800px;
+}
+p {
+  line-height: 17px;
+  font-size: 12px;
+  color: #4d4d4d;
+}
+h3 {
+  font-size: 16px;
+}
+.text-box {
+  bottom: 10%;
+}
+.tbox {
+  bottom: 8%;
+  width: 76%;
+  margin-left: -38%;
+  height: 11%;
+}
+.star9 {
+  left: 85%;
+  top: 90%;
+}
+.star8 {
+  left: 8.6%;
+  top: 81.5%;
+}
+.b1 {
+  left: -5%;
+  top: 26%;
+}
+.b2 {
+  right: -2%;
+  top: 26%;
+}
+.bg{
+  display: none;
+}
+.bgm {
+  height: 800px;
+  display: block;
+}
+}
+</style>
+</head>
+   <body>
+      <!-- Main Content -->
+      <section class="container">
+        <img src="img/bg.jpg" class=" bg">
+        <img src="img/bgm.jpg" class=" bgm">
+        <img src="img/Prudential.png" class="pabsolute prudential-logo">
+        <img src="img/b1.png" class="pabsolute b b1">
+        <img src="img/b2.png" class="pabsolute b b2">
+        <img src="img/g1.png" class="pabsolute g g1">
+        <img src="img/g2.png" class="pabsolute g g2">
+        <img src="img/g3.png" class="pabsolute g g3">
+        <img src="img/g4.png" class="pabsolute g g4">
+        <img src="img/star.png" class="pabsolute star star1">
+        <img src="img/star.png" class="pabsolute star star2">
+        <img src="img/star.png" class="pabsolute star star3">
+        <img src="img/star.png" class="pabsolute star star4">
+        <img src="img/star.png" class="pabsolute star star5">
+        <img src="img/star.png" class="pabsolute star star6">
+        <img src="img/star.png" class="pabsolute star star7">
+        <img src="img/star.png" class="pabsolute star star8">
+        <img src="img/star.png" class="pabsolute star star9">
+        <img src="img/tbox.png" class="pabsolute tbox">
+        <div class="pabsolute text-box">
+          <h3>Life is about eXPERIENCES</h3>
+          <p>We hope you can treasure memories of the past, enjoy the<br> present and look forward to a brighter future.</p>
+        </div>
+      </section>
+   </body>
+</html>
+

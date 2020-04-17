@@ -60,10 +60,6 @@ p {
 
 @keyframes cakes {
     0% { transform: translateY(0%); }
-    100% { transform: translateY(15%); }
-}
-@keyframes confetti {
-    0% { transform: translateY(0%); }
     100% { transform: translateY(10%); }
 }
 .s{
@@ -100,9 +96,15 @@ p {
   right: 7%;
   animation-delay: 1.8s;
 }
+
+@keyframes confetti {
+    0% { transform: scale(1, 1) rotate(0deg); }
+    100% { transform: scale(0.98, 1.02) rotate(-3deg); }
+}
 .c{
   width: 25%;
   animation: confetti 2s ease-in-out infinite alternate;
+  transform-origin: bottom center;
   z-index: 9;
 }
 .c1 {
@@ -136,21 +138,19 @@ p {
 }
 p {
   margin: 6px 0;
-  font-size: 18px;
+  font-size: 20px;
   color: #69747a;
 }
 .text-box {
-  bottom: 26%;
-  left: 50%;
+  bottom: 23%;
   text-align: center;
-  width: 30%;
-  margin-left: -15%;
+  width: 100%;
 }
 .bgm{
   display: none;
 }
 .tbox {
-  bottom: 23%;
+  bottom: 20%;
   width: 50%;
   left: 50%;
   margin-left: -25%;
@@ -162,17 +162,17 @@ p {
   height: 800px;
 }
 .hbd {
-  margin-top: 0%;
+  top: 40%;
+  width: 74%;
+  margin-left: -37%;
 }
 p {
   line-height: 17px;
   font-size: 15px;
   color: #4d4d4d;
 }
-.text-box {
-  bottom: 24.5%;
-  width: 50%;
-  margin-left: -25%;
+.tbox {
+  bottom: 21.5%;
 }
 .bg{
   display: none;
@@ -185,31 +185,27 @@ p {
   max-width: inherit;
 }
 
-
-.hbd {
-  top: 40%;
-}
 .s1 {
-  top: 11%;
+  top: 7%;
 }
 .s2 {
   top: 26%;
 }
 .s3 {
-  top: 39%;
+  top: 32%;
+  left: 0;
 }
 .s4 {
-  top: 37%;
+  top: 32%;
 }
 .s5 {
   top: 55%;
+  left: -2%;
 }
 .s6 {
-  top: 52%;
+  top: 49%;
+  right: -5%;
 }
-}
-@media screen and (max-width:420px){
-
 }
 </style>
 </head>
