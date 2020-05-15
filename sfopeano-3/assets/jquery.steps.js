@@ -2006,7 +2006,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "Finish"
          * @for defaults
          **/
-        finish: "Finish",
+        finish: "Submit Application",
 
         /**
          * Label for the next button.
@@ -2040,3 +2040,4 @@ var defaults = $.fn.steps.defaults = {
     }
 };
 })(jQuery);
+
