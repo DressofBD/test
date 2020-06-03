@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IHaveADream : Transcript</title>
+</head>
+<body id="mcp">
+<p id="streamTextPlayer">
+</p>
+<script type="text/javascript" src="scripts/jquery-2.0.3.min.js"></script>
+
+<script language="javascript" type="text/javascript">
+window.setInterval(function(){
+    $.get('file.txt',
+        function(data){
+            $('#streamTextPlayer').html(data);
+        }
+    );
+},1000);
+</script>
+</body>
+</html>
