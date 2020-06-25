@@ -11,9 +11,6 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <meta name="theme-color" content="#fafafa">
   </head>
   <body>
     <!--[if IE]>
@@ -37,7 +34,7 @@
             </button>
           </div>
           <div class="col-6">
-            <button class="btn btn-no" type="button" data-toggle="modal" data-target="#yesModal">
+            <button class="btn btn-no" type="button" data-toggle="modal" data-target="#noModal">
               <span><i class="fa fa-check-square-o"></i> No</span>
               <p>No, I'm Not Interested In Discovering This Secret</p>
             </button>
@@ -69,8 +66,10 @@
           </div>
           <div class="modal-body">
             <h5 class="modal-title" >Enter Your Email To See The Results Of This Urgent Poll</h5>
-            <input type="email" name="email" placeholder="Please enter your email" required="">
-            <a href="#!" class="show-result">Show Me The Results</a>
+            <form>
+              <input type="email" name="email" placeholder="Please enter your email" required="">
+              <button type="submit" class="show-result">Show Me The Results</button>
+            </form>
             <span class="security"><i class="fa fa-unlock-alt"></i> Safe And Free</span>
             <p>You will receive an email with the current results in the means of 30 minutes. The results of this poll are quite shocking right now...</p>
             <ul class="footer-link">
