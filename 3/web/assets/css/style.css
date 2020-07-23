@@ -483,6 +483,9 @@ footer{
 footer {
   max-height: 460px;
 }
+.socal-links li:nth-child(4) img {
+  margin-left: 0px;
+}
 }
 @media(max-width: 767px){
   .navbar-toggler {
