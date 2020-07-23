@@ -184,6 +184,16 @@ body {
 header {
   background-color: #f7f7f7;
   padding: 20px 0;
+  position: fixed;
+  height: 105px;
+  width: 100%;
+  z-index: 999;
+  transition: 0.5s;
+}
+header.sticky{
+  padding: 3px 0;
+  background-color: #2b2b2b;
+  height: 75px;
 }
 .navbar-brand {
   max-width: 110px;
@@ -195,8 +205,11 @@ header {
   color: #504f4f;
   transition: 0.3s;
 }
+header.sticky .navbar-nav .nav-link{
+  color: #fff;
+}
 .nav-link:hover, .nav-link:active, .nav-link:focus, .nav-item.active .nav-link{
-  color: #ff5c71;
+  color: #ff5c71 !important;
 }
 .navbar-toggler-icon {
   color: #ff5c71;
@@ -205,6 +218,7 @@ header {
 
 .banner {
   background-color: #f7f7f7;
+  padding-top: 105px;
 }
 .banner .container {
   padding: 80px 0;
@@ -393,12 +407,14 @@ footer{
   padding-top: 80px;
   padding-bottom: 40px;
 }
-.footer-links li{}
 .footer-links li a {
   color: #ff5c71;
   padding: 5px 0;
   display: block;
   transition: 0.3s;
+}
+.footer-links li:first-child a{
+  padding-top: 0;
 }
 .footer-links li a:hover{
   color: #fff;
@@ -428,6 +444,7 @@ footer{
 }
 .socal-links li a img {
   max-width: 27px;
+  margin-bottom: 10px;
 }
 .footer-address p{
   font-family: FivoSans-Regular;
@@ -437,6 +454,7 @@ footer{
 .footer-address h4{
   font-family: FivoSans-Bold;
   font-size: 20px;
+  margin-top: 2px;
 }
 .footer-address a{
   color: #fff;
@@ -488,6 +506,14 @@ footer {
 }
 }
 @media(max-width: 767px){
+.navbar-collapse{
+  background-color: #f7f7f7;
+  padding-bottom: 10px;
+  margin-top: 15px;
+}
+header.sticky .navbar-nav .nav-link {
+  color: #504f4f;
+}
   .navbar-toggler {
   margin-right: 34px;
 }
