@@ -350,9 +350,9 @@ h1.banner-heading {
   padding: 100px 0 80px 0;
 }
 .as-is-img img {
-  max-width: 106%;
+  max-width: 119%;
   position: relative;
-  left: -11%;
+  left: -26%;
 }
 
 
@@ -519,6 +519,7 @@ footer {
 }
 .as-is-img img {
   left: 0;
+  margin-top: 20px;
 }
 .footer .map-img {
   width: 100% !important;
