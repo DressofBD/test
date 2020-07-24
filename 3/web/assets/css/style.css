@@ -199,7 +199,7 @@ header {
 }
 header.sticky{
   padding: 3px 0;
-  background-color: #2b2b2b;
+  background-color: #eaeaea;
   height: 75px;
   top: 0;
   line-height: normal;
@@ -217,7 +217,7 @@ header.sticky{
   transition: 0.3s;
 }
 header.sticky .navbar-nav .nav-link{
-  color: #fff;
+  /*color: #fff;*/
 }
 .nav-link:hover, .nav-link:active, .nav-link:focus, .nav-item.active .nav-link{
   color: #ff5c71 !important;
@@ -384,7 +384,7 @@ h1.banner-heading {
 
 
 .prioritization {
-  background-color: #f8f6f7;
+  background-color: #f7f7f7;
   padding: 100px 0 80px 0;
 }
 .prioritization-img img {
