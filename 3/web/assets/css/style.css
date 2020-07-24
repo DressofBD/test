@@ -204,6 +204,8 @@ header.sticky{
   top: 0;
   line-height: normal;
   max-width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-brand {
@@ -546,12 +548,13 @@ header.sticky .navbar-nav .nav-link {
 .navbar-toggler {
   position: relative;
   width: 100%;
+  padding: 0;
 }
 .navbar-toggler-icon {
   position: absolute;
   /*width: 130px;*/
   right: 0;
-  top: -40px;
+  top: -36px;
 }
 .navbar {
   padding-left: 0;
