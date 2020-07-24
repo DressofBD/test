@@ -184,7 +184,7 @@ body {
   overflow-x: hidden !important;
   max-width: 100%;
 }
-* header {
+header {
   background-color: #f7f7f7;
   padding: 20px 0;
   position: fixed;
@@ -197,7 +197,7 @@ body {
   line-height: normal;
   overflow: hidden;
 }
-* header.sticky{
+header.sticky{
   padding: 3px 0;
   background-color: #2b2b2b;
   height: 75px;
@@ -242,7 +242,8 @@ header.sticky .navbar-nav .nav-link{
   padding-top: 105px;
 }
 .banner .container {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-image: url(../images/bannerheadingbg.png);
   background-position: bottom left;
   background-size: 46%;
@@ -527,6 +528,10 @@ footer {
   margin-left: 0px;
 }
 }
+
+
+
+
 @media(max-width: 767px){
 .navbar-collapse {
   margin-top: -10px;
@@ -544,16 +549,21 @@ header.sticky .navbar-nav .nav-link {
 }
 .navbar-toggler-icon {
   position: absolute;
-  width: 130px;
+  /*width: 130px;*/
   right: 0;
   top: -40px;
 }
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+}
 .navbar-nav {
   max-width: 130px;
-  text-align: center;
+  text-align: right;
 }
 .banner .container{
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .banner-img img, .approach-img img, .prioritization-img img, .as-is-img img, .long-term-vision-img img {
   max-width: 100% !important;
@@ -566,6 +576,12 @@ header.sticky .navbar-nav .nav-link {
 }
 .banner-img img {
   margin-left: 0;
+}
+.banner-desc {
+  padding-left: 15px;
+}
+.banner-desc ul li {
+  width: 100%;
 }
 .success-rate {
   padding: 30px 0;
