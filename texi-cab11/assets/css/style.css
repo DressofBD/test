@@ -357,6 +357,7 @@ p{
   background: #000;
   color: #fff;
   padding: 35px 0;
+  padding-bottom: 20px;
 }
 .footer a{
   color: #f4b73f;
@@ -403,9 +404,34 @@ p{
   transition: none;
   display: none;
 }
-
-
-
+.footer-btm2 {
+  padding-top: 15px;
+  border-top: 1px solid #1e1400;
+  margin-top: 15px;
+}
+.terms-pages{}
+.terms-pages a {
+  margin: 0 5px;
+}
+.terms-pages a:first-child {
+  border-right: 1px solid;
+  padding-right: 15px;
+}
+.copyright {
+  text-align: right;
+}
+.privacy-policy-terms h2 {
+  font-weight: bold;
+}
+.privacy-policy-terms ul, .privacy-policy-terms ol{
+  padding-left: 16px;
+}
+.privacy-policy-terms ul li{
+  list-style: disc;
+}
+.privacy-policy-terms ol li{
+  list-style: decimal;
+}
 
 
 
@@ -494,7 +520,9 @@ p.we-specialize, .footer-top, .footer-btm {
 .f-btm-block {
   margin-bottom: 15px;
 }
-
+.footer-btm2, .copyright {
+  text-align: center !important;
+}
 
 
 
