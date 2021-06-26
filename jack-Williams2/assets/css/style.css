@@ -202,6 +202,7 @@ form {
 }
 form p{
   font-size: 16px;
+  font-weight: 500;
 }
 .draft-analyser {
   background: #ff7979;
@@ -333,7 +334,12 @@ button[disabled=""] {
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 10px 0;
+  background-image: linear-gradient(to top, #fff, #ffccae);
+}
+.summary ul li:nth-child(2n) {
+  background-image: linear-gradient(to top, #ececec, #ffd6d6);
 }
 .summary ul li p {
   font-weight: 500;
@@ -352,7 +358,7 @@ button[disabled=""] {
   transition: 0.3s;
 }
 .s-block:hover{
-  background: transparent;
+  background: #fff;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -371,14 +377,22 @@ button[disabled=""] {
   border: 1px solid #000;
   padding: 20px;
 }
-.lane-win ul li{
+.lane-win ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  background-image: linear-gradient(to top, #fff, #ffccae);
+  padding: 10px;
+}
+.lane-win ul li:nth-child(2n){
+  background-image: linear-gradient(to top, #ececec, #ffd6d6);
 }
 .lane-win ul li:last-child{
   margin-bottom: 0px;
+}
+.lane-win.comp ul li:first-child p {
+  font-weight: 700;
 }
 .lane-win ul li img {
   border-radius: 50%;
@@ -398,7 +412,7 @@ button[disabled=""] {
   transition: 0.3s;
 }
 .lane-win ul li .n-block:hover{
-  background: transparent;
+  background: #fff;
 }
 .s-block.round {
   border-radius: 50%;
@@ -436,6 +450,20 @@ button[disabled=""] {
 }
 .lane-win.comp {
   margin-top: 30px;
+}
+.draft-analyser {
+   background: #fff; 
+  display: inline-block;
+  padding: 15px 0px;
+  border: 1px solid #a4a4a4;
+  width: 100%;
+  box-shadow: 0px 6px 10px #e1e1e1;
+}
+form ul li .input-group input {
+  padding: 7px 5px;
+}
+.btn-calculate {
+  background: green;
 }
 
 
