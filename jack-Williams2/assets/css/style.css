@@ -464,13 +464,20 @@ button[disabled=""] {
 }
 form ul li .input-group input {
   padding: 7px 5px;
+  text-align: center;
 }
 .btn-calculate {
   background: green;
 }
-
-
-
+datalist, option{
+  text-align: center !important;
+}
+div.tab-desc{
+  /*display: none;*/
+}
+.tabs-content div.tab-desc:not(:first-child) {
+  display: none;
+}
 
 
 /*Responsive*/

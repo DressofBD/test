@@ -23,21 +23,21 @@ $.fn.colorize = function () {
 $(".s-block").colorize();
 
 
+$(function() {
+  $('.top-navs a').click(function() {
 
-// Show hide tab sections
-// $(document).ready(function(){
+    // Check for active
+    $('.top-navs a').removeClass('active');
+    $(this).addClass('active');
 
-//   $('#toppage, #junglepage').hide();
-  
-//     $(".top-navs a").each(function(i) {
-//         $(this).click(function() {
-//             $("#wrapper").find("div:eq('" + i + "')").show().siblings().hide();
-//         });
-//     }); 
-// });
+    // Display active tab
+    let currentTab = $(this).attr('href');
+    $('.tabs-content div.tab-desc').hide();
+    $(currentTab).show();
 
-
-
+    return false;
+  });
+});
 
 
 
