@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <title></title>
+    <link rel="shortcut icon" type="image/icon" href="assets/prudential.png">
+<style>
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+@font-face {
+  font-family: MetaPlus-Italic;
+  src: url(assets/MetaPlus-Italic.otf);
+}
+body {
+  font-family: "MetaPlus-Italic", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  color: #000;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6, ul, ol, p{
+  margin: 0;
+  padding: 0;
+}
+.eDm {
+  max-width: 800px;
+  height: auto;
+  margin: 0px auto;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(to right, #e8e8ea, #e3e3e5);
+  border: 1px solid #000;
+  padding: 0;
+}
+.eDm img{
+  max-width: 100%;
+  height: auto;
+}
+.eDm .main-bg {
+  margin-bottom: -5px;
+}
+.eDm .main-content {
+  top: 11%;
+  bottom: 0;
+  left: 5%;
+  right: 0;
+  width: 39%;
+  height: auto;
+  z-index: 9;
+}
+.eDm .eDm-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 5px solid #FFBF00;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 90%;
+  margin-left: -45%;
+  padding-bottom: 15px
+}
+.eDm .eDm-footer img {
+  max-width: 200px;
+  max-height: 50px;
+}
+.eDm .pab{
+  position: absolute;
+}
+.eDm .hbd {
+  width: 50%;
+  right: 65px;
+  position: absolute;
+  top: 12%;
+}
+.eDm p {
+  color: #354355;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+.eDm p.another-year {
+  margin-bottom: 50px;
+}
+.eDm .ft {
+  z-index: 9;
+  top: 18%;
+}
+.eDm .ftbg{
+  top: 18%;
+  animation: ftbg 2s ease-in-out infinite normal;
+}
+@keyframes ftbg{
+  0%{
+    opacity: 1;
+    transform: scale(0.5);
+  }
+  100%{
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+.eDm .p-last {
+  position: relative;
+  top: 18%;
+}
+
+
+@media screen and (max-width:800px){
+.eDm {
+  width: 400px;
+  min-height: 800px;
+}
+.eDm .main-bg {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+}
+.eDm .main-content {
+  top: 5%;
+  left: 6%;
+  width: 87%;
+}
+.eDm .con {
+  width: 110px;
+}
+.eDm .fire {
+  top: 55%;
+  left: 33%;
+  width: 31px;
+}
+.eDm .ft, .eDm .ftbg {
+  top: 20%;
+  width: 160px;
+  left: 30%;
+}
+.eDm .p-last {
+  
+  top: 10%;
+}
+}
+</style>
+</head>
+   <body>
+      <section class="eDm">
+        <img src="assets/bg.jpg" alt="" class="main-bg">
+        <div class="pab main-content">
+          <p class="another-year">Another year wiser, another year closer to your goals.</p>
+          <p>Have a</p>
+          <img src="assets/ft.png" alt="" class="pab ft">
+          <img src="assets/ft-bg.png" alt="" class="pab ftbg">
+          <div class="p-last">
+            <p>celebration on this</p>
+            <p>special day!</p>
+          </div>
+        </div>
+          <div class="eDm-footer">
+            <img src="assets/flogo1.png" alt="">
+            <img src="assets/flogo2.png" alt="">
+          </div>
+      </section>
+   </body>
+</html>
+
