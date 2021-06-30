@@ -3,8 +3,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
-    <title></title>
-    <link rel="shortcut icon" type="image/icon" href="assets/prudential.png">
 <style>
 * {
   -webkit-box-sizing: border-box;
@@ -109,12 +107,23 @@ h1, h2, h3, h4, h5, h6, ul, ol, p{
   position: relative;
   top: 18%;
 }
-
+.eDm .mb-block{
+  display: none;
+}
+.eDm .mb-none{
+  display: block;
+}
 
 @media screen and (max-width:800px){
 .eDm {
   width: 400px;
   min-height: 800px;
+}
+.eDm .mb-block{
+  display: block;
+}
+.eDm .mb-none{
+  display: none;
 }
 .eDm .main-bg {
   position: absolute;
@@ -124,7 +133,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, p{
 .eDm .main-content {
   top: 5%;
   left: 6%;
-  width: 87%;
+  width: 40%;
 }
 .eDm .con {
   width: 110px;
@@ -135,9 +144,9 @@ h1, h2, h3, h4, h5, h6, ul, ol, p{
   width: 31px;
 }
 .eDm .ft, .eDm .ftbg {
-  top: 20%;
+  top: 27%;
   width: 160px;
-  left: 30%;
+  left: 6%;
 }
 .eDm .p-last {
   
@@ -148,7 +157,8 @@ h1, h2, h3, h4, h5, h6, ul, ol, p{
 </head>
    <body>
       <section class="eDm">
-        <img src="assets/bg.jpg" alt="" class="main-bg">
+        <img src="assets/bg.jpg" alt="" class="mb-none main-bg">
+        <img src="assets/bg-m.jpg" alt="" class="mb-block main-bg">
         <div class="pab main-content">
           <p class="another-year">Another year wiser, another year closer to your goals.</p>
           <p>Have a</p>
