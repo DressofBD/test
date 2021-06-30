@@ -71,10 +71,19 @@ h1, h2, h3, h4, h5, h6, ul, ol, p{
   position: absolute;
 }
 .eDm .hbd {
-  width: 50%;
-  right: 65px;
+  width: 39%;
+  right: 83px;
   position: absolute;
-  top: 12%;
+  top: 7%;
+  animation: hbd 2s ease-in-out infinite alternate;
+}
+@keyframes hbd{
+  0%{
+    transform: scale(.95);
+  }
+  100%{
+    transform: scale(1.0);
+  }
 }
 .eDm p {
   color: #354355;
@@ -95,10 +104,16 @@ h1, h2, h3, h4, h5, h6, ul, ol, p{
 }
 @keyframes ftbg{
   0%{
+    filter: brightness(100%);
     opacity: 1;
-    transform: scale(0.5);
+    transform: scale(0.8);
+  }
+  50%{
+    opacity: 0.5;
+    filter: brightness(100%);
   }
   100%{
+    filter: brightness(200%);
     opacity: 0;
     transform: scale(1.5);
   }
@@ -134,7 +149,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, p{
   top: 5%;
   left: 4%;
   width: 40%;
-} 
+}
 .eDm .con {
   width: 110px;
 }
@@ -159,6 +174,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, p{
       <section class="eDm">
         <img src="assets/bg.jpg" alt="" class="mb-none main-bg">
         <img src="assets/bg-m.jpg" alt="" class="mb-block main-bg">
+        <img src="assets/hbd.png" alt="" class="hbd">
         <div class="pab main-content">
           <p class="another-year">Another year wiser, another year closer to your goals.</p>
           <p>Have a</p>
